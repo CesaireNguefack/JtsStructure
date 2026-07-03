@@ -8,10 +8,10 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_BACKEND: ghcr.io/cesairenguefack/sohblitz-backend
-  IMAGE_FRONTEND: ghcr.io/cesairenguefack/sohblitz-frontend
-  VPS_IP: 51.75.65.254
-  VPS_USER: sublime
+  IMAGE_BACKEND: ghcr.io/cesairenguefack/sohblitz-backend_
+  IMAGE_FRONTEND: ghcr.io/cesairenguefack/sohblitz-frontend_
+  VPS_IP: 51.75.65.254_
+  VPS_USER: sublime_
 
 jobs:
 
@@ -69,7 +69,7 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no $VPS_USER@$VPS_IP << EOF
             set -e
-            cd /var/www/SohblitzMobil 
+            cd /var/www/SohblitzMobil_ 
             git fetch origin
             git reset --hard origin/main  
             echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u cesairenguefack --password-stdin
