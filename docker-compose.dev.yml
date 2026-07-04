@@ -15,11 +15,11 @@ services:
       - app_network
 
   backend:
-    build: ./sohblitz-backend
+    build: ./ets-backend
     container_name: backend
     restart: always
     env_file:
-      - ./sohblitz-backend/.env
+      - ./ets-backend/.env
     environment:
       NODE_ENV: docker_sublime_prod
       DATABASE_URL: postgresql://cesaire:changeme@db:5432/sohblitz
@@ -41,7 +41,7 @@ services:
       "
 
   frontend:
-    build: ./sohblitz-frontend
+    build: ./est-frontend
     container_name: frontend
     restart: always
     ports:

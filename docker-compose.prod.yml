@@ -1,6 +1,6 @@
 services:
   frontend:
-    image: ghcr.io/cesairenguefack/sohblitz-frontend:latest
+    image: ghcr.io/cesairenguefack/est-frontend:latest
     restart: always
     ports:
       - "3000:3000"
@@ -10,7 +10,7 @@ services:
       - backend
 
   backend:
-    image: ghcr.io/cesairenguefack/sohblitz-backend:latest
+    image: ghcr.io/cesairenguefack/ets-backend:latest
     restart: always
     env_file:
       - .env

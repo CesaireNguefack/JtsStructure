@@ -23,7 +23,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
           },
         },
         defaults: {
-          from: `"Sohblitz" <${config.get<string>('MAIL_FROM')}>`,
+          from: `"ETS Structure" <${config.get<string>('MAIL_FROM')}>`,
         },
       }),
     }),
