@@ -5,11 +5,11 @@ import { useTranslations } from "@/lib/TranslationProvider"
 export   function ButtonContact(){
         const pathname = usePathname()
         const t = useTranslations()
-       const locale = pathname.split("/")[1] || "de"
+       const locale = pathname.split("/")[1] || "fr"
         const router = useRouter()
     
     return (
-        <button  onClick={() => router.push(`/${locale}/contact`)}
+        <button  onClick={() => router.push(`/${locale}/evaluation`)}
             className="text-white px-5 py-3 rounded-xl shadow-lg 
              cursor-pointer hover:scale-105  "
              style={{ background: "var(--gradient-primary)" }}

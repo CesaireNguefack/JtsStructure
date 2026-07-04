@@ -1,172 +1,113 @@
 [
   {
     "id": 0,
-    "title": "Allgemeine Gallery Images",
+    "title": "Allgemeine Galerie",
     "description1": "",
     "description": "",
-     "pricing": [
-    
-    ],
-    "tags": [
-    
-    ]
+    "pricing": [],
+    "tags": []
   },
   {
     "id": 1,
-    "title": "Gebäudereinigung",
-    "description1": "– Regelmäßige Unterhalts- oder Grundreinigung für Häuser und Wohnungen.",
-    "description": "100% chemiefreie Gebäudereinigung mit Dampftechnologie. Ideal für Haushalte, AirBnB, Ferienwohnungen, gewerblich raume, Restaurant, Lagerfläche und Industrie Anlage",
+    "title": "Tragwerksplanung im Hochbau",
+    "description1": "Konzeption, Vordimensionierung und Nachweise fur neue und bestehende Gebaude.",
+    "description": "ETS Structure erstellt Tragwerksplanungen fur Wohn-, Gewerbe-, Industrie- und offentliche Gebaude. Dazu gehoren Lastannahmen, Bemessung tragender Bauteile und die Abstimmung mit Architekten und ausfuhrenden Unternehmen.",
     "pricing": [
-      "25€ – 35€ pro Stunde"
+      "Honorar nach Angebot je nach Planstand, Leistungsphase und Komplexitat",
+      "Lieferumfang: Berechnungen, Annahmen und technische Empfehlungen"
     ],
     "tags": [
-      "Dampfreinigung",
-      "Allergikerfreundlich",
-      "Hygienisch"
+      "Hochbau",
+      "Stahlbeton",
+      "Stahl",
+      "Holz"
     ]
   },
   {
     "id": 2,
-    "title": "Büro und Praxisreinigung",
-    "description1": "– Hygienische Reinigung für Büros und Praxen mit Desinfektion.",
-    "description": "Professionelle Reinigung für Büros und Praxen für ein gesundes Arbeitsklima. Desinfektion ohne Chemie.",
+    "title": "Berechnung und Bemessung",
+    "description1": "Verlassliche statische Berechnungen fur tragende Bauteile, Anschlusse und Tragwerke.",
+    "description": "Bemessung von Tragern, Stutzen, Decken, Fundamenten, tragenden Wanden, Dachwerken und Anschlussen nach Projektannahmen und geltenden Normen.",
     "pricing": [
-      "30€ – 40€ pro Stunde"
+      "Pauschale oder Aufwandsschatzung nach Prufung des Umfangs",
+      "Einzelauftrag oder komplette Projektbegleitung"
     ],
     "tags": [
-      "Desinfektion",
-      "Arbeitsplatzhygiene"
+      "Statik",
+      "Eurocodes",
+      "Fundamente"
     ]
   },
   {
     "id": 3,
-    "title": "Bauendreinigung",
-    "description1": "– Bauschluss- oder Feinreinigung nach Renovierungen.",
-    "description": "Gründliche Reinigung nach Bau oder Renovierung. Entfernt Baustaub, Fett und Verschmutzungen.",
+    "title": "Gutachten und Tragwerksdiagnostik",
+    "description1": "Analyse von Rissen, Schaden, Verformungen und konstruktiven Mangelbildern.",
+    "description": "Begehung, Unterlagenprufung, Ursachenanalyse und Empfehlungen fur Instandsetzung oder Verstarkung. Die Berichte unterstutzen technische und administrative Entscheidungen.",
     "pricing": [
-      "Grobreinigung: 4€ – 9€ / m²",
-      "Feinreinigung: 5€ – 9.50€ / m²",
-      "Sanitär, Geräte und Möbel werden extra berechnet"
+      "Ortstermin und Bericht nach Angebot",
+      "Preis je nach Dringlichkeit, Fahrt und Untersuchungsumfang"
     ],
     "tags": [
-      "Neubau",
-      "Renovierung"
+      "Diagnostik",
+      "Risse",
+      "Gutachten"
     ]
   },
   {
     "id": 4,
-    "title": "Fenster und Glasreinigung",
-    "description1": "– Streifenfreie Reinigung von Fenstern, Spiegeln und Glasflächen, innen und außen plus Rahmen.",
-    "description": "Streifenfreie Glas- und Fensterreinigung für private Haushalte, Büros und Geschäfte.",
+    "title": "Ingenieurbauwerke",
+    "description1": "Studien und technische Stellungnahmen fur Brucken, Stege, Wande und Sonderbauwerke.",
+    "description": "Begleitung von Ingenieurbauwerken: statische Prufungen, Tragfahigkeitsanalysen, Reparaturvorschlage, Verstarkungen und technische Nachverfolgung.",
     "pricing": [
-      "4€ – 8€ / m² (innen & außen)",
-      "Rahmen: +1.45€ pro Fenster",
-      "Verschmutzungsgrad / Höhe: +20% – 50%"
+      "Angebot passend zum Bauwerkstyp",
+      "Prufung auf Basis von Unterlagen oder nach Ortstermin"
     ],
     "tags": [
-      "Streifenfrei",
-      "Professionell"
+      "Brucken",
+      "Stege",
+      "Stutzwande"
     ]
   },
   {
     "id": 5,
-    "title": "Autoinnenreinigung",
-    "description1": "– Frischer Innenraum für dein Fahrzeug.",
-    "description": "Dampfreinigung des Fahrzeuginnenraums ohne Chemie. Entfernt Gerüche, Keime und Schmutz. Innenraum komplett + Sitze: Staubsaugen (inkl. Kofferraum)Kunststoffreinigung Armaturen + Lüftung, Scheiben innen, Sitze shampoonieren (Waschsauger), Flecken entfernen, Fußmatten reinigen",
+    "title": "Infrastruktur und Tiefbau",
+    "description1": "Tragwerksbezogene Unterstutzung fur Infrastruktur, Fundamente, Stutzbauwerke und erdberuhrte Bauteile.",
+    "description": "Ingenieurtechnische Studien fur Infrastrukturprojekte, Schnittstellen zwischen Hochbau und Tiefbau, Stutzbauwerke und Strukturen mit besonderen Boden- oder Nutzungsanforderungen.",
     "pricing": [
-      "Basisreinigung: 40€ – 130€",
-      "Intensivreinigung: 130€ – 250€",
-      "Ozon Reinigung inklusive",
-      "Geruchsbeseitigung: 50€ – 80€"
+      "Angebot nach Prufung der Randbedingungen und vorhandenen Unterlagen"
     ],
     "tags": [
-      "Auto",
-      "Desinfektion"
+      "Tiefbau",
+      "Stutzbauwerke",
+      "Infrastruktur"
     ]
   },
   {
     "id": 6,
-    "title": "Polster Reinigung",
-    "description1": "– Saubere Sofas, Sessel und Matratzen, hygienisch und schonend.",
-    "description": "Tiefenreinigung von Sofas und Polstern. Entfernt Milben, Flecken und Bakterien.",
+    "title": "Sanierung und Verstarkung",
+    "description1": "Losungen zur Umnutzung, Reparatur oder Tragfahigkeitserhohung bestehender Strukturen.",
+    "description": "Verstarkungsstudien bei Nutzungsanderung, Wanddurchbruchen, Erweiterungen, Aufstockungen oder Schadensbehebung unter Berucksichtigung der Baustellen- und Nutzungsbedingungen.",
     "pricing": [
-      "Sofa: 20€ – 40€ pro Sitz",
-      "Sessel: 25€ – 40€",
-      "Bürostuhl: 9€ – 20€"
+      "Studie nach Angebot entsprechend Aufmass, Planunterlagen und Zustand"
     ],
     "tags": [
-      "Milbenentfernung",
-      "Tiefenreinigung"
+      "Verstarkung",
+      "Sanierung",
+      "Umbau"
     ]
   },
   {
     "id": 7,
-    "title": "Teppichreinigung",
-    "description1": "– Tiefenreinigung mit mobiler Technik.",
-    "description": "Dampfreinigung von Teppichen für hygienische Sauberkeit und frische Stoffe.",
+    "title": "Technische Beratung und Projektprufung",
+    "description1": "Unabhangige Beratung zur Absicherung technischer Entscheidungen und Projektunterlagen.",
+    "description": "Prufung von Berechnungen, konstruktiven Prinzipien, Varianten, Ausschreibungs- oder Ausfuhrungsunterlagen sowie Unterstutzung bei technischen Fragen der Projektbeteiligten.",
     "pricing": [
-      "kleiner Teppich: 20 - 50 €",
-      "mittel: 50 - 100 €",
-      "groß: 100 - 200 €"
+      "Kurzberatung oder laufende Begleitung nach Angebot"
     ],
     "tags": [
-      "Allergikerfreundlich"
+      "Beratung",
+      "Technische Prufung",
+      "Koordination"
     ]
-  },
-  {
-    "id": 8,
-    "title": "Raffstore & Jalousie Reinigung",
-    "description1": "",
-    "description": "Reinigung von Jalousien und Raffstores mit schonender Dampftechnologie.",
-    "pricing": [
-      "20€ – 55€ pro Stück",
-      "Je nach Verschmutzung & Höhe: +10% – 45%"
-    ],
-    "tags": [
-      "Sonnenschutz"
-    ]
-  },
-  {
-    "id": 9,
-    "title": "Steinreinigung",
-    "description1": "",
-    "description": "Entfernung von Moos, Algen und Verschmutzungen auf Terrassen  mit Hochdruck-Dampf.",
-    "pricing": [
-      "Leichte Verschmutzung (Staub, normaler Dreck): 5 - 8 € / m²",
-      "Mittlere Verschmutzung (Moos, Algen): 8 - 13 € / m²",
-      "Starke Verschmutzung (Öl, Flecken, tief sitzender Schmutz): 15 - 28 € / m²",
-      "Mit Imprägnierung / Versiegelung: 4 - 6 € / m²"
-    ],
-    "tags": [
-      "Terrasse",
-      "Fassade",
-      "Moosentfernung"
-    ]
-  },
-  {
-    "id": 10,
-    "title": "Treppen Reinigung",
-    "description1": "- Saubere Treppen",
-    "description": " Der erste Eindruck zählt Wir sorgen für gepflegte und hygienisch saubere Treppenhäuser i n Wohn- und Geschäftsgebäuden. Unser zuverlässiger Reinigungsservice entfernt gründlich Schmutz, Staub und Ablagerungen - von den Stufen bis zum Geländer. Regelmäßig, flexibel und mit viel Sorgfalt kümmern wir uns darum, dass Ihr Treppenhaus jederzeit einladend aussieht",
-    "pricing": [
-      "Klein (2-4 Etagen): 20-40 €",
-      "Mittel (5-8 Etagen): 40-80 €",
-      "Groß (mehr als 8 Etagen): 80- 150 €"
-    ],
-    "tags": []
-  },
-  {
-  "id": 11,
-  "title": "Hausreinigung",
-  "description1": "",
-  "description": "Reinigung von Wohnräumen, Küchen und Bädern. Staubsaugen, Wischen und Staubentfernung. Fenster- und Glasreinigung. Tiefenreinigung bei Bedarf. Flexible Termine – einmalig oder regelmäßig.",
-  "pricing": [
-    "25 € – 30 € pro Stunde"
-  ],
-  "tags": [
-    "Residenzen",
-    "Wohnungen",
-    "Einfamilienhaus"
-  ]
-}
+  }
 ]

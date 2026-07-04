@@ -11,7 +11,7 @@ import Demo from "./Demo"
 import TeamHome from "./Team"
 import HomePageContacSection from "./HomePageContacSection"
 import ServicesBlock from "./Services"
-import Footer from "@/componenten/Footer"
+import WhyChoose from "./WhyChoose"
 
 export default function Welcome() {
 
@@ -63,6 +63,7 @@ export default function Welcome() {
             </div>
             <AboutSection />
             <ServicesBlock  />
+            <WhyChoose />
             <TeamHome />
             <ReviewsSection />
             <Demo />

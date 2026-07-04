@@ -5,21 +5,15 @@ import {ButtonContact} from "@/componenten/Cards/KontaktButton";
 export default function Demo() {
      const t = useTranslations()
     return (
-        <section className="relative h-[500px] flex items-center justify-center overflow-hidden">
-
-            {/* Video background */}
-            <video
-                autoPlay
-                loop
-                muted
-                playsInline
+        <section className="relative h-[500px] flex items-center justify-center overflow-hidden bg-slate-950">
+            <img
+                src="/images/ets-structure-hero.png"
+                alt="Expertise structurelle"
                 className="absolute top-0 left-0 w-full h-full object-cover"
-            >
-                <source src="/videos/cleaning.mp4" type="video/mp4" />
-            </video>
+            />
 
             {/* Overlay sombre pour lisibilité */}
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-slate-950/65"></div>
 
             {/* Content */}
             <div className="relative z-10 text-center text-white max-w-3xl px-6">

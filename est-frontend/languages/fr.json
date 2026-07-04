@@ -2,36 +2,39 @@
   "navbar": {
     "home": "Accueil",
     "contact": "Contact",
-     "price":"Liste des prix",
-    "gallery":"Gallerie",
+     "price":"Prestations",
+    "services":"Services",
+    "sectors":"Secteurs",
+    "gallery":"Réalisations",
+    "realisations":"Réalisations",
     "impressum": "Impressum",
     "privacy": "Politique de confidentialité",
-    "about": "Apropos de nous",
+    "about": "À propos",
     "agb": "CGV",
     "reseaux": "Suivez-nous sur les réseaux sociaux"
   },
   "hero": {
-    "title": "Une propreté \n sur laquelle vous pouvez compter",
-    "subtitle": "Des services de nettoyage rapides, fiables et de qualité directement sur place à Braunschweig et ses environs"
+    "title": "Construisons ensemble \n des ouvrages durables \n et performants",
+    "subtitle": "Rigueur, qualité et innovation au service de vos projets."
   },
   "footer": {
-  "title": "Services de nettoyage professionnels en Allemagne. Solutions rapides, fiables et 100 % sans produits chimiques pour votre maison et votre entreprise.",
+  "title": "Bureau d’études structure spécialisé dans le dimensionnement, le diagnostic et l’expertise des ouvrages.",
   "navigation": "Navigation",
   "sublime": "Tous droits réservés. Conçu et développé par "
 },
   "about": {
-    "quality": "Qualité supérieure",
+    "quality": "Rigueur technique",
     "title": "Qui nous sommes",
-    "description": "En tant que propriétaire, \nEmerant Dass Kuietche Soh\n basé à Braunschweig, je garantis personnellement des résultats impeccables – que ce soit pour des particuliers ou des entreprises.",
-    "subtitle": "Notre zone de service",
-    "subdescription": "Nous nous déplaçons directement chez vous à \nBraunschweig, Wolfsburg, Salzgitter, Gifhorn\n et dans les environs."
+    "description": "ETS Structure est une entreprise spécialisée dans les études, calculs et expertises structurelles. Nous intervenons dès les premières hypothèses jusqu’aux notes de calcul, plans d’exécution et diagnostics d’ouvrages existants.",
+    "subtitle": "Nos domaines d’intervention",
+    "subdescription": "Bâtiment, ouvrages d’art, infrastructures, réhabilitation, renforcement et assistance technique pour maîtres d’ouvrage, architectes et entreprises."
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Nous sommes à votre disposition 24 heures sur 24, joignez-nous pour discuter de votre besoin!",
+    "subtitle": "Présentez-nous votre projet, vos plans ou votre problématique structurelle.",
     "iconLocation": "Notre localisation",
-    "contactbtn": "Nous contacter →",
-    "reserve": "Réserver →",
+    "contactbtn": "Demander une évaluation →",
+    "reserve": "Demander un devis →",
     "sending": "Envoi en cours...",
     "submit": "Envoyer →",
     "formtitle": "Nous contacter",
@@ -46,43 +49,43 @@
     "street": "Rue et numéro",
     "postcode": "Code postal",
     "city": "Ville",
-    "reservationformtitle": "Formulaire de reservation",
-    "confirmedreservationsent": "Réservation envoyée !",
+    "reservationformtitle": "Demande d’étude",
+    "confirmedreservationsent": "Demande envoyée !",
     "goback": "← Retour",
     "showfullcalender": "Voir le calendrier complet",
     "invalide": "invalide",
-    "datereservation": "Entrez la date à la quelle vous souhaitez le service",
+    "datereservation": "Indiquez la date souhaitée pour un échange technique",
     "notavailable": "Nous ne sommes pas disponibles à cette date.",
     "sizeerror": "doit contenir entre 2 et 70 caractères",
     "errorcharacter": "contient des caractères non valides",
     "messageerror": "doit contenir entre 2 et 500 caractères",
     "sendsucess":"Message envoyé avec succès ✅",
     "senderror":"Erreur envoi",
-    "addresse":"Braunschweig, Wolfsburg, Salzgitter, Gifhorn et environs."
+    "addresse":"Allemagne et accompagnement à distance selon les projets."
   },
   "service": {
-    "title": "Nos services",
-    "title2":"Nos tarifs",
-    "subtitle1": "Frais de déplacement à Braunschweig :",
-    "subtitle2": "5€ à 10€",
-    "besichtigungstermin": "Rendez-vous de visite gratuit",
-    "subtitle22": "Hors Braunschweig :",
-    "subtitle3": "0,65€ / km.",
-    "subtitle4": "Montant minimum de commande :",
-    "subtitle5": "50€.",
-    "subtitle6": "Réductions disponibles pour les contrats à long terme.",
-    "footer0": "Sohblitz-Mobil :",
-    "footer": "100% sans produits chimiques & hygiénique  \n Les prix varient selon la surface, le niveau de saleté et l’accessibilité. \n Des services supplémentaires comme l’imprégnation ou le nettoyage des joints sont possibles.",
-    "price": "Prix",
-    "detailfooter": "Nous sommes disponibles à Braunschweig et ses environs – rapides, fiables et 100 % sans produits chimiques."
+    "title": "Nos prestations",
+    "title2":"Honoraires sur devis",
+    "subtitle1": "Premier échange projet :",
+    "subtitle2": "Analyse du besoin",
+    "besichtigungstermin": "Rendez-vous technique",
+    "subtitle22": "Études et expertises :",
+    "subtitle3": "Offre adaptée à la complexité.",
+    "subtitle4": "Documents fournis :",
+    "subtitle5": "Notes de calcul, avis, plans et rapports.",
+    "subtitle6": "Accompagnement possible sur toutes les phases du projet.",
+    "footer0": "ETS Structure :",
+    "footer": "Chaque mission est chiffrée selon le périmètre, les données disponibles, les normes applicables et le niveau de détail attendu.",
+    "price": "Devis",
+    "detailfooter": "Nous accompagnons les projets de bâtiment, ouvrages d’art et infrastructures avec une approche rigoureuse, confidentielle et sécurisée."
   },
   "teamsection": {
-    "title": "Nettoyage professionnel pour votre domicile",
-    "description": "Nous proposons des services de nettoyage fiables et minutieux pour les appartements, les bureaux et les fenêtres – afin que vous puissiez vous concentrer sur l’essentiel."
+    "title": "Une ingénierie structurelle claire et exploitable",
+    "description": "Nos livrables facilitent la décision, la coordination chantier et la justification technique auprès des intervenants du projet."
   },
   "demosection": {
-    "title": "Nettoyage professionnel pour votre domicile",
-    "subtitle": "Nous assurons la propreté des appartements, bureaux et commerces."
+    "title": "Sécuriser les choix structurels",
+    "subtitle": "Diagnostic, calcul, conception et expertise pour construire, transformer ou renforcer avec méthode."
   },
   "reviewsection": {
     "title": "Quelques avis",
@@ -121,12 +124,12 @@
     "addService": "Ajouter un service"
   },
   "contactPageHeaderInfos": {
-    "title": "Contactez-nous \n pour un nettoyage \n professionnel",
-    "subtitle": "Votre partenaire fiable pour la propreté"
+    "title": "Contactez-nous \n pour une étude \n structurelle",
+    "subtitle": "Votre partenaire pour les calculs et expertises structurelles"
   },
   "aboutPageHeaderInfos": {
     "title": "En savoir plus \n sur notre \n entreprise",
-    "subtitle": "Votre partenaire pour un nettoyage professionnel"
+    "subtitle": "Votre partenaire pour l’ingénierie structurelle"
   },
   "impressumPageHeaderInfos": {
     "title": "Informations \n légales",
@@ -138,29 +141,29 @@
   },
   "agbPageHeaderInfos": {
     "title": "Conditions générales \n de service",
-    "subtitle": "Nos conditions pour les prestations de nettoyage"
+    "subtitle": "Nos conditions pour les prestations d’études structurelles"
   },
   "privacyPage": {
     "title": "Politique de confidentialité",
-    "intro": "Sohblitz-Mobil accorde une grande importance à la protection de vos données personnelles. Vos informations sont traitées de manière confidentielle et conformément au RGPD ainsi qu'aux lois applicables en matière de protection des données.",
+    "intro": "ETS Structure accorde une grande importance à la protection de vos données personnelles. Vos informations sont traitées de manière confidentielle et conformément au RGPD ainsi qu'aux lois applicables en matière de protection des données.",
     "lastUpdate": "Dernière mise à jour : Mars 2026",
     "sections": [
       {
         "title": "Responsable du traitement",
         "content": [
           "Emerant dass Kuietche soh",
-          "Sohblitz-Mobil",
+          "ETS Structure",
           "Heinrich-Büssing-Ring 22",
           "38102 Braunschweig",
           "Téléphone : 0176 48082448",
-          "Email : sohblitz.mobil@web.de"
+          "Email : contact@ets-structure.de"
         ]
       },
       {
         "title": "Collecte et utilisation des données",
         "content": [
           "Nous collectons des données personnelles uniquement lorsque cela est nécessaire à l'exécution de nos services.",
-          "Cela inclut par exemple les services de nettoyage tels que le nettoyage de bâtiments ou de fenêtres.",
+          "Cela inclut par exemple les demandes d’étude, de calcul, d’expertise ou d’assistance technique.",
           "Les données typiques collectées sont le nom, l'adresse, le numéro de téléphone et l'adresse e-mail provenant de demandes ou de contrats.",
           "Base légale : article 6 paragraphe 1 b du RGPD (exécution d'un contrat) et article 6 paragraphe 1 f du RGPD (intérêt légitime)."
         ]
@@ -221,20 +224,19 @@
         "title": "Informations conformément au §5 TMG",
         "content": [
           "Propriétaire : Emerant dass Kuietche soh",
-          "Sohblitz-Mobil"
+          "ETS Structure"
         ]
       },
       {
         "title": "Services de l'entreprise",
         "content": [
-          "Nettoyage de bâtiments",
-          "Nettoyage de tissus d’ameublement (canapé, fauteuil, matelas, chaises de bureau)",
-          "Nettoyage intérieur de voiture",
-          "Nettoyage de tapis",
-          "Nettoyage après chantier",
-          "Nettoyage de bureaux et cabinets",
-          "Nettoyage de fenêtres et vitrages",
-          "Nettoyage de stores et jalousies"
+          "Études structurelles de bâtiment",
+          "Calculs et dimensionnement",
+          "Expertises et diagnostics",
+          "Ouvrages d’art",
+          "Infrastructures",
+          "Réhabilitation et renforcement",
+          "Assistance technique"
         ]
       },
       {
@@ -248,7 +250,7 @@
         "title": "Contact",
         "content": [
           "Téléphone : 0176 48082448",
-          "Email : sohblitz.mobil@web.de"
+          "Email : contact@ets-structure.de"
         ]
       },
       {
@@ -261,8 +263,8 @@
       {
         "title": "Profession",
         "content": [
-          "Agent de nettoyage de bâtiments",
-          "Chambre compétente : Chambre des métiers Braunschweig-Lüneburg-Stade",
+          "Bureau d’études structure",
+          "Chambre compétente : à compléter",
           "Burgplatz 2",
           "38100 Braunschweig"
         ]
@@ -291,18 +293,18 @@
       {
         "title": "Champ d'application",
         "content": [
-          "Les présentes conditions générales s'appliquent à tous les contrats de services de nettoyage entre Sohblitz-Mobil et le client.",
-          "Cela inclut le nettoyage de bâtiments, le nettoyage de tissus d’ameublement, de tapis, l'intérieur de voiture, le nettoyage après chantier, le nettoyage de bureaux et cabinets ainsi que le nettoyage de vitres, stores et jalousies.",
+          "Les présentes conditions générales s'appliquent à tous les contrats d’études, de calculs, d’expertises et d’assistance technique entre ETS Structure et le client.",
+          "Cela inclut notamment les études structurelles de bâtiment, ouvrages d’art, infrastructures, diagnostics, notes de calcul, rapports et avis techniques.",
           "Toute condition différente doit être confirmée par écrit."
         ]
       },
       {
         "title": "Description des prestations et obligations du client",
         "content": [
-          "L'étendue des prestations est définie dans l'offre ou la réservation.",
-          "Le client met gratuitement à disposition l'eau, l'électricité, l'accès aux locaux et les conteneurs à déchets.",
-          "Les pièces doivent être accessibles et dégagées.",
-          "Sohblitz-Mobil utilise des produits et équipements professionnels."
+          "L'étendue des prestations est définie dans l'offre, la mission ou la commande.",
+          "Le client met à disposition les plans, hypothèses, diagnostics existants, contraintes de site et informations nécessaires à l’étude.",
+          "Les données transmises doivent être complètes, lisibles et à jour.",
+          "ETS Structure utilise des méthodes et outils professionnels adaptés à la mission."
         ]
       },
       {
@@ -312,17 +314,16 @@
           "Numéro de TVA : DE458350919.",
           "Le paiement doit être effectué dans un délai de 7 jours après réception de la facture par virement bancaire.",
           "Frais de rappel : 5 €.",
-          "Montant minimum de commande : 50 €.",
-          "Frais de déplacement à Braunschweig : 0,50 €/km.",
-          "Frais de déplacement hors Braunschweig : 0,75 €/km."
+          "Les frais de déplacement, relevés sur site ou réunions sont précisés dans l’offre.",
+          "Toute prestation complémentaire fait l’objet d’un accord préalable."
         ]
       },
       {
         "title": "Rendez-vous et annulations",
         "content": [
-          "Les rendez-vous convenus sont contraignants.",
-          "Les annulations moins de 24 heures avant entraînent des frais de 50%.",
-          "Les retards du client prolongent la durée facturée.",
+          "Les rendez-vous, réunions et jalons convenus sont contraignants.",
+          "Les annulations tardives peuvent entraîner des frais selon l’offre.",
+          "Les retards de transmission des données peuvent prolonger les délais d’étude.",
           "En cas de retard de paiement, l'obligation de prestation est suspendue."
         ]
       },
@@ -330,17 +331,17 @@
         "title": "Défauts et réclamations",
         "content": [
           "Les défauts visibles doivent être signalés immédiatement.",
-          "Sohblitz-Mobil corrigera les défauts dans un délai de 48 heures.",
-          "La correction est gratuite.",
-          "Si la correction échoue, une réduction de prix ou une résiliation est possible."
+          "ETS Structure analysera la demande et corrigera les défauts avérés dans un délai raisonnable.",
+          "La correction est gratuite lorsqu’elle concerne une erreur imputable à ETS Structure.",
+          "Si la correction échoue, une réduction de prix ou une résiliation peut être étudiée."
         ]
       },
       {
         "title": "Responsabilité",
         "content": [
           "La responsabilité s'applique uniquement en cas de faute intentionnelle ou de négligence grave.",
-          "Les dommages doivent être signalés dans les 48 heures.",
-          "Aucune responsabilité n'est assumée pour les salissures causées par le client ou par des cas de force majeure."
+          "Les dommages ou erreurs présumés doivent être signalés sans délai.",
+          "Aucune responsabilité n'est assumée pour les conséquences de données incomplètes, erronées ou modifiées sans information préalable."
         ]
       },
       {
@@ -353,8 +354,8 @@
       {
         "title": "Résiliation et durée du contrat",
         "content": [
-          "Les commandes uniques se terminent automatiquement après l'exécution du service.",
-          "Les contrats à long terme peuvent être résiliés avec un préavis de deux semaines à la fin du mois.",
+          "Les missions ponctuelles se terminent après la remise des livrables convenus.",
+          "Les missions récurrentes peuvent être résiliées selon les conditions prévues dans l’offre.",
           "Le tribunal compétent est Braunschweig.",
           "Les modifications des conditions générales sont réservées.",
           "En passant commande, le client accepte ces conditions générales."
@@ -363,10 +364,10 @@
     ]
   },
   "aboutSection": {
-    "title": "À propos de Sohblitz-Mobil",
-    "subtitle": "Le nettoyage professionnel avec passion",
-    "text1": "Sohblitz-Mobil est une entreprise moderne de nettoyage basée à Braunschweig. Notre objectif est d'offrir à nos clients des espaces propres, hygiéniques et agréables, que ce soit à domicile, au bureau ou dans les locaux professionnels.",
-    "text2": "Nous proposons une large gamme de services de nettoyage professionnels : nettoyage de bâtiments, nettoyage de tissus d’ameublement, nettoyage de tapis, nettoyage intérieur de voiture ainsi que nettoyage de vitres et surfaces vitrées.",
-    "text3": "Grâce à des équipements professionnels, des produits de qualité et une équipe engagée, nous garantissons un service fiable et une grande satisfaction client."
+    "title": "À propos de ETS Structure",
+    "subtitle": "Études, calculs et expertises structurelles",
+    "text1": "ETS Structure accompagne les maîtres d’ouvrage, architectes, entreprises et partenaires techniques dans la conception, la vérification et l’analyse des structures.",
+    "text2": "Nous intervenons sur le bâtiment, les ouvrages d’art et les infrastructures, avec des missions de dimensionnement, diagnostic, renforcement, expertise et assistance technique.",
+    "text3": "Notre priorité est de produire des livrables fiables, exploitables et sécurisés, dans le respect des contraintes d’intégrité, de disponibilité, de confidentialité et de sécurité des données."
   }
 }

@@ -3,14 +3,14 @@
 import { useTranslations } from "@/lib/TranslationProvider";
 import Link from "next/link";
 import { usePathname } from "next/navigation"
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   const t = useTranslations()
   const pathname = usePathname()
-  const locale = pathname.split("/")[1] || "de"
+  const locale = pathname.split("/")[1] || "fr"
 
   return (
     <footer
@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <h2 className="text-xl font-bold mb-4">Sohblit-Mobli</h2>
+            <h2 className="text-xl font-bold mb-4">ETS Structure</h2>
             <p className="text-sm leading-relaxed">
               {t.footer.title}
             </p>
@@ -41,23 +41,23 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href={`/${locale}/secteurs`} className="hover:underline">
+                  {t.navbar.sectors}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/services`} className="hover:underline">
+                  {t.navbar.services}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/realisations`} className="hover:underline">
+                  {t.navbar.realisations}
+                </Link>
+              </li>
+              <li>
                 <Link href={`/${locale}/about`} className="hover:underline">
                   {t.navbar.about}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${locale}/impressum`} className="hover:underline">
-                  {t.navbar.impressum}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${locale}/privacy`} className="hover:underline">
-                  {t.navbar.privacy}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${locale}/agb`} className="hover:underline">
-                  {t.navbar.agb}
                 </Link>
               </li>
               <li>
@@ -100,10 +100,10 @@ export default function Footer() {
         <Mail size={16} />
       </div>
       <a
-        href="mailto:sohblitz.mobil@web.de"
+        href="mailto:contact@ets-structure.de"
         className="text-gray-700 group-hover:text-[var(--foreground)] transition"
       >
-        sohblitz.mobil@web.de
+        contact@ets-structure.de
       </a>
     </li>
     {/* Adresse */}
@@ -131,7 +131,7 @@ export default function Footer() {
               {/* Instagram */}
               <li>
                 <a
-                  href="https://www.instagram.com/sohblitzmobil/"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-700 hover:text-[var(--foreground)] transition group"
@@ -144,13 +144,25 @@ export default function Footer() {
               {/* Facebook */}
               <li>
                 <a
-                  href="https://www.facebook.com/profile.php?id=61579470717567"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-700 hover:text-[var(--foreground)] transition group"
                 >
                   <FaFacebook size={30} className="text-blue-600 text-lg group-hover:scale-110 transition" />
                   <span>Facebook</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-[var(--foreground)] transition group"
+                >
+                  <FaLinkedin size={30} className="text-blue-700 text-lg group-hover:scale-110 transition" />
+                  <span>LinkedIn</span>
                 </a>
               </li>
 
@@ -165,7 +177,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <p>© {new Date().getFullYear()} "YourBrand:" {t.footer.sublime}<Link href="https://sublimeprod.com" target="_blank" rel="noopener noreferrer" >Sublimeprod</Link> </p>
+          <p>© {new Date().getFullYear()} ETS Structure. {t.footer.sublime}<Link href="https://sublimeprod.com" target="_blank" rel="noopener noreferrer" >Sublimeprod</Link> </p>
 
         </div>
       </div>

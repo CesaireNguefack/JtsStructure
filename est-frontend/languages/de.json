@@ -1,8 +1,11 @@
 {
   "navbar": {
     "home": "Startseite",
-    "price":"Preisliste",
-    "gallery":"Gallery",
+    "price":"Leistungen",
+    "services":"Leistungen",
+    "sectors":"Sektoren",
+    "gallery":"Referenzen",
+    "realisations":"Referenzen",
     "contact": "Kontakt",
     "impressum": "Impressum",
     "privacy": "Datenschutz",
@@ -11,8 +14,8 @@
     "reseaux":"Folgen Sie uns in den sozialen Medien"
   },
   "hero": {
-    "title": "Sauberkeit \n  auf die Sie sich verlassen können",
-    "subtitle": "Sohblitz-Mobil bietet schnelle, zuverlässige und gründliche Reinigungsdienste direkt vor Ort in Braunschweig und Umgebung"
+    "title": "Gemeinsam bauen wir \n dauerhafte und leistungsfähige \n Bauwerke",
+    "subtitle": "Sorgfalt, Qualität und Innovation im Dienst Ihrer Projekte."
   },
   "adminPage": {
   "btn_section_view": "Nach Service anzeigen",
@@ -35,16 +38,16 @@
 },
 
   "footer": {
-    "title": "Professionelle Reinigungsdienste in Deutschland. Schnelle, zuverlässige und 100 % chemiefreie Lösungen für Ihr Zuhause und Ihr Unternehmen.",
+    "title": "Ingenieurbüro für Tragwerksplanung, statische Berechnungen, Diagnostik und Gutachten.",
     "navigation": "Navigation",
     "sublime": "Alle Rechte vorbehalten.  Designed und entwickelt von "
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Wir sind rund um die Uhr für Sie da. Kontaktieren Sie uns, um Ihren Bedarf zu besprechen!",
+    "subtitle": "Senden Sie uns Ihre Projektidee, Pläne oder tragwerksbezogene Fragestellung.",
     "iconLocation": "Unser Standort",
-    "contactbtn": "Kontaktieren →",
-    "reserve": "Buchen →",
+    "contactbtn": "Bewertung anfragen →",
+    "reserve": "Angebot anfragen →",
     "sending": "Sending...",
     "submit": "Submit →",
     "formtitle": "Kontakt aufnehmen",
@@ -59,46 +62,46 @@
     "street": "Straße und Hausnummer",
     "postcode": "Postleitzahl",
     "city": "Stadt",
-    "reservationformtitle": "Buchungsformular",
-    "confirmedreservationsent": "Reservation sent!",
+    "reservationformtitle": "Projektanfrage",
+    "confirmedreservationsent": "Anfrage gesendet!",
     "goback": "← Zurück",
     "showfullcalender": "Zum Kalender wechseln",
     "invalide": "ungültig",
-    "datereservation": "Bitte geben Sie das gewünschte Datum ein.",
+    "datereservation": "Bitte geben Sie den gewünschten Termin für ein technisches Gespräch ein.",
     "notavailable": "Wir sind an diesem Datum nicht verfügbar.",
     "sizeerror": "muss zwischen 2 und 70 Zeichen enthalten",
     "errorcharacter": "enthält ungültige Zeichen",
     "messageerror": "muss zwischen 2 und 500 Zeichen enthalten",
     "sendsucess": "Nachricht erfolgreich gesendet ✅",
     "senderror": "Fehler beim Senden",
-    "addresse":"Braunschweig, Wolfsburg, Salzgitter, Gifhorn und Umgebung."
+    "addresse":"Deutschlandweit und remote je nach Projekt."
   },
   "about": {
-    "quality": "Hohe Qualität",
+    "quality": "Technische Sorgfalt",
     "title": "Wer wir sind",
-    "description": "Als Inhaber \nEmerant Dass Kuietche Soh\n aus Braunschweig sorge ich persönlich für blitzsaubere Ergebnisse – ob privat oder gewerblich.",
-    "subtitle": "Unser Einsatzgebiet",
-    "subdescription": "Wir kommen mobil zu dir in \nBraunschweig, Wolfsburg, Salzgitter, Gifhorn\n und Umgebung."
+    "description": "ETS Structure ist spezialisiert auf Tragwerksplanung, statische Berechnungen und Gutachten. Wir begleiten Projekte von den ersten Annahmen bis zu Berechnungen, Ausführungsunterlagen und Diagnosen bestehender Bauwerke.",
+    "subtitle": "Unsere Einsatzbereiche",
+    "subdescription": "Hochbau, Ingenieurbau, Infrastruktur, Sanierung, Verstärkung und technische Beratung für Bauherren, Architekten und Unternehmen."
   },
   "service": {
-    "title": "Unsere Dienste ",
-    "title2": "Unsere Preise",
-    "subtitle1": "Fahrtkosten innerhalb Braunschweig:",
-    "subtitle2": "5€ bis 10€ ",
-    "besichtigungstermin": "Kostenlos Besichtigungstermin",
-    "price": "Preise",
-    "detailfooter": " Wir sind in Braunschweig und Umgebung verfügbar – schnell, zuverlässig und 100% chemiefrei.",
-    "subtitle22": " Außerhalb Braunschweig:",
-    "subtitle3": "0,65€ / km.",
-    "subtitle4": "Mindestbestellwert:",
-    "subtitle5": "50€.",
-    "subtitle6": "Rabatte bei Dauerverträgen verfügbar.",
-    "footer0": "Sohblitz-Mobil:",
-    "footer": "100% chemiefrei & hygienisch  \n Preise variieren je nach Fläche, Verschmutzung und Zugänglichkeit. \n Zusatzleistungen wie Imprägnierung oder Fugenreinigung möglich."
+    "title": "Unsere Leistungen",
+    "title2": "Honorar nach Angebot",
+    "subtitle1": "Erstes Projektgespräch:",
+    "subtitle2": "Bedarfsanalyse",
+    "besichtigungstermin": "Technischer Termin",
+    "price": "Angebot",
+    "detailfooter": "Wir begleiten Hochbau-, Ingenieurbau- und Infrastrukturprojekte mit einer sorgfaltigen, vertraulichen und sicheren Arbeitsweise.",
+    "subtitle22": "Studien und Gutachten:",
+    "subtitle3": "Angebot passend zur Komplexitat.",
+    "subtitle4": "Lieferumfang:",
+    "subtitle5": "Berechnungen, Stellungnahmen, Plane und Berichte.",
+    "subtitle6": "Begleitung in allen Projektphasen moglich.",
+    "footer0": "ETS Structure:",
+    "footer": "Jede Mission wird nach Umfang, vorhandenen Daten, geltenden Normen und gewunschtem Detaillierungsgrad angeboten."
   },
   "teamsection": {
-    "title": "Professionelle Reinigung für Ihr Zuhause",
-    "description": "   Wir bieten zuverlässige und gründliche Reinigungsdienste für Wohnungen, Büros und Fenster – damit Sie sich auf die wichtigen Dinge konzentrieren können."
+    "title": "Klare und nutzbare Tragwerksplanung",
+    "description": "Unsere Unterlagen unterstutzen Entscheidungen, Baustellenkoordination und technische Nachweise gegenuber allen Projektbeteiligten."
   },
   "reviewsection": {
     "title": "Einige Bewertungen",
@@ -106,8 +109,8 @@
     "seemore": "Mehr anzeigen"
   },
   "demosection": {
-    "title": "Professionelle Reinigung für Ihr Zuhause",
-    "subtitle": " Wir sorgen für Sauberkeit in Wohnungen, Büros und Geschäften."
+    "title": "Tragwerksentscheidungen absichern",
+    "subtitle": "Diagnostik, Berechnung, Planung und Gutachten fur Neubau, Umbau und Verstarkung."
   },
   "adminNavbar": {
     "dashboard": "Dashboard",
@@ -122,12 +125,12 @@
     "addService": "Service hinzufügen"
   },
   "contactPageHeaderInfos": {
-    "title": "Kontaktieren Sie uns \n   für eine professionelle \n  Reinigung",
-    "subtitle": "Ihr zuverlässiger Partner für Sauberkeit"
+    "title": "Kontaktieren Sie uns \n fur eine \n Tragwerksstudie",
+    "subtitle": "Ihr Partner fur Berechnungen und Tragwerksgutachten"
   },
   "aboutPageHeaderInfos": {
     "title": "Erfahren Sie mehr \n über unser \n Unternehmen",
-    "subtitle": "Ihr Partner für professionelle Reinigung"
+    "subtitle": "Ihr Partner fur Tragwerksplanung"
   },
   "impressumPageHeaderInfos": {
     "title": "Rechtliche \n Informationen",
@@ -139,27 +142,27 @@
   },
   "agbPageHeaderInfos": {
     "title": "Allgemeine \n Geschäftsbedingungen",
-    "subtitle": "Unsere Vertragsbedingungen für Dienstleistungen"
+    "subtitle": "Unsere Bedingungen fur Ingenieurleistungen"
   },
   "privacyPage": {
     "title": "Datenschutzerklärung",
-    "intro": "Sohblitz-Mobil nimmt den Schutz Ihrer personenbezogenen Daten sehr ernst. Ihre Daten werden vertraulich und gemäß DSGVO sowie BDSG verarbeitet.",
+    "intro": "ETS Structure nimmt den Schutz Ihrer personenbezogenen Daten sehr ernst. Ihre Daten werden vertraulich und gemaß DSGVO sowie BDSG verarbeitet.",
     "sections": [
       {
         "title": "1. Verantwortlicher",
         "content": [
           "Emerant dass Kuietche soh",
-          "Sohblitz-Mobil",
+          "ETS Structure",
           "Heinrich-Büssing-Ring 22",
           "38102 Braunschweig",
           "Telefon: 0176 48082448",
-          "E-Mail: sohblitz.mobil@web.de"
+          "E-Mail: contact@ets-structure.de"
         ]
       },
       {
         "title": "2. Erhebung und Verwendung von Daten",
         "content": [
-          "Wir erheben personenbezogene Daten nur, soweit dies zur Auftragserfüllung erforderlich ist, z. B. für Reinigungsleistungen wie Gebäudereinigung oder Fensterreinigung.",
+          "Wir erheben personenbezogene Daten nur, soweit dies zur Bearbeitung von Studien-, Berechnungs-, Gutachten- oder Beratungsanfragen erforderlich ist.",
           "Typische Daten sind Name, Adresse, Telefonnummer oder E-Mail-Adresse aus Anfragen oder Verträgen.",
           "Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) sowie lit. f DSGVO (berechtigtes Interesse an Kundenkommunikation).",
           "Es findet keine automatisierte Entscheidungsfindung oder Profiling statt."
@@ -222,20 +225,19 @@
         "title": "Angaben gemäß § 5 TMG",
         "content": [
           "Inhaber: Emerant dass Kuietche soh",
-          "Sohblitz-Mobil"
+          "ETS Structure"
         ]
       },
       {
         "title": "Unternehmensleistungen",
         "content": [
-          "Gebäudereinigung",
-          "Polsterreinigung (Sofa, Sessel, Matratze, Bürostühle)",
-          "Autoinnenreinigung",
-          "Teppichreinigung",
-          "Bauendreinigung",
-          "Büro- und Praxisreinigung",
-          "Fenster- und Glasreinigung",
-          "Raffstore- und Jalousiereinigung"
+          "Tragwerksplanung im Hochbau",
+          "Statische Berechnungen und Bemessung",
+          "Gutachten und Diagnostik",
+          "Ingenieurbauwerke",
+          "Infrastruktur",
+          "Sanierung und Verstarkung",
+          "Technische Beratung"
         ]
       },
       {
@@ -249,7 +251,7 @@
         "title": "Kontakt",
         "content": [
           "Telefon: 0176 48082448",
-          "E-Mail: sohblitz.mobil@web.de"
+          "E-Mail: contact@ets-structure.de"
         ]
       },
       {
@@ -262,8 +264,8 @@
       {
         "title": "Berufsbezeichnung",
         "content": [
-          "Gebäudereiniger",
-          "Zuständige Kammer: Handwerkskammer Braunschweig-Lüneburg-Stade",
+          "Ingenieurburo fur Tragwerksplanung",
+          "Zustandige Kammer: zu erganzen",
           "Burgplatz 2",
           "38100 Braunschweig"
         ]
@@ -292,18 +294,18 @@
       {
         "title": "Geltungsbereich",
         "content": [
-          "Diese AGB gelten für alle Verträge über Reinigungsdienste zwischen Sohblitz-Mobil und dem Kunden.",
-          "Dies umfasst Gebäudereinigung, Polsterreinigung, Teppichreinigung, Autoinnenreinigung, Bauendreinigung, Büro- und Praxisreinigung sowie Fenster-, Glas-, Raffstore- und Jalousiereinigung.",
+          "Diese AGB gelten fur alle Vertrage uber Tragwerksplanung, Berechnungen, Gutachten und technische Beratung zwischen ETS Structure und dem Kunden.",
+          "Dies umfasst Hochbau, Ingenieurbauwerke, Infrastruktur, Diagnostik, Berechnungen, Berichte und technische Stellungnahmen.",
           "Abweichende Bedingungen bedürfen der Schriftform."
         ]
       },
       {
         "title": "Leistungsbeschreibung und Kundenpflichten",
         "content": [
-          "Der Leistungsumfang ergibt sich aus dem Angebot oder der Buchung.",
-          "Der Kunde stellt kostenlos Wasser, Strom, Zugang und Abfallbehälter zur Verfügung.",
-          "Die Räume müssen zugänglich und freigeräumt sein.",
-          "Sohblitz-Mobil verwendet professionelle Reinigungsmittel und Geräte."
+          "Der Leistungsumfang ergibt sich aus Angebot, Auftrag oder Bestellung.",
+          "Der Kunde stellt Plane, Annahmen, vorhandene Gutachten, Standortbedingungen und alle erforderlichen Informationen bereit.",
+          "Die bereitgestellten Daten mussen vollstandig, lesbar und aktuell sein.",
+          "ETS Structure verwendet professionelle Methoden und Werkzeuge passend zur Mission."
         ]
       },
       {
@@ -313,17 +315,16 @@
           "USt-ID: DE458350919.",
           "Die Zahlung erfolgt innerhalb von 7 Tagen nach Rechnung per Überweisung.",
           "Mahngebühr: 5 €.",
-          "Mindestbestellwert: 50 €.",
-          "Fahrtkosten innerhalb Braunschweig: 0,50 €/km.",
-          "Fahrtkosten außerhalb Braunschweig: 0,75 €/km."
+          "Reise-, Ortstermin- und Besprechungskosten werden im Angebot geregelt.",
+          "Zusatzleistungen erfordern eine vorherige Zustimmung."
         ]
       },
       {
         "title": "Termine und Absagen",
         "content": [
-          "Vereinbarte Termine sind verbindlich.",
-          "Absagen weniger als 24 Stunden vorher führen zu einer Gebühr von 50 %.",
-          "Verspätungen durch den Kunden verlängern die Rechnungszeit.",
+          "Vereinbarte Termine, Besprechungen und Meilensteine sind verbindlich.",
+          "Verspatete Absagen konnen nach Angebot berechnet werden.",
+          "Verzogerungen bei der Datenubergabe konnen die Bearbeitungszeit verlangern.",
           "Bei Zahlungsverzug ruht die Leistungspflicht."
         ]
       },
@@ -331,17 +332,17 @@
         "title": "Mängel und Reklamationen",
         "content": [
           "Sichtbare Mängel müssen sofort gemeldet werden.",
-          "Sohblitz-Mobil behebt diese innerhalb von 48 Stunden.",
-          "Die Nachbesserung erfolgt kostenlos.",
-          "Bei erfolgloser Nachbesserung sind Preisminderung oder Rücktritt möglich."
+          "ETS Structure pruft die Meldung und behebt nachgewiesene Mangel innerhalb einer angemessenen Frist.",
+          "Die Nachbesserung erfolgt kostenlos, wenn der Mangel ETS Structure zuzurechnen ist.",
+          "Bei erfolgloser Nachbesserung konnen Preisminderung oder Rucktritt gepruft werden."
         ]
       },
       {
         "title": "Haftung",
         "content": [
           "Die Haftung besteht nur bei Vorsatz oder grober Fahrlässigkeit.",
-          "Schäden müssen innerhalb von 48 Stunden gemeldet werden.",
-          "Keine Haftung für Verschmutzungen durch den Kunden oder höhere Gewalt."
+          "Vermutete Schaden oder Fehler sind unverzuglich zu melden.",
+          "Keine Haftung fur Folgen unvollstandiger, fehlerhafter oder nicht mitgeteilter geanderter Daten."
         ]
       },
       {
@@ -354,8 +355,8 @@
       {
         "title": "Kündigung und Vertragsdauer",
         "content": [
-          "Einmalige Aufträge enden automatisch nach der Leistungserbringung.",
-          "Dauerverträge können mit einer Frist von zwei Wochen zum Monatsende gekündigt werden.",
+          "Einmalige Auftrage enden nach Ubergabe der vereinbarten Unterlagen.",
+          "Laufende Missionen konnen gemaß den Bedingungen im Angebot beendet werden.",
           "Gerichtsstand ist Braunschweig.",
           "Änderungen der AGB bleiben vorbehalten.",
           "Mit der Auftragserteilung akzeptiert der Kunde diese AGB."
@@ -364,10 +365,10 @@
     ]
   },
   "aboutSection": {
-    "title": "Über Sohblitz-Mobil",
-    "subtitle": "Professionelle Reinigung mit Leidenschaft",
-    "text1": "Sohblitz-Mobil ist ein modernes Reinigungsunternehmen mit Sitz in Braunschweig. Unser Ziel ist es, unseren Kunden saubere, hygienische und angenehme Räume zu bieten – egal ob Zuhause, im Büro oder im Unternehmen.",
-    "text2": "Wir bieten eine Vielzahl professioneller Reinigungsdienstleistungen an, darunter Gebäudereinigung, Polsterreinigung, Teppichreinigung, Autoinnenreinigung sowie Fenster- und Glasreinigung.",
-    "text3": "Mit professionellen Geräten, hochwertigen Reinigungsmitteln und einem engagierten Team sorgen wir für zuverlässige Ergebnisse und höchste Kundenzufriedenheit."
+    "title": "Über ETS Structure",
+    "subtitle": "Studien, Berechnungen und Tragwerksgutachten",
+    "text1": "ETS Structure begleitet Bauherren, Architekten, Unternehmen und technische Partner bei Planung, Prufung und Analyse von Tragwerken.",
+    "text2": "Wir arbeiten an Hochbau, Ingenieurbauwerken und Infrastruktur mit Bemessung, Diagnostik, Verstarkung, Gutachten und technischer Beratung.",
+    "text3": "Unser Ziel sind zuverlassige, nutzbare und sichere Unterlagen unter Beachtung von Integritat, Verfugbarkeit, Vertraulichkeit und Datensicherheit."
   }
 }

@@ -1,173 +1,113 @@
 [
   {
     "id": 0,
-    "title": "General Gallery images",
+    "title": "General Gallery",
     "description1": "",
     "description": "",
-     "pricing": [
-    
-    ],
-    "tags": [
-    
-    ]
+    "pricing": [],
+    "tags": []
   },
-  
   {
     "id": 1,
-    "title": "Building Cleaning",
-    "description1": "– Regular maintenance or deep cleaning for houses and apartments.",
-    "description": "100% chemical-free building cleaning using steam technology. Ideal for households, AirBnB, holiday rentals, commercial spaces, restaurants, warehouses, and industrial facilities.",
+    "title": "Building Structural Design",
+    "description1": "Structural concept, preliminary sizing and verification for new and existing buildings.",
+    "description": "ETS Structure provides structural engineering studies for residential, commercial, industrial and public buildings, including load analysis, member design and coordination with architects and contractors.",
     "pricing": [
-      "25€ – 35€ per hour"
+      "Fees on request depending on drawings, project phase and complexity",
+      "Deliverables: calculation notes, assumptions and technical recommendations"
     ],
     "tags": [
-      "Steam cleaning",
-      "Allergy-friendly",
-      "Hygienic"
+      "Buildings",
+      "Concrete",
+      "Steel",
+      "Timber"
     ]
   },
   {
     "id": 2,
-    "title": "Office and Practice Cleaning",
-    "description1": "– Hygienic cleaning for offices and practices with disinfection.",
-    "description": "Professional cleaning for offices and practices to ensure a healthy working environment. Chemical-free disinfection.",
+    "title": "Structural Calculations",
+    "description1": "Reliable calculation notes for load-bearing members, connections and structural systems.",
+    "description": "Design of beams, columns, slabs, foundations, load-bearing walls, frames and connections according to project assumptions and applicable standards.",
     "pricing": [
-      "30€ – 40€ per hour"
+      "Fixed fee or estimate after scope review",
+      "One-off or complete project assignments"
     ],
     "tags": [
-      "Disinfection",
-      "Workplace hygiene"
+      "Calculations",
+      "Eurocodes",
+      "Foundations"
     ]
   },
   {
     "id": 3,
-    "title": "Post-Construction Cleaning",
-    "description1": "– Final or detailed cleaning after construction or renovation.",
-    "description": "Thorough cleaning after construction or renovation. Removes dust, grease and dirt.",
+    "title": "Structural Assessments and Diagnostics",
+    "description1": "Analysis of cracks, defects, deformation and structural pathologies.",
+    "description": "Inspection, document review, probable-cause analysis and repair or strengthening recommendations. Reports support technical and administrative decisions.",
     "pricing": [
-      "Rough cleaning: 4€ – 9€ / m²",
-      "Fine cleaning: 5€ – 9.50€ / m²",
-      "Sanitary, equipment and furniture are charged separately"
+      "Site visit and report on request",
+      "Estimate depends on urgency, travel and investigation level"
     ],
     "tags": [
-      "New construction",
-      "Renovation"
+      "Diagnostics",
+      "Cracks",
+      "Expert report"
     ]
   },
   {
     "id": 4,
-    "title": "Window and Glass Cleaning",
-    "description1": "– Streak-free cleaning of windows, mirrors and glass surfaces, inside and outside including frames.",
-    "description": "Streak-free glass and window cleaning for private homes, offices and shops.",
+    "title": "Bridges and Civil Structures",
+    "description1": "Engineering studies and technical advice for bridges, footbridges, walls and special structures.",
+    "description": "Support for civil structure projects: structural checks, capacity analysis, repair proposals, strengthening and technical follow-up.",
     "pricing": [
-      "4€ – 8€ / m² (inside & outside)",
-      "+1.45€ per frame",
-      "Dirt level / height: +20% – 50%"
+      "Offer adapted to the structure type",
+      "Desk review or site visit possible"
     ],
     "tags": [
-      "Streak-free",
-      "Professional"
+      "Bridges",
+      "Footbridges",
+      "Retaining walls"
     ]
   },
   {
     "id": 5,
-    "title": "Car Interior Cleaning",
-    "description1": "– A fresh interior for your vehicle.",
-    "description": "Chemical-free steam cleaning of the vehicle interior. Removes odors, germs, and dirt.  Full interior service including: \n- Vacuuming (including trunk) \n- Cleaning of plastic surfaces (dashboard, air vents) \n- Interior window cleaning \n- Seat shampooing (extraction machine) \n- Stain removal \n- Floor mat cleaning",
+    "title": "Infrastructure and Civil Engineering",
+    "description1": "Structural support for infrastructure, foundations, retaining structures and buried works.",
+    "description": "Civil engineering studies for infrastructure projects, building/infrastructure interfaces, retaining structures and structures exposed to specific ground or operating constraints.",
     "pricing": [
-      "Basic cleaning: 40€ – 130€",
-      "Deep cleaning: 130€ – 250€",
-      "Ozone treatment included",
-      "Odor removal: 50€ – 80€"
+      "Quote after review of constraints and available documents"
     ],
     "tags": [
-      "Car",
-      "Disinfection"
+      "Civil engineering",
+      "Retaining structures",
+      "Infrastructure"
     ]
   },
   {
     "id": 6,
-    "title": "Upholstery Cleaning",
-    "description1": "– Clean sofas, armchairs and mattresses, hygienic and gentle.",
-    "description": "Deep cleaning of sofas and upholstery. Removes mites, stains and bacteria.",
+    "title": "Rehabilitation and Strengthening",
+    "description1": "Solutions to transform, repair or increase the capacity of existing structures.",
+    "description": "Strengthening studies for change of use, wall openings, extensions, additional floors or defect remediation, considering site feasibility and operating constraints.",
     "pricing": [
-      "Sofa: 20€ – 40€ per seat",
-      "Armchair: 25€ – 40€",
-      "Office chair: 9€ – 20€"
+      "Study quoted according to surveys, drawings and building condition"
     ],
     "tags": [
-      "Mite removal",
-      "Deep cleaning"
+      "Strengthening",
+      "Rehabilitation",
+      "Transformation"
     ]
   },
   {
     "id": 7,
-    "title": "Carpet Cleaning",
-    "description1": "– Deep cleaning with mobile equipment.",
-    "description": "Steam cleaning of carpets for hygienic cleanliness and fresh fabrics.",
+    "title": "Technical Assistance and Project Review",
+    "description1": "Independent advice to secure technical choices and project documents.",
+    "description": "Review of calculation notes, constructive principles, variants, tender or execution documents, and support for technical questions from project stakeholders.",
     "pricing": [
-      "Small carpet: 20€ - 50€",
-      "Medium: 50€ - 100€",
-      "Large: 100€ - 200€"
+      "Short assignment or continuous support on request"
     ],
     "tags": [
-      "Allergy-friendly"
+      "Consulting",
+      "Technical review",
+      "Coordination"
     ]
-  },
-  {
-    "id": 8,
-    "title": "Blind & Shutter Cleaning",
-    "description1": "",
-    "description": "Cleaning of blinds and shutters using gentle steam technology.",
-    "pricing": [
-      "20€ – 55€ per unit",
-      "Depending on dirt level & height: +10% – 45%"
-    ],
-    "tags": [
-      "Sun protection"
-    ]
-  },
-  {
-    "id": 9,
-    "title": "Stone",
-    "description1": "",
-    "description": "Removal of moss, algae and dirt from terraces  using high-pressure steam.",
-    "pricing": [
-      "Light soiling (dust, normal dirt): 5€ - 8€ / m²",
-      "Medium soiling (moss, algae): 8€ - 13€ / m²",
-      "Heavy soiling (oil, stains, deep dirt): 15€ - 28€ / m²",
-      "With sealing / protection: 4€ - 6€ / m²"
-    ],
-    "tags": [
-      "Terrace",
-      "Facade",
-      "Moss removal"
-    ]
-  },
-  {
-    "id": 10,
-    "title": "Staircase Cleaning",
-    "description1": "- Clean staircases",
-    "description": "First impressions matter. We ensure clean and hygienic stairwells in residential and commercial buildings. Our reliable cleaning service thoroughly removes dirt, dust, and buildup – from the steps to the railings. Regularly, flexibly, and with great care, we make sure your stairwell always looks welcoming.",
-    "pricing": [
-      "Small (2-4 floors): 20-40€",
-      "Medium (5-8 floors): 40-80€",
-      "Large (more than 8 floors): 80-150€"
-    ],
-    "tags": []
-  },
-  {
-  "id": 11,
-  "title": "House Cleaning",
-  "description1": "",
-  "description": "Cleaning of living spaces, kitchens, and bathrooms. Vacuuming, mopping, and dusting. Window and glass cleaning. Deep cleaning when needed. Flexible scheduling – one-time or regular service.",
-  "pricing": [
-    "25€ – 30€ per hour"
-  ],
-  "tags": [
-    "Residences",
-    "Apartments",
-    "Single-family homes"
-  ]
-}
+  }
 ]

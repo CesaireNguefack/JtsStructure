@@ -9,7 +9,7 @@ const reviews = [
         name: "Martina Blume",
         location: "Braunschweig",
         avatar: "/images/p1.png",
-        message: "Wir waren sehr zufrieden mit der Pünktlichkeit und der Qualität der Reinigung unserer Schaufenster! SohBlitz ist ein Unternehmen, das wir wärmstens empfehlen."
+        message: "Die technische Analyse war klar, nachvollziehbar und sehr hilfreich fur unsere Projektentscheidung. ETS Structure konnen wir empfehlen."
 
     },
     {
@@ -24,7 +24,7 @@ const reviews = [
         name: "Wilfried Mund",
         location: " Braunschweig",
         avatar: "/images/p3.png",
-        message: "Very punctual and professional, with excellent cleanliness. I am very satisfied and will gladly use their services again."
+        message: "Professional, precise and responsive. The structural recommendations were easy to use with our project team."
     }
 ]
 

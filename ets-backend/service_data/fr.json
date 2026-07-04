@@ -1,172 +1,113 @@
 [
   {
     "id": 0,
-    "title": "Generall Image Gallery",
+    "title": "Galerie générale",
     "description1": "",
     "description": "",
-     "pricing": [
-    
-    ],
-    "tags": [
-    
-    ]
+    "pricing": [],
+    "tags": []
   },
   {
     "id": 1,
-    "title": "Nettoyage de bâtiments",
-    "description1": "– Nettoyage régulier ou en profondeur pour maisons et appartements.",
-    "description": "Nettoyage de bâtiments 100 % sans produits chimiques grâce à la technologie vapeur. Idéal pour les ménages, AirBnB, locations de vacances, locaux commerciaux, restaurants, entrepôts et installations industrielles.",
+    "title": "Études structurelles de bâtiment",
+    "description1": "Conception, prédimensionnement et justification des structures neuves ou existantes.",
+    "description": "ETS Structure réalise les études de structure pour logements, bâtiments tertiaires, industriels et équipements publics. Les missions couvrent l’analyse des descentes de charges, le dimensionnement des éléments porteurs et la coordination avec les architectes et entreprises.",
     "pricing": [
-      "25€ – 35€ par heure"
+      "Honoraires sur devis selon plans, phase et complexité",
+      "Livrables : notes de calcul, hypothèses, recommandations techniques"
     ],
     "tags": [
-      "Nettoyage vapeur",
-      "Adapté aux allergiques",
-      "Hygiénique"
+      "Bâtiment",
+      "Béton armé",
+      "Acier",
+      "Bois"
     ]
   },
   {
     "id": 2,
-    "title": "Nettoyage de bureaux et cabinets",
-    "description1": "– Nettoyage hygiénique pour bureaux et cabinets avec désinfection.",
-    "description": "Nettoyage professionnel pour bureaux et cabinets afin d’assurer un environnement de travail sain. Désinfection sans produits chimiques.",
+    "title": "Calculs et dimensionnement",
+    "description1": "Notes de calcul fiables pour éléments porteurs, assemblages et systèmes structurels.",
+    "description": "Dimensionnement des poutres, poteaux, dalles, fondations, murs porteurs, charpentes et assemblages selon les hypothèses du projet et les normes applicables.",
     "pricing": [
-      "30€ – 40€ par heure"
+      "Forfait ou estimation après analyse du périmètre",
+      "Possibilité de mission ponctuelle ou complète"
     ],
     "tags": [
-      "Désinfection",
-      "Hygiène au travail"
+      "Notes de calcul",
+      "Eurocodes",
+      "Fondations"
     ]
   },
   {
     "id": 3,
-    "title": "Nettoyage de fin de chantier",
-    "description1": "– Nettoyage après travaux ou rénovation.",
-    "description": "Nettoyage approfondi après construction ou rénovation. Élimine poussière, graisse et saletés.",
+    "title": "Expertises et diagnostics structurels",
+    "description1": "Analyse des fissures, désordres, déformations et pathologies d’ouvrages.",
+    "description": "Inspection, analyse documentaire, identification des causes probables et recommandations de réparation ou de renforcement. Les rapports aident à sécuriser les décisions techniques et administratives.",
     "pricing": [
-      "Nettoyage grossier : 4€ – 9€ / m²",
-      "Nettoyage fin : 5€ – 9.50€ / m²",
-      "Sanitaires, appareils et meubles facturés en supplément"
+      "Visite et rapport sur devis",
+      "Chiffrage selon urgence, déplacement et niveau d’investigation"
     ],
     "tags": [
-      "Construction",
-      "Rénovation"
+      "Diagnostic",
+      "Fissures",
+      "Rapport d’expertise"
     ]
   },
   {
     "id": 4,
-    "title": "Nettoyage de vitres et surfaces vitrées",
-    "description1": "– Nettoyage sans traces des fenêtres, miroirs et surfaces vitrées, intérieur et extérieur avec cadres.",
-    "description": "Nettoyage professionnel de vitres et surfaces vitrées pour particuliers, bureaux et commerces.",
+    "title": "Ouvrages d’art",
+    "description1": "Études et avis techniques pour ponts, passerelles, murs et ouvrages spéciaux.",
+    "description": "Accompagnement des projets d’ouvrages d’art : vérification structurelle, analyse de capacité, propositions de réparation, renforcement et suivi technique.",
     "pricing": [
-      "4€ – 8€ / m² (intérieur & extérieur)",
-      "+1.45€ par cadre",
-      "Selon saleté / hauteur : +20% – 50%"
+      "Offre adaptée au type d’ouvrage",
+      "Analyse possible sur dossier ou après visite"
     ],
     "tags": [
-      "Sans traces",
-      "Professionnel"
+      "Ponts",
+      "Passerelles",
+      "Murs de soutènement"
     ]
   },
   {
     "id": 5,
-    "title": "Nettoyage intérieur automobile",
-    "description1": "– Un intérieur propre et frais pour votre véhicule.",
-    "description": "Nettoyage intérieur du véhicule à la vapeur sans produits chimiques. Élimine les odeurs, les germes et la saleté. Prestation complète incluant :\n- Aspiration (y compris le coffre) \n- Nettoyage des surfaces plastiques (tableau de bord, aérations) \n- Nettoyage des vitres intérieures \n- Shampouinage des sièges (injecteur-extracteur) \n- Élimination des taches \n- Nettoyage des tapis",
+    "title": "Infrastructures et génie civil",
+    "description1": "Appui structurel pour infrastructures, fondations, soutènements et ouvrages enterrés.",
+    "description": "Études de génie civil pour projets d’infrastructure, interfaces bâtiment/VRD, ouvrages de soutènement et structures exposées à des contraintes particulières de sol ou d’exploitation.",
     "pricing": [
-      "Nettoyage de base : 40€ – 130€",
-      "Nettoyage intensif : 130€ – 250€",
-      "Traitement à l’ozone inclus",
-      "Élimination des odeurs : 50€ – 80€"
+      "Devis après réception des contraintes et documents disponibles"
     ],
     "tags": [
-      "Auto",
-      "Désinfection"
+      "Génie civil",
+      "Soutènement",
+      "Infrastructures"
     ]
   },
   {
     "id": 6,
-    "title": "Nettoyage de tissus et meubles rembourrés",
-    "description1": "– Canapés, fauteuils et matelas propres, hygiéniques et préservés.",
-    "description": "Nettoyage en profondeur des canapés et tissus. Élimine acariens, taches et bactéries.",
+    "title": "Réhabilitation et renforcement",
+    "description1": "Solutions pour transformer, réparer ou augmenter la capacité des structures existantes.",
+    "description": "Études de renforcement après changement d’usage, ouverture de murs porteurs, extension, surélévation ou reprise de désordres. Les propositions tiennent compte de la faisabilité chantier et des contraintes d’exploitation.",
     "pricing": [
-      "Canapé : 20€ – 40€ par place",
-      "Fauteuil : 25€ – 40€",
-      "Chaise de bureau : 9€ – 20€"
+      "Étude sur devis selon relevés, plans et état de l’ouvrage"
     ],
     "tags": [
-      "Élimination des acariens",
-      "Nettoyage en profondeur"
+      "Renforcement",
+      "Réhabilitation",
+      "Transformation"
     ]
   },
   {
     "id": 7,
-    "title": "Nettoyage de tapis",
-    "description1": "– Nettoyage en profondeur avec équipement mobile.",
-    "description": "Nettoyage vapeur des tapis pour une hygiène optimale et des textiles rafraîchis.",
+    "title": "Assistance technique et revue de projet",
+    "description1": "Avis indépendant pour sécuriser vos choix techniques et vos documents de projet.",
+    "description": "Relecture de notes, vérification de principes constructifs, analyse de variantes, accompagnement en phase consultation ou exécution et réponses aux questions techniques des parties prenantes.",
     "pricing": [
-      "Petit tapis : 20 - 50 €",
-      "Moyen : 50 - 100 €",
-      "Grand : 100 - 200 €"
+      "Mission courte ou accompagnement continu sur devis"
     ],
     "tags": [
-      "Adapté aux allergiques"
+      "Conseil",
+      "Revue technique",
+      "Coordination"
     ]
-  },
-  {
-    "id": 8,
-    "title": "Nettoyage de stores et jalousies",
-    "description1": "",
-    "description": "Nettoyage de stores et jalousies avec une technologie vapeur douce.",
-    "pricing": [
-      "20€ – 55€ par unité",
-      "Selon saleté & hauteur : +10% – 45%"
-    ],
-    "tags": [
-      "Protection solaire"
-    ]
-  },
-  {
-    "id": 9,
-    "title": "Nettoyage de pierres  ",
-    "description1": "",
-    "description": "Élimination de la mousse, des algues et des saletés sur terrasses   grâce à la vapeur haute pression.",
-    "pricing": [
-      "Salissure légère (poussière, saleté normale) : 5 - 8 € / m²",
-      "Salissure moyenne (mousse, algues) : 8 - 13 € / m²",
-      "Salissure importante (huile, taches, saleté incrustée) : 15 - 28 € / m²",
-      "Avec imprégnation / protection : 4 - 6 € / m²"
-    ],
-    "tags": [
-      "Terrasse",
-      "Façade",
-      "Élimination de mousse"
-    ]
-  },
-  {
-    "id": 10,
-    "title": "Nettoyage des escaliers",
-    "description1": "- Escaliers propres",
-    "description": "La première impression compte. Nous assurons des cages d’escaliers propres et hygiéniques dans les immeubles résidentiels et commerciaux. Notre service de nettoyage fiable élimine efficacement la saleté, la poussière et les dépôts – des marches jusqu’aux rampes. De manière régulière, flexible et avec le plus grand soin, nous veillons à ce que votre cage d’escalier soit toujours accueillante.",
-    "pricing": [
-      "Petit (2-4 étages) : 20-40 €",
-      "Moyen (5-8 étages) : 40-80 €",
-      "Grand (plus de 8 étages) : 80-150 €"
-    ],
-    "tags": []
-  },
-  {
-  "id": 11,
-  "title": "Nettoyage de maison",
-  "description1": "",
-  "description": "Nettoyage des pièces de vie, cuisines et salles de bain. Aspiration, lavage des sols et dépoussiérage. Nettoyage des fenêtres et surfaces vitrées. Nettoyage en profondeur si nécessaire. Interventions flexibles – ponctuelles ou régulières.",
-  "pricing": [
-    "25 € – 30 € par heure"
-  ],
-  "tags": [
-    "Résidences",
-    "Appartements",
-    "Maisons individuelles"
-  ]
-}
+  }
 ]

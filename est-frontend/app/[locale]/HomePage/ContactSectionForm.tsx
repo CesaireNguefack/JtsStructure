@@ -7,7 +7,7 @@ import { getCurentLanguage } from "@/languages/getcurentlanguage"
 import { useTranslations } from "@/lib/TranslationProvider"
 import {ButtonSubmit} from "@/componenten/Cards/KontaktButton"
 import {  Mail, MapPin } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function ContactFormBody() {
   return (
@@ -254,7 +254,7 @@ export function ContactCalendar() {
 
       <IconCardForm
         icon={<Mail />}
-        title="sohblitz.mobil@web.de"
+        title="contact@ets-structure.de"
 
       />
 
@@ -262,6 +262,18 @@ export function ContactCalendar() {
         icon={<MapPin />}
         title={t.contact.addresse}
       /> <br></br>
+
+      <div className="flex gap-3 pt-2">
+        <a className="text-pink-600 hover:scale-110 transition" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <FaInstagram size={28} />
+        </a>
+        <a className="text-blue-600 hover:scale-110 transition" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <FaFacebook size={28} />
+        </a>
+        <a className="text-blue-700 hover:scale-110 transition" href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <FaLinkedin size={28} />
+        </a>
+      </div>
       </div>
     </div>
   )

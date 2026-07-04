@@ -16,7 +16,7 @@ export default function Navbar({ navState, showLogo }: Props) {
   const t = useTranslations()
   const [open, setOpen] = useState(false)
 
-  const locale = pathname.split("/")[1] || "de"
+  const locale = pathname.split("/")[1] || "fr"
 
   // ✅ FIX ACTIVE LINK (important)
   const isActive = (path: string) => {
@@ -70,28 +70,20 @@ export default function Navbar({ navState, showLogo }: Props) {
               {t.navbar.home}
             </Link>
 
-            <Link href={`/${locale}/price`} className={linkClass("/price")}>
-              {t.navbar.price}
+            <Link href={`/${locale}/secteurs`} className={linkClass("/secteurs")}>
+              {t.navbar.sectors}
             </Link>
 
-            <Link href={`/${locale}/gallery`} className={linkClass("/gallery")}>
-              {t.navbar.gallery}
+            <Link href={`/${locale}/services`} className={linkClass("/services")}>
+              {t.navbar.services}
+            </Link>
+
+            <Link href={`/${locale}/realisations`} className={linkClass("/realisations")}>
+              {t.navbar.realisations}
             </Link>
 
             <Link href={`/${locale}/about`} className={linkClass("/about")}>
               {t.navbar.about}
-            </Link>
-
-            <Link href={`/${locale}/impressum`} className={linkClass("/impressum")}>
-              {t.navbar.impressum}
-            </Link>
-
-            <Link href={`/${locale}/privacy`} className={linkClass("/privacy")}>
-              {t.navbar.privacy}
-            </Link>
-
-            <Link href={`/${locale}/agb`} className={linkClass("/agb")}>
-              {t.navbar.agb}
             </Link>
 
             <Link href={`/${locale}/contact`} className={linkClass("/contact")}>
@@ -132,24 +124,20 @@ export default function Navbar({ navState, showLogo }: Props) {
             {t.navbar.home}
           </Link>
 
-          <Link href={`/${locale}/price`} onClick={() => setOpen(false)}>
-              {t.navbar.price}
-            </Link>
+          <Link href={`/${locale}/secteurs`} onClick={() => setOpen(false)}>
+            {t.navbar.sectors}
+          </Link>
 
-            <Link href={`/${locale}/gallery`} onClick={() => setOpen(false)}>
-              {t.navbar.gallery}
-            </Link>
+          <Link href={`/${locale}/services`} onClick={() => setOpen(false)}>
+            {t.navbar.services}
+          </Link>
+
+          <Link href={`/${locale}/realisations`} onClick={() => setOpen(false)}>
+            {t.navbar.realisations}
+          </Link>
 
           <Link href={`/${locale}/about`} onClick={() => setOpen(false)}>
             {t.navbar.about}
-          </Link>
-
-          <Link href={`/${locale}/impressum`} onClick={() => setOpen(false)}>
-            {t.navbar.impressum}
-          </Link>
-
-          <Link href={`/${locale}/privacy`} onClick={() => setOpen(false)}>
-            {t.navbar.privacy}
           </Link>
 
           <Link href={`/${locale}/contact`} onClick={() => setOpen(false)}>
@@ -190,19 +178,18 @@ export default function Navbar({ navState, showLogo }: Props) {
   )
 }
 
-import Image from "next/image";
-
 export function Logo({ className = "" }) {
   return (
-    <div className={className}>
-      <Image
-        src="/images/logo.png"
-        alt="Sohblitz Mobil Logo"
-        width={120}
-        height={120}
-        className="w-[80px] md:w-[120px] h-auto"
-        priority
-      />
+    <div className={`inline-flex items-center gap-3 ${className}`}>
+      <span className="flex h-12 w-12 items-center justify-center rounded bg-slate-950 text-sm font-bold text-white shadow">
+        ETS
+      </span>
+      <div className="leading-tight">
+        <p className="text-xl font-bold text-white md:text-2xl">ETS Structure</p>
+        <p className="text-xs font-medium uppercase tracking-[0.16em] text-sky-100">
+          Ingénierie structurelle
+        </p>
+      </div>
     </div>
   );
 }
@@ -211,15 +198,13 @@ export function Logo({ className = "" }) {
 export function Logo2({ show = true, className = "" }) {
   if (!show) return null;
   return (
-    <div className={className}>
-      <Image
-        src="/images/logo.png"
-        alt="Sohblitz Mobil Logo"
-        width={120}
-        height={120}
-        className="w-[60px] md:w-[70px] h-auto"
-        priority
-      />
+    <div className={`inline-flex items-center gap-2 ${className}`}>
+      <span className="flex h-9 w-9 items-center justify-center rounded bg-slate-950 text-xs font-bold text-white">
+        ETS
+      </span>
+      <span className="text-base font-bold text-slate-900 md:text-lg">
+        ETS Structure
+      </span>
     </div>
   );
 }

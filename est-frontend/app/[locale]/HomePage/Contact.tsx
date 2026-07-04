@@ -42,7 +42,7 @@ export default function ContactSection() {
         <IconCard
           icon={<Mail />}
           title="Email"
-          description="sohblitz.mobil@web.de" 
+          description="contact@ets-structure.de" 
         />
 
         <IconCard
