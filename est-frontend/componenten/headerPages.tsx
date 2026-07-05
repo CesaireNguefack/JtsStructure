@@ -30,45 +30,35 @@ export default function HeaderPages({ title, headerTitle, subtitle, image }: Pro
         value = value?.[key]
     }
 
+    const titleText = String(value ?? "").replace(/\s*\n\s*/g, " ")
+    const headerTitleText = String(headerTitle_ ?? "").replace(/\s*\n\s*/g, " ")
+    const subtitleText = String(subtitle_ ?? "").replace(/\s*\n\s*/g, " ")
+
     return (
         <main>
             <Navbar navState="gradient" showLogo={true} />
 
-            <section className="pt-14 bg-gray-50 bg-gradient-to-r from-[#d7e8f2] via-[#a9c9e4] to-[#6fa6d8]">
+            <section
+                className="relative min-h-[320px] overflow-hidden bg-slate-950 pt-28 md:min-h-[390px] md:pt-36"
+                style={{ backgroundImage: `url('/images/${image}')`, backgroundSize: "cover", backgroundPosition: "center" }}
+            >
+                <div className="absolute inset-0 bg-slate-950/50" />
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-950/65 via-slate-900/35 to-transparent" />
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 grid md:grid-cols-2 items-center min-h-[100px] gap-6">
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-10 min-h-[190px] md:min-h-[230px] flex items-center">
+                    <div className="w-full max-w-6xl text-left text-white space-y-3 md:space-y-4">
+                        <h1 className="font-black uppercase leading-none tracking-[0.01em] !text-white text-[clamp(2.2rem,7vw,5rem)]">
+                            {titleText}
+                        </h1>
+                        <h2 className="truncate font-bold leading-tight text-white text-[clamp(1.35rem,3.5vw,2.4rem)]">
+                            {headerTitleText}
+                        </h2>
 
-                    {/* Image */}
-                    <div className="flex justify-center">
-                        <img
-                            src={`/images/${image}`}
-                            alt="Doctor"
-                            className="w-[120px] sm:w-[150px] md:w-[250px]"
-                        />
+                        <p className="truncate text-white text-[clamp(0.95rem,2.2vw,1.2rem)]">
+                            {subtitleText}
+                        </p>
                     </div>
-
-                    {/* Texte */}
-                    <div className="text-slate-800 space-y-4 md:space-y-5 text-center md:text-left">
-
-                        <h5 className="font-bold leading-tight whitespace-pre-line text-[clamp(1.5rem,4vw,2.5rem)]">
-                            {headerTitle_}
-                        </h5>
-
-                        <div>
-                            <p className="text-slate-600 text-[clamp(0.9rem,2.5vw,1.125rem)]">
-                                {subtitle_}
-                            </p>
-                        </div>
-
-                    </div>
-
                 </div>
-            </section>
-
-            <section className="flex justify-center items-center h-[70px]">
-                <h1 className="font-bold text-center text-[clamp(1.5rem,4vw,2.5rem)]">
-                    {value ?? ""}
-                </h1>
             </section>
         </main>
 

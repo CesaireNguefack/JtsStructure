@@ -32,7 +32,7 @@ useEffect(() => {
   loadServices()
 }, [])
   return <main className="bg-white">
-      <HeaderPages title={""} headerTitle="contactPageHeaderInfos.title" subtitle ="contactPageHeaderInfos.subtitle" image="appointment1.png"/>
+      <HeaderPages title={"navbar.price"} headerTitle="pricingPageHeaderInfos.title" subtitle ="pricingPageHeaderInfos.subtitle" image="appointment1.png"/>
        <ServiceBody services={services} />
     </main>; 
   

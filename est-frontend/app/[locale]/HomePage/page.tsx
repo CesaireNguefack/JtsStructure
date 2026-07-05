@@ -31,15 +31,9 @@ export default function Welcome() {
             const heroHeight = heroRef.current.offsetHeight
             const scroll = window.scrollY
 
-            const oneThird = heroHeight / 3
-
-            if (scroll < oneThird) {
+            if (scroll < heroHeight) {
                 setNavState("transparent")
                 setShowLogo(false)
-            }
-            else if (scroll >= oneThird && scroll < heroHeight) {
-                setNavState("gradient")
-                setShowLogo(true)
             }
             else {
                 setNavState("white")

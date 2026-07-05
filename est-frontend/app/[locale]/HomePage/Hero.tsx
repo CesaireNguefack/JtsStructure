@@ -5,13 +5,14 @@ import ContactSection from "@/app/[locale]/HomePage/Contact"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Logo } from "@/componenten/Navbar"
 import { useTranslations } from "@/lib/TranslationProvider"
 
 const slides = [
-  "/images/ets-structure-hero.png",
-  "/images/about20.png",
-  "/images/about1.png",
+  "/images/headers/home/cover_header_clean.png",
+  "/images/headers/services/cover_header_clean.png",
+  "/images/headers/secteurs/cover_header_clean.png",
+  "/images/headers/realisations/cover_header_clean.png",
+  "/images/headers/about/cover_header_clean.png",
 ]
 
 export default function Hero() {
@@ -30,27 +31,23 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-[720px] overflow-hidden pt-1 md:pt-10 pb-20 md:pb-32 z-10 bg-slate-950"
+      className="relative min-h-[720px] overflow-hidden pt-32 md:pt-40 pb-20 md:pb-32 z-10 bg-slate-950"
     >
       <Image
         src={slides[slideIndex]}
         alt="Bureau d'etudes structurelles ETS Structure"
         fill
         priority
-        className="object-cover opacity-70 transition-opacity duration-700"
+        quality={95}
+        sizes="100vw"
+        className="object-cover object-[72%_center] transition-opacity duration-700 md:object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-900/20" />
 
       {/* CONTAINER */}
       <div className="relative max-w-7xl mx-auto px-4 md:px-10">
 
-        {/* ✅ LOGO aligné avec le contenu */}
-        <div className="mb-8">
-          <Logo />
-        </div>
-
         {/* GRID */}
-        <div className="grid md:grid-cols-[1.05fr_0.95fr] items-center min-h-[520px]">
+        <div className="grid md:grid-cols-[1.05fr_0.95fr] items-center min-h-[500px]">
 
           {/* LEFT */}
           <div className="max-w-3xl">

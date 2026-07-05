@@ -124,12 +124,33 @@
     "addService": "Add service"
   },
   "contactPageHeaderInfos": {
-    "title": "Contact us \n for a structural \n study",
-    "subtitle": "Your partner for structural calculations and assessments"
+    "title": "Let's discuss your project",
+    "subtitle": "Contact details and first technical exchange"
   },
   "aboutPageHeaderInfos": {
-    "title": "Learn more \n about our \n company",
-    "subtitle": "Your structural engineering partner"
+    "title": "Structural engineering office",
+    "subtitle": "Mission, values and quality commitment"
+  },
+  "servicesPageHeaderInfos": {
+    "title": "Structural engineering services",
+    "subtitle": "Studies, calculations, diagnostics and technical follow-up"
+  },
+  "sectorsPageHeaderInfos": {
+    "title": "Sectors of intervention",
+    "subtitle": "Buildings, civil works, infrastructure and technical projects"
+  },
+  "realisationsPageHeaderInfos": {
+    "title": "Projects and references",
+    "subtitle": "Project previews, diagnostics and structural interventions"
+  },
+  "evaluationPageHeaderInfos": {
+    "label": "Assessment request",
+    "title": "Describe your technical need",
+    "subtitle": "An initial response adapted to your project"
+  },
+  "pricingPageHeaderInfos": {
+    "title": "Services by quotation",
+    "subtitle": "Offers adapted to the nature and complexity of each project"
   },
   "impressumPageHeaderInfos": {
     "title": "Legal \n Information",

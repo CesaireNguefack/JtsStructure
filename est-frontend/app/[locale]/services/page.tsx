@@ -14,17 +14,14 @@ export default async function ServicesPage({
     <main className="bg-white">
       <HeaderPages
         title="navbar.services"
-        headerTitle="contactPageHeaderInfos.title"
-        subtitle="contactPageHeaderInfos.subtitle"
-        image="ets-structure-hero.png"
+        headerTitle="servicesPageHeaderInfos.title"
+        subtitle="servicesPageHeaderInfos.subtitle"
+        image="headers/services/cover_header.png"
       />
 
       <section className="px-6 py-16">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
-              {content.services.eyebrow}
-            </p>
             <h1 className="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">
               {content.services.title}
             </h1>

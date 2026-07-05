@@ -15,6 +15,8 @@ export default function Navbar({ navState, showLogo }: Props) {
   const pathname = usePathname()
   const t = useTranslations()
   const [open, setOpen] = useState(false)
+  const isTop = navState === "transparent"
+  const isSubPage = navState === "gradient"
 
   const locale = pathname.split("/")[1] || "fr"
 
@@ -25,9 +27,9 @@ export default function Navbar({ navState, showLogo }: Props) {
   }
 
   const linkClass = (path: string) =>
-    `transition ${isActive(path)
-      ? "text-blue-600 font-semibold"
-      : "hover:text-blue-500"
+    `text-[13px] font-bold uppercase tracking-[0.02em] transition ${isActive(path) && !isTop
+      ? "text-blue-700"
+      : "text-black hover:text-red-700"
     }`
 
   // ✅ LANGUAGE SWITCH (stay on same page)
@@ -51,21 +53,28 @@ export default function Navbar({ navState, showLogo }: Props) {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 h-14 overflow-visible
-  ${navState === "transparent" && "bg-transparent"}
-  ${navState === "gradient" && "bg-gradient-to-r from-[#d7e8f2] via-[#a9c9e4] to-[#6fa6d8] shadow-lg backdrop-blur-md"}
+      className={`fixed top-0 w-full z-50 overflow-visible
+  ${isTop ? "h-24 bg-transparent pt-4 md:h-[118px]" : isSubPage ? "h-20 bg-transparent pt-3 md:h-24" : "h-14"}
   ${navState === "white" && "bg-white shadow-md"}
   `}
     >
-      <div className="max-w-7xl mx-auto flex items-center h-full px-4 md:px-10">
-        <Logo2 show={showLogo} />
+      <div
+        className={`mx-auto flex items-center px-4 md:px-8
+          ${isTop
+            ? "h-20 w-[calc(100%-2rem)] max-w-[1804px] bg-white/65 shadow-sm backdrop-blur-sm md:h-[102px]"
+            : isSubPage
+              ? "h-16 w-[calc(100%-1.5rem)] max-w-7xl bg-white/82 shadow-md backdrop-blur-sm md:h-20"
+            : "h-full w-[calc(100%-2rem)] max-w-[1804px]"
+          }`}
+      >
+        {isTop ? <TopLogo /> : <Logo2 show={showLogo} />}
 
 
         {/* RIGHT BLOCK → tout à droite */}
-        <div className="hidden md:flex items-center gap-8 ml-auto">
+        <div className={`hidden md:flex items-center ml-auto ${isTop ? "gap-8" : "gap-8"}`}>
 
           {/* NAV */}
-          <nav className="flex gap-6 text-slate-700">
+          <nav className={`flex items-center ${isTop ? "gap-9" : "gap-7"}`}>
             <Link href={`/${locale}`} className={linkClass("")}>
               {t.navbar.home}
             </Link>
@@ -92,7 +101,7 @@ export default function Navbar({ navState, showLogo }: Props) {
           </nav>
 
           {/* LANGUAGES */}
-          <div className="flex gap-4 items-center text-xl">
+          <div className={`flex gap-4 items-center ${isTop ? "text-lg" : "text-xl"}`}>
             <Link href={getLocalizedPath("de")} className={langClass("de")}>
               🇩🇪
             </Link>
@@ -109,66 +118,85 @@ export default function Navbar({ navState, showLogo }: Props) {
         {/* BURGER (mobile) */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden ml-auto text-2xl"
+          className={`md:hidden ml-auto text-2xl font-bold ${isTop ? "text-black" : ""}`}
+          aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
         >
-          ☰
+          <span className="block leading-none">☰</span>
         </button>
 
       </div>
 
       {/* MOBILE MENU */}
       {open && (
-        <div className="md:hidden bg-white shadow-lg flex flex-col items-center gap-6 py-6 text-lg">
+        <div className="fixed inset-y-0 right-0 left-16 z-[60] md:hidden bg-white text-slate-950 shadow-2xl">
+          <div className="flex min-h-dvh flex-col px-5 py-7">
+            <div className="flex justify-end">
+              <button
+                onClick={() => setOpen(false)}
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-4xl font-light leading-none text-slate-950 shadow-sm"
+                aria-label="Fermer le menu"
+              >
+                ×
+              </button>
+            </div>
 
-          <Link href={`/${locale}`} onClick={() => setOpen(false)}>
-            {t.navbar.home}
-          </Link>
+            <nav className="mt-2 flex flex-col items-start gap-9">
+              <MobileMenuLink href={`/${locale}`} onClick={() => setOpen(false)}>
+                {t.navbar.home}
+              </MobileMenuLink>
 
-          <Link href={`/${locale}/secteurs`} onClick={() => setOpen(false)}>
-            {t.navbar.sectors}
-          </Link>
+              <MobileMenuLink href={`/${locale}/secteurs`} onClick={() => setOpen(false)}>
+                {t.navbar.sectors}
+              </MobileMenuLink>
 
-          <Link href={`/${locale}/services`} onClick={() => setOpen(false)}>
-            {t.navbar.services}
-          </Link>
+              <MobileMenuLink href={`/${locale}/services`} onClick={() => setOpen(false)}>
+                {t.navbar.services}
+              </MobileMenuLink>
 
-          <Link href={`/${locale}/realisations`} onClick={() => setOpen(false)}>
-            {t.navbar.realisations}
-          </Link>
+              <MobileMenuLink href={`/${locale}/realisations`} onClick={() => setOpen(false)}>
+                {t.navbar.realisations}
+              </MobileMenuLink>
 
-          <Link href={`/${locale}/about`} onClick={() => setOpen(false)}>
-            {t.navbar.about}
-          </Link>
+              <MobileMenuLink href={`/${locale}/about`} onClick={() => setOpen(false)}>
+                {t.navbar.about}
+              </MobileMenuLink>
 
-          <Link href={`/${locale}/contact`} onClick={() => setOpen(false)}>
-            {t.navbar.contact}
-          </Link>
+              <MobileMenuLink href={`/${locale}/contact`} onClick={() => setOpen(false)}>
+                {t.navbar.contact}
+              </MobileMenuLink>
+            </nav>
 
-          {/* LANG MOBILE */}
-          <div className="flex gap-4 text-xl">
+            {/* LANG MOBILE */}
+            <div className="mt-auto border-t border-slate-200 pt-6">
+              <p className="mb-4 text-xs font-black uppercase tracking-[0.18em] text-slate-500">
+                Langue
+              </p>
+              <div className="flex gap-5 text-2xl">
 
-            <Link
-              href={getLocalizedPath("de")}
-              className={langClass("de")}
-              onClick={() => setOpen(false)}
-            >
-              🇩🇪
-            </Link>
+                <Link
+                  href={getLocalizedPath("de")}
+                  className={langClass("de")}
+                  onClick={() => setOpen(false)}
+                >
+                  🇩🇪
+                </Link>
 
-            <Link
-              href={getLocalizedPath("en")}
-              className={langClass("en")}
-              onClick={() => setOpen(false)}
-            >
-              🇬🇧
-            </Link>
-            <Link
-              href={getLocalizedPath("fr")}
-              className={langClass("fr")}
-              onClick={() => setOpen(false)}
-            >
-              🇫🇷
-            </Link>
+                <Link
+                  href={getLocalizedPath("en")}
+                  className={langClass("en")}
+                  onClick={() => setOpen(false)}
+                >
+                  🇬🇧
+                </Link>
+                <Link
+                  href={getLocalizedPath("fr")}
+                  className={langClass("fr")}
+                  onClick={() => setOpen(false)}
+                >
+                  🇫🇷
+                </Link>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -176,6 +204,26 @@ export default function Navbar({ navState, showLogo }: Props) {
 
     </header>
   )
+}
+
+function MobileMenuLink({
+  href,
+  onClick,
+  children,
+}: {
+  href: string;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <Link
+      href={href}
+      onClick={onClick}
+      className="text-[19px] font-medium uppercase leading-none tracking-[0.02em] text-slate-950 transition hover:text-red-700"
+    >
+      {children}
+    </Link>
+  );
 }
 
 export function Logo({ className = "" }) {
@@ -190,6 +238,21 @@ export function Logo({ className = "" }) {
           Ingénierie structurelle
         </p>
       </div>
+    </div>
+  );
+}
+
+
+export function TopLogo({ className = "" }) {
+  return (
+    <div className={`inline-flex h-full items-center gap-4 ${className}`}>
+      <div className="flex h-14 w-20 items-center justify-center bg-red-700 text-2xl font-black tracking-[-0.12em] text-white md:h-16 md:w-24">
+        EST
+      </div>
+      <div className="h-16 w-px bg-slate-400 md:h-20" />
+      <p className="hidden text-[13px] font-black uppercase tracking-[0.18em] text-slate-950 sm:block md:text-[15px]">
+        Rigueur, qualite, innovation.
+      </p>
     </div>
   );
 }

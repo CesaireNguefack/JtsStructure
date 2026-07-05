@@ -125,12 +125,33 @@
     "addService": "Service hinzufügen"
   },
   "contactPageHeaderInfos": {
-    "title": "Kontaktieren Sie uns \n fur eine \n Tragwerksstudie",
-    "subtitle": "Ihr Partner fur Berechnungen und Tragwerksgutachten"
+    "title": "Sprechen wir über Ihr Projekt",
+    "subtitle": "Kontakt, Eckdaten und erster technischer Austausch"
   },
   "aboutPageHeaderInfos": {
-    "title": "Erfahren Sie mehr \n über unser \n Unternehmen",
-    "subtitle": "Ihr Partner fur Tragwerksplanung"
+    "title": "Ingenieurbüro für Tragwerksplanung",
+    "subtitle": "Mission, Werte und Qualitätsanspruch"
+  },
+  "servicesPageHeaderInfos": {
+    "title": "Leistungen der Tragwerksplanung",
+    "subtitle": "Studien, Berechnungen, Diagnostik und technische Begleitung"
+  },
+  "sectorsPageHeaderInfos": {
+    "title": "Einsatzbereiche",
+    "subtitle": "Gebäude, Ingenieurbauwerke, Infrastruktur und technische Projekte"
+  },
+  "realisationsPageHeaderInfos": {
+    "title": "Referenzen und Projekte",
+    "subtitle": "Einblicke in Projekte, Diagnosen und Tragwerkseingriffe"
+  },
+  "evaluationPageHeaderInfos": {
+    "label": "Bewertung anfragen",
+    "title": "Beschreiben Sie Ihren technischen Bedarf",
+    "subtitle": "Eine erste Rückmeldung passend zu Ihrem Projekt"
+  },
+  "pricingPageHeaderInfos": {
+    "title": "Leistungen nach Angebot",
+    "subtitle": "Angebote passend zu Art und Komplexität des Projekts"
   },
   "impressumPageHeaderInfos": {
     "title": "Rechtliche \n Informationen",

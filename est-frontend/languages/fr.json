@@ -124,12 +124,33 @@
     "addService": "Ajouter un service"
   },
   "contactPageHeaderInfos": {
-    "title": "Contactez-nous \n pour une étude \n structurelle",
-    "subtitle": "Votre partenaire pour les calculs et expertises structurelles"
+    "title": "Échangeons sur votre projet",
+    "subtitle": "Contact, coordonnées et premier échange technique"
   },
   "aboutPageHeaderInfos": {
-    "title": "En savoir plus \n sur notre \n entreprise",
-    "subtitle": "Votre partenaire pour l’ingénierie structurelle"
+    "title": "Bureau d'études structure",
+    "subtitle": "Mission, valeurs et engagement qualité"
+  },
+  "servicesPageHeaderInfos": {
+    "title": "Prestations d'ingénierie structurelle",
+    "subtitle": "Études, calculs, diagnostics et suivi technique"
+  },
+  "sectorsPageHeaderInfos": {
+    "title": "Secteurs d'intervention",
+    "subtitle": "Bâtiments, ouvrages d'art, infrastructures et projets techniques"
+  },
+  "realisationsPageHeaderInfos": {
+    "title": "Réalisations et références",
+    "subtitle": "Aperçu de projets, diagnostics et interventions structurelles"
+  },
+  "evaluationPageHeaderInfos": {
+    "label": "Demande d'évaluation",
+    "title": "Décrivez votre besoin technique",
+    "subtitle": "Un premier retour adapté à votre projet"
+  },
+  "pricingPageHeaderInfos": {
+    "title": "Prestations sur devis",
+    "subtitle": "Des offres adaptées à la nature et à la complexité du projet"
   },
   "impressumPageHeaderInfos": {
     "title": "Informations \n légales",

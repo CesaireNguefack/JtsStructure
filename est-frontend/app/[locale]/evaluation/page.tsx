@@ -81,9 +81,9 @@ export default function EvaluationPage() {
   return (
     <main className="bg-white">
       <HeaderPages
-        title="contact.reserve"
-        headerTitle="contactPageHeaderInfos.title"
-        subtitle="contactPageHeaderInfos.subtitle"
+        title="evaluationPageHeaderInfos.label"
+        headerTitle="evaluationPageHeaderInfos.title"
+        subtitle="evaluationPageHeaderInfos.subtitle"
         image="appointment1.png"
       />
 

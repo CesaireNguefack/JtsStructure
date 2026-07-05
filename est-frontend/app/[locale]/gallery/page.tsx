@@ -46,9 +46,9 @@ export default function Page() {
     <main className="bg-white min-h-screen">
       <HeaderPages
         title="navbar.gallery"
-        headerTitle="contactPageHeaderInfos.title"
-        subtitle="contactPageHeaderInfos.subtitle"
-        image="appointment1.png"
+        headerTitle="realisationsPageHeaderInfos.title"
+        subtitle="realisationsPageHeaderInfos.subtitle"
+        image="headers/realisations/cover_header.png"
       />
 
       {/* 🔥 PHOTO PROVIDER */}

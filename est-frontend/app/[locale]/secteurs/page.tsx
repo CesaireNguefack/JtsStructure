@@ -14,18 +14,16 @@ export default async function SectorsPage({
     <main className="bg-white">
       <HeaderPages
         title="navbar.sectors"
-        headerTitle="aboutPageHeaderInfos.title"
-        subtitle="aboutPageHeaderInfos.subtitle"
-        image="about20.png"
+        headerTitle="sectorsPageHeaderInfos.title"
+        subtitle="sectorsPageHeaderInfos.subtitle"
+        image="headers/secteurs/cover_header.png"
       />
 
       <section className="px-6 py-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
-                {content.sectors.eyebrow}
-              </p>
+             
               <h1 className="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">
                 {content.sectors.title}
               </h1>

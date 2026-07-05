@@ -8,7 +8,7 @@ export default function About() {
         title="navbar.about"
         headerTitle="aboutPageHeaderInfos.title"
         subtitle="aboutPageHeaderInfos.subtitle"
-        image="about.png"
+        image="headers/about/cover_header.png"
       />
       <AboutSection/>
     </main>

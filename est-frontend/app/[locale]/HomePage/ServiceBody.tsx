@@ -46,7 +46,7 @@ export default function ServiceBody({ services }: { services: Service[] }) {
                 href={`/${locale}/service/${slug}`}
                 className="block"
               >
-                <div className="group relative bg-white/90 backdrop-blur rounded-2xl shadow-xl overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl">
+                <div className="group relative bg-white/90 backdrop-blur   shadow-xl overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-2xl">
 
                   {/* Gradient hover */}
                   <div className="absolute inset-0 bg-gradient-to-r from-[#8fb0c8] to-[#6f95b2] opacity-0 group-hover:opacity-100 transition duration-500"></div>
