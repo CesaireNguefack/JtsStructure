@@ -13,7 +13,7 @@ export default function AboutSection() {
         <h2 className="text-3xl font-bold text-white md:text-5xl">
           {t.about.title}
         </h2>
-        <div className="mt-5 h-1 w-28 rounded-full bg-emerald-500" />
+        <div className="mt-5 h-1 w-28 rounded-full bg-[var(--foreground)]" />
 
         <p className="mt-12 max-w-4xl text-sm font-medium leading-8 text-white md:text-base">
           {t.about.description}

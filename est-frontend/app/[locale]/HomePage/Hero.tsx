@@ -51,12 +51,13 @@ export default function Hero() {
 
           {/* LEFT */}
           <div className="max-w-3xl">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-sky-200">
+            
+             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white">
               ETS Structure
-            </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white">
-              {t.hero.title}
             </h1>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white">
+              {t.hero.title}
+            </h2>
 
             <p className="mt-6 text-lg text-slate-200 max-w-2xl leading-relaxed">
               {t.hero.subtitle}

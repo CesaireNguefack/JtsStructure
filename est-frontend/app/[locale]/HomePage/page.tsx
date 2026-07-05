@@ -12,6 +12,7 @@ import TeamHome from "./Team"
 import HomePageContacSection from "./HomePageContacSection"
 import ServicesBlock from "./Services"
 import WhyChoose from "./WhyChoose"
+import HeroAboutDivider from "./HeroAboutDivider"
 
 export default function Welcome() {
 
@@ -55,11 +56,13 @@ export default function Welcome() {
             <div ref={heroRef}>
                 <Hero />
             </div>
+            <HeroAboutDivider />
             <AboutSection />
             <ServicesBlock  />
-            <WhyChoose />
+
             <TeamHome />
-            <ReviewsSection />
+             <WhyChoose />
+
             <Demo />
             <HomePageContacSection />
              
