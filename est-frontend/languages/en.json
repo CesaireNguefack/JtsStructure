@@ -17,6 +17,9 @@
     "title": "Let's build durable \n and high-performing \n structures together",
     "subtitle": "Rigor, quality and innovation at the service of your projects."
   },
+  "homeDivider": {
+    "items": ["RIGOR", "QUALITY", "INNOVATION"]
+  },
   "footer": {
     "title": "Structural engineering office for design, calculations, diagnostics and expert assessments.",
     "navigation": "Navigation",

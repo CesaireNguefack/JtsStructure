@@ -13,8 +13,8 @@ export default function AboutSection() {
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <img
-              src="/images/about20.png"
-              alt="EST-Structure"
+              src="/images/about/team_lead.png"
+              alt="Équipe EST Structure"
               className="h-[420px] w-full rounded-lg object-cover shadow-sm"
             />
           </div>
@@ -67,11 +67,6 @@ export default function AboutSection() {
           </div>
         </section>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2">
-          <TeamList title={content.about.teamNowTitle} items={content.about.teamNow} />
-          <TeamList title={content.about.teamLaterTitle} items={content.about.teamLater} />
-        </div>
-
         <section className="mt-14 rounded-lg bg-slate-950 p-6 text-white md:p-8">
           <h2 className="text-2xl font-bold">{content.resources.title}</h2>
           <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -84,21 +79,5 @@ export default function AboutSection() {
         </section>
       </div>
     </section>
-  );
-}
-
-function TeamList({ title, items }: { title: string; items: readonly string[] }) {
-  return (
-    <article className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-      <h2 className="text-xl font-bold text-slate-900">{title}</h2>
-      <ul className="mt-5 space-y-3">
-        {items.map((item) => (
-          <li key={item} className="flex gap-3 text-slate-700">
-            <span className="mt-2 h-2 w-2 rounded-full bg-sky-700" />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </article>
   );
 }

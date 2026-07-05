@@ -2,7 +2,6 @@
 
 import { useParams, usePathname, useRouter } from "next/navigation";
 import Navbar from "@/componenten/Navbar";
-import Image from "next/image";
 import { ButtonReservation } from "@/componenten/Cards/KontaktButton";
 import { useState, useEffect } from "react";
 import SplitSection from "@/componenten/SplitSection";
@@ -64,7 +63,7 @@ export default function ServiceDetail() {
       <br />
       <SplitSection
         reverse
-        left={<ServiceCarousel service={service} />}
+        left={<ServiceCoverImage service={service} />}
         right={<ServiceDescription service={service} />}
       />
     </main>
@@ -187,105 +186,24 @@ export function ServiceDescription({ service }: { service: Service }) {
 
 const defaultImage = "/service_data/images/personel.jpeg";
 
-export function ServiceCarousel({ service }: { service: Service }) {
-
-  const images = service.images && service.images.length > 0
-    ? service.images
-    : [defaultImage]
-
-  const [current, setCurrent] = useState(0)
-
-  // 🔁 Auto slide
-  useEffect(() => {
-    if (images.length <= 1) return
-
-    const interval = setInterval(() => {
-      setCurrent(prev => (prev === images.length - 1 ? 0 : prev + 1))
-    }, 3000)
-
-    return () => clearInterval(interval)
-  }, [images.length])
-
-  // 🔒 Sécurité index
-  const currentImage = images[current] || images[0]
+export function ServiceCoverImage({ service }: { service: Service }) {
+  const coverImage = service.cover || defaultImage
 
   const getFullUrl = (path: string) => {
-    // if (path.startsWith("http") || path.startsWith("/images")) return path
-    return `${API_URL}${path}`
+    if (path.startsWith("http") || path.startsWith("/images")) return path
+    if (path.startsWith("/")) return `${API_URL}${path}`
+    return `${API_URL}/${path}`
   }
-
 
   return (
     <div className="relative flex flex-col items-center md:items-start">
-
-      {/* MAIN IMAGE */}
       <div className="relative w-full max-w-[420px] aspect-square rounded-3xl overflow-hidden shadow-2xl">
         <img
-          src={getFullUrl(currentImage)}
+          src={getFullUrl(coverImage)}
           alt={service.title}
-           
-
-          className="object-cover"
+          className="h-full w-full object-cover"
         />
-
-        {/* BUTTONS */}
-        {images.length > 1 && (
-          <>
-            <button
-              onClick={() =>
-                setCurrent(current === 0 ? images.length - 1 : current - 1)
-              }
-              className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full"
-            >
-              ‹
-            </button>
-
-            <button
-              onClick={() =>
-                setCurrent(current === images.length - 1 ? 0 : current + 1)
-              }
-              className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full"
-            >
-              ›
-            </button>
-          </>
-        )}
       </div>
-
-      {/* THUMBNAILS */}
-      <div className="mt-4 flex gap-3 flex-wrap justify-center">
-        {images.map((img, i) => (
-          <div
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`w-14 h-14 rounded-lg overflow-hidden cursor-pointer border-2 ${current === i ? "border-primary" : "border-transparent"
-              }`}
-          >
-            <img
-              src={getFullUrl(img)}
-              alt="thumb"
-              width={56}
-              height={56}
-
-              className="object-cover"
-            />
-          </div>
-        ))}
-      </div>
-
-      {/* DOTS */}
-      {images.length > 1 && (
-        <div className="mt-3 flex gap-2">
-          {images.map((_, i) => (
-            <div
-              key={i}
-              onClick={() => setCurrent(i)}
-              className={`w-2.5 h-2.5 rounded-full cursor-pointer ${current === i ? "bg-primary" : "bg-gray-300"
-                }`}
-            />
-          ))}
-        </div>
-      )}
     </div>
   )
 }

@@ -17,6 +17,9 @@
     "title": "Construisons ensemble \n des ouvrages durables \n et performants",
     "subtitle": "Rigueur, qualité et innovation au service de vos projets."
   },
+  "homeDivider": {
+    "items": ["RIGUEUR", "QUALITÉ", "INNOVATION"]
+  },
   "footer": {
   "title": "Bureau d’études structure spécialisé dans le dimensionnement, le diagnostic et l’expertise des ouvrages.",
   "navigation": "Navigation",

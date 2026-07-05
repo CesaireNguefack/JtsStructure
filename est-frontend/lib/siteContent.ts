@@ -93,10 +93,6 @@ const siteContent = {
         ["Perspectives de developpement", "La page evoluera naturellement avec la croissance de l'entreprise et de ses references."],
         ["Partenaires", "Collaboration avec maitres d'ouvrage, architectes, entreprises, bureaux techniques et acteurs du chantier."],
       ],
-      teamNowTitle: "Notre equipe aujourd'hui",
-      teamLaterTitle: "Notre equipe demain",
-      teamNow: ["Fondateur & Ingenieur Conseil"],
-      teamLater: ["Ingenieurs Structures", "Dessinateurs-Projeteurs", "Conducteurs de Travaux", "Experts techniques"],
     },
     resources: {
       title: "Actualites et ressources",
@@ -192,10 +188,6 @@ const siteContent = {
         ["Development outlook", "This page will naturally evolve as the company grows and expands its references."],
         ["Partners", "Collaboration with clients, architects, contractors, technical offices and site stakeholders."],
       ],
-      teamNowTitle: "Our team today",
-      teamLaterTitle: "Our team tomorrow",
-      teamNow: ["Founder & Consulting Engineer"],
-      teamLater: ["Structural Engineers", "Drafters and BIM technicians", "Site Managers", "Technical Experts"],
     },
     resources: {
       title: "News and resources",
@@ -283,10 +275,6 @@ const siteContent = {
         ["Entwicklungsperspektiven", "Diese Seite waechst natuerlich mit dem Unternehmen und seinen Referenzen."],
         ["Partner", "Zusammenarbeit mit Bauherren, Architekten, Unternehmen, Fachplanern und Projektbeteiligten."],
       ],
-      teamNowTitle: "Unser Team heute",
-      teamLaterTitle: "Unser Team morgen",
-      teamNow: ["Gruender & Beratender Ingenieur"],
-      teamLater: ["Tragwerksplaner", "Bauzeichner und Konstrukteure", "Bauleiter", "Technische Experten"],
     },
     resources: {
       title: "Aktuelles und Ressourcen",

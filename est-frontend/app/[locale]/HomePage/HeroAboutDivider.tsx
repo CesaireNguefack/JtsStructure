@@ -1,10 +1,11 @@
-const items = [
-  "Études structurelles",
-  "Expertise technique",
-  "Suivi de réalisation",
-]
+"use client"
+
+import { useTranslations } from "@/lib/TranslationProvider"
 
 export default function HeroAboutDivider() {
+  const t = useTranslations()
+  const items = t?.homeDivider?.items ?? []
+
   return (
     <section className="relative overflow-hidden bg-white px-6 py-14 text-slate-950 md:py-18">
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(26,72,108,0.08)_1px,transparent_1px),linear-gradient(0deg,rgba(26,72,108,0.06)_1px,transparent_1px)] bg-[size:48px_48px]" />
@@ -19,7 +20,7 @@ export default function HeroAboutDivider() {
         </div>
 
         <div className="grid gap-6 text-center md:grid-cols-3">
-          {items.map((item) => (
+          {items.map((item: string) => (
             <div
               key={item}
               className="relative border border-[rgba(26,72,108,0.15)] bg-white/75 px-5 py-6 shadow-sm backdrop-blur-sm"

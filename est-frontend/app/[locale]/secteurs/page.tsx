@@ -32,7 +32,7 @@ export default async function SectorsPage({
               </p>
               <Link
                 href={`/${locale}/evaluation`}
-                className="mt-8 inline-flex rounded bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+                className="mt-8 inline-flex rounded bg-slate-950 px-5 py-3 text-sm font-semibold !text-white transition hover:bg-sky-800"
               >
                 {content.cta}
               </Link>

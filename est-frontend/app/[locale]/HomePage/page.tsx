@@ -65,8 +65,6 @@ export default function Welcome() {
 
             <Demo />
             <HomePageContacSection />
-             
-
         </main>
     )
 }

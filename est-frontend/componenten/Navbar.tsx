@@ -102,14 +102,14 @@ export default function Navbar({ navState, showLogo }: Props) {
 
           {/* LANGUAGES */}
           <div className={`flex gap-4 items-center ${isTop ? "text-lg" : "text-xl"}`}>
-            <Link href={getLocalizedPath("de")} className={langClass("de")}>
-              🇩🇪
+            <Link href={getLocalizedPath("fr")} className={langClass("fr")}>
+              🇫🇷
             </Link>
             <Link href={getLocalizedPath("en")} className={langClass("en")}>
               🇬🇧
             </Link>
-            <Link href={getLocalizedPath("fr")} className={langClass("fr")}>
-              🇫🇷
+            <Link href={getLocalizedPath("de")} className={langClass("de")}>
+              🇩🇪
             </Link>
           </div>
 
@@ -174,11 +174,11 @@ export default function Navbar({ navState, showLogo }: Props) {
               <div className="flex gap-5 text-2xl">
 
                 <Link
-                  href={getLocalizedPath("de")}
-                  className={langClass("de")}
+                  href={getLocalizedPath("fr")}
+                  className={langClass("fr")}
                   onClick={() => setOpen(false)}
                 >
-                  🇩🇪
+                  🇫🇷
                 </Link>
 
                 <Link
@@ -188,12 +188,13 @@ export default function Navbar({ navState, showLogo }: Props) {
                 >
                   🇬🇧
                 </Link>
+
                 <Link
-                  href={getLocalizedPath("fr")}
-                  className={langClass("fr")}
+                  href={getLocalizedPath("de")}
+                  className={langClass("de")}
                   onClick={() => setOpen(false)}
                 >
-                  🇫🇷
+                  🇩🇪
                 </Link>
               </div>
             </div>
@@ -250,8 +251,8 @@ export function TopLogo({ className = "" }) {
         EST
       </div>
       <div className="h-16 w-px bg-slate-400 md:h-20" />
-      <p className="hidden text-[13px] font-black uppercase tracking-[0.18em] text-slate-950 sm:block md:text-[15px]">
-        Rigueur, qualite, innovation.
+      <p className="hidden text-[15px] font-black uppercase tracking-[0.08em] text-slate-950 sm:block md:text-[17px]">
+        ETS Structure
       </p>
     </div>
   );

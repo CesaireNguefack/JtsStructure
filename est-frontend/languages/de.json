@@ -17,6 +17,9 @@
     "title": "Gemeinsam bauen wir \n dauerhafte und leistungsfähige \n Bauwerke",
     "subtitle": "Sorgfalt, Qualität und Innovation im Dienst Ihrer Projekte."
   },
+  "homeDivider": {
+    "items": ["SORGFALT", "QUALITÄT", "INNOVATION"]
+  },
   "adminPage": {
   "btn_section_view": "Nach Service anzeigen",
   "btn_global_view": "Globale Ansicht",
