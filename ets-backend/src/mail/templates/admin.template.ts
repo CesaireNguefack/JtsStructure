@@ -5,46 +5,35 @@ import { getLang } from 'src/getlanguage';
 
 export function adminTemplate(data: any) {
     const t = getLang(data.lang);
-      const baseUrl = process.env.FRONTEND_URL;
   const content = `
-    <h2>${t.newReservation}</h2>
+    <h2 style="margin:0 0 18px; color:#0b2545; font-size:24px; line-height:1.25;">${t.newReservation}</h2>
 
-    <table width="100%" style="border-collapse:collapse;">
+    <table width="100%" style="border-collapse:collapse; border:1px solid #d8e2eb;">
       <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Nom</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.name}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Nom</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.name}</td>
       </tr>
       <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Email</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.email}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Email</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.email}</td>
       </tr>
        <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Tel</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.phone}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Tel</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.phone}</td>
       </tr>
       <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Service</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.service.titre}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Service</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.service.titre}</td>
       </tr> 
        <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Adresse</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.street}, ${data.zipcode} ${data.city}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Adresse</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.street}, ${data.zipcode} ${data.city}</td>
       </tr>
        <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Message</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.message}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Message</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.message}</td>
       </tr>
     </table>
-    <br/>
-       <a href="${baseUrl}/de/reservation/confirm/${data.id}" 
-           style="background:#28a745;color:white;padding:12px 20px;text-decoration:none;border-radius:5px;margin-right:10px;">
-           ${t.confirmBtn}
-        </a>
-
-        <a href="${baseUrl}/de/reservation/cancel/${data.id}" 
-           style="background:#dc3545;color:white;padding:12px 20px;text-decoration:none;border-radius:5px;">
-           ${t.cancelBtn}
-        </a>
   `;
 
   return baseTemplate(content,t);

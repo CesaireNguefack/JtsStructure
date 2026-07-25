@@ -1,5 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { ReservationStatus } from '@prisma/client';
+import * as fs from "fs";
+import * as path from "path";
 import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
@@ -10,13 +12,47 @@ export class ReservationService {
     async createReservation(data: {
         name: string, email: string, message: string, date: Date, idService: number, street: string, zipcode: string, city: string
     }) {
+        const idService = Number(data.idService);
+        await this.ensureServiceExists(idService);
+
         return this.prisma.reservation.create({
             data: {
                 ...data,
+                idService,
                 date: new Date(data.date),
                 status: ReservationStatus.PENDING
             }
         })
+    }
+
+    private async ensureServiceExists(id: number) {
+        const existingService = await this.prisma.service.findUnique({
+            where: { id },
+        });
+
+        if (existingService) return existingService;
+
+        const service = this.findServiceData(id);
+
+        if (!service) {
+            throw new Error(`Service with id ${id} not found`);
+        }
+
+        return this.prisma.service.create({
+            data: {
+                id,
+                titre: service.title,
+                description: service.description1 || service.description || service.title,
+                price: 0,
+            },
+        });
+    }
+
+    private findServiceData(id: number) {
+        const filePath = path.join(process.cwd(), "service_data", "fr.json");
+        const services = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+
+        return services.find((service: { id: number }) => service.id === id);
     }
 
     async getReservations() {

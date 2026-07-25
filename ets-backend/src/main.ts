@@ -16,8 +16,8 @@ async function bootstrap() {
     origin: [
                 'http://localhost:3000',
                 'http://51.75.65.254:3000',
-                'https://ets-structure.de',
-                'https://www.ets-structure.de'
+                'https://jts-structure.com',
+                'https://www.jts-structure.com'
               ],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
     credentials: true

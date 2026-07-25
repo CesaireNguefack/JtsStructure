@@ -24,13 +24,16 @@ export default function Navbar({ navState, showLogo }: Props) {
   // ✅ FIX ACTIVE LINK (important)
   const isActive = (path: string) => {
     if (path === "") return pathname === `/${locale}`
+    if (path === "/services") {
+      return pathname === `/${locale}/services` || pathname.startsWith(`/${locale}/service/`)
+    }
     return pathname === `/${locale}${path}`
   }
 
   const linkClass = (path: string) =>
-    `text-[13px] font-bold uppercase tracking-[0.02em] transition ${isActive(path) && !isTop
-      ? "text-blue-700"
-      : "text-black hover:text-red-700"
+    `relative py-2 text-[13px] font-bold uppercase tracking-[0.02em] transition after:absolute after:inset-x-0 after:-bottom-1 after:h-[2px] after:origin-left after:bg-[var(--foreground)] after:transition-transform after:duration-300 ${isActive(path)
+      ? "text-[var(--foreground)] after:scale-x-100"
+      : "text-black after:scale-x-0 hover:text-[var(--foreground)] hover:after:scale-x-100"
     }`
 
   // ✅ LANGUAGE SWITCH (stay on same page)
@@ -142,27 +145,27 @@ export default function Navbar({ navState, showLogo }: Props) {
             </div>
 
             <nav className="mt-2 flex flex-col items-start gap-9">
-              <MobileMenuLink href={`/${locale}`} onClick={() => setOpen(false)}>
+              <MobileMenuLink href={`/${locale}`} active={isActive("")} onClick={() => setOpen(false)}>
                 {t.navbar.home}
               </MobileMenuLink>
 
-              <MobileMenuLink href={`/${locale}/secteurs`} onClick={() => setOpen(false)}>
+              <MobileMenuLink href={`/${locale}/secteurs`} active={isActive("/secteurs")} onClick={() => setOpen(false)}>
                 {t.navbar.sectors}
               </MobileMenuLink>
 
-              <MobileMenuLink href={`/${locale}/services`} onClick={() => setOpen(false)}>
+              <MobileMenuLink href={`/${locale}/services`} active={isActive("/services")} onClick={() => setOpen(false)}>
                 {t.navbar.services}
               </MobileMenuLink>
 
-              <MobileMenuLink href={`/${locale}/realisations`} onClick={() => setOpen(false)}>
+              <MobileMenuLink href={`/${locale}/realisations`} active={isActive("/realisations")} onClick={() => setOpen(false)}>
                 {t.navbar.realisations}
               </MobileMenuLink>
 
-              <MobileMenuLink href={`/${locale}/about`} onClick={() => setOpen(false)}>
+              <MobileMenuLink href={`/${locale}/about`} active={isActive("/about")} onClick={() => setOpen(false)}>
                 {t.navbar.about}
               </MobileMenuLink>
 
-              <MobileMenuLink href={`/${locale}/contact`} onClick={() => setOpen(false)}>
+              <MobileMenuLink href={`/${locale}/contact`} active={isActive("/contact")} onClick={() => setOpen(false)}>
                 {t.navbar.contact}
               </MobileMenuLink>
             </nav>
@@ -210,10 +213,12 @@ export default function Navbar({ navState, showLogo }: Props) {
 
 function MobileMenuLink({
   href,
+  active,
   onClick,
   children,
 }: {
   href: string;
+  active?: boolean;
   onClick: () => void;
   children: React.ReactNode;
 }) {
@@ -221,7 +226,11 @@ function MobileMenuLink({
     <Link
       href={href}
       onClick={onClick}
-      className="text-[19px] font-medium uppercase leading-none tracking-[0.02em] text-slate-950 transition hover:text-red-700"
+      className={`border-l-2 pl-4 text-[19px] font-medium uppercase leading-none tracking-[0.02em] transition ${
+        active
+          ? "border-[var(--foreground)] text-[var(--foreground)]"
+          : "border-transparent text-slate-950 hover:border-[var(--foreground)] hover:text-[var(--foreground)]"
+      }`}
     >
       {children}
     </Link>

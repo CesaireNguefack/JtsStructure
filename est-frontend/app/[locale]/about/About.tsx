@@ -2,6 +2,7 @@
 
 import { getCurentLanguage } from "@/languages/getcurentlanguage";
 import { getSiteContent } from "@/lib/siteContent";
+import { Star } from "lucide-react";
 
 export default function AboutSection() {
   const locale = getCurentLanguage();
@@ -15,7 +16,7 @@ export default function AboutSection() {
             <img
               src="/images/about/team_lead.png"
               alt="Équipe EST Structure"
-              className="h-[420px] w-full rounded-lg object-cover shadow-sm"
+              className="h-[420px] w-full object-cover shadow-sm"
             />
           </div>
 
@@ -30,25 +31,13 @@ export default function AboutSection() {
               {content.about.introFooter}
             </p>
 
-            <div className="mt-8 rounded-lg bg-slate-950 p-6 text-white">
+            <div className="mt-8 bg-slate-950 p-6 text-white">
               <h2 className="text-2xl font-bold">{content.about.missionTitle}</h2>
               <div className="mt-4 space-y-4 text-sm leading-6 text-slate-200">
                 {content.about.missionText.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
-            </div>
-
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              {content.about.blocks.map(([title, text]) => (
-                <article
-                  key={title}
-                  className="rounded-lg border border-slate-200 bg-slate-50 p-5"
-                >
-                  <h2 className="text-base font-bold text-slate-900">{title}</h2>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">{text}</p>
-                </article>
-              ))}
             </div>
           </div>
         </div>
@@ -59,21 +48,17 @@ export default function AboutSection() {
           </h2>
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             {content.about.values.map(([title, text]) => (
-              <article key={title} className="rounded-lg border border-slate-200 bg-slate-50 p-6">
-                <h3 className="text-xl font-bold text-slate-900">{title}</h3>
+              <article key={title} className="border border-slate-200 bg-slate-50 p-6">
+                <div className="flex items-start gap-3">
+                  <Star
+                    className="mt-1 h-5 w-5 shrink-0 text-[var(--foreground)]"
+                    fill="currentColor"
+                    strokeWidth={1.8}
+                  />
+                  <h3 className="text-xl font-bold text-slate-900">{title}</h3>
+                </div>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{text}</p>
               </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="mt-14 rounded-lg bg-slate-950 p-6 text-white md:p-8">
-          <h2 className="text-2xl font-bold">{content.resources.title}</h2>
-          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {content.resources.items.map((item) => (
-              <div key={item} className="rounded border border-white/15 bg-white/5 px-4 py-3 text-sm">
-                {item}
-              </div>
             ))}
           </div>
         </section>

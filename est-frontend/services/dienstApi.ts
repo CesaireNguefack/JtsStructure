@@ -1,5 +1,15 @@
 export const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001"
 
+const getApiBaseUrls = () => {
+  const urls = [API_URL]
+
+  if (API_URL.endsWith("/api")) {
+    urls.push(API_URL.slice(0, -4))
+  }
+
+  return urls
+}
+
 export type Lang = "de" | "fr" | "en"
 
 export type Service = {
@@ -18,21 +28,24 @@ export async function getServices(lang: Lang = "de"): Promise<Service[]> {
 
   console.log("API_URL++++backend")
   console.log(API_URL)
-  try {
-    const res = await fetch(`${API_URL}/services?lang=${lang}`, {
-      cache: "no-store",
-    })
+  for (const apiBaseUrl of getApiBaseUrls()) {
+    try {
+      const res = await fetch(`${apiBaseUrl}/services?lang=${lang}`, {
+        cache: "no-store",
+      })
 
-    if (!res.ok) {
-      throw new Error("Failed to fetch services")
+      if (!res.ok) {
+        throw new Error("Failed to fetch services")
+      }
+
+      const data: Service[] = await res.json()
+      return data
+    } catch (error) {
+      console.error(`getServices error with ${apiBaseUrl}:`, error)
     }
-
-    const data: Service[] = await res.json()
-    return data
-  } catch (error) {
-    console.error("getServices error:", error)
-    return []
   }
+
+  return []
 }
 
 
@@ -95,22 +108,25 @@ export async function getServiceById(
   id: number,
   lang: Lang = "de"
 ): Promise<Service | null> {
-  try {
-    const res = await fetch(
-      `${API_URL}/services/${id}?lang=${lang}`,
-      { cache: "no-store" }
-    )
+  for (const apiBaseUrl of getApiBaseUrls()) {
+    try {
+      const res = await fetch(
+        `${apiBaseUrl}/services/${id}?lang=${lang}`,
+        { cache: "no-store" }
+      )
 
-    if (!res.ok) {
-      throw new Error("Failed to fetch service")
+      if (!res.ok) {
+        throw new Error("Failed to fetch service")
+      }
+
+      const data: Service = await res.json()
+      return data
+    } catch (error) {
+      console.error(`getServiceById error with ${apiBaseUrl}:`, error)
     }
-
-    const data: Service = await res.json()
-    return data
-  } catch (error) {
-    console.error("getServiceById error:", error)
-    return null
   }
+
+  return null
 }
 
 

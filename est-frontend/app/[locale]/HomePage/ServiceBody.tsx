@@ -13,6 +13,13 @@ const slugify = (text: string) =>
     .replace(/\s+/g, "-")
     .replace(/[^\w-]+/g, "");
 
+const getServiceCoverUrl = (cover?: string) => {
+  if (!cover) return "/images/appointment0.png";
+  if (cover.startsWith("http") || cover.startsWith("/images")) return cover;
+  if (cover.startsWith("/")) return `${API_URL}${cover}`;
+  return `${API_URL}/${cover}`;
+};
+
 
 export default function ServiceBody({ services }: { services: Service[] }) {
   const pathname = usePathname();
@@ -60,9 +67,7 @@ export default function ServiceBody({ services }: { services: Service[] }) {
                     {/* image */}
                     <div className="overflow-hidden">
                       <img
-                        src={service.cover
-                          ? `${API_URL}/${service.cover}`
-                          : "/images/appointment0.png"}
+                        src={getServiceCoverUrl(service.cover)}
                         alt={service.title}
                         className="w-full h-52 object-cover transition duration-500 group-hover:scale-110"
                       />

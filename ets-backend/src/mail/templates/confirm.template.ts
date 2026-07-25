@@ -5,24 +5,24 @@ export function confirmTemplate(data: any) {
   const t = getLang(data.lang);
 
   const content = `
-    <h2>${t.confirmed}</h2>
+    <h2 style="margin:0 0 18px; color:#0b2545; font-size:24px; line-height:1.25;">${t.confirmed}</h2>
 
     <p>${t.greeting} <strong>${data.name}</strong>,</p>
 
     <p>${t.confirmed_body}</p>
 
-    <table width="100%" style="border-collapse:collapse; margin-top:20px;">
+    <table width="100%" style="border-collapse:collapse; margin-top:20px; border:1px solid #d8e2eb;">
       <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Service</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.service.titre}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Service</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.service.titre}</td>
       </tr>
       <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Adresse</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.street}, ${data.zipcode} ${data.city}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Adresse</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.street}, ${data.zipcode} ${data.city}</td>
       </tr>
       <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Date</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.date}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Date</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.date}</td>
       </tr>
     </table>
     <br/>
@@ -44,18 +44,18 @@ export function reservationTemplate(data: any) {
 
     <p>${t.received}</p>
     
-    <table width="100%" style="border-collapse:collapse; margin-top:20px;">
+    <table width="100%" style="border-collapse:collapse; margin-top:20px; border:1px solid #d8e2eb;">
       <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Service</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.service.titre}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Service</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.service.titre}</td>
       </tr>
       <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Adresse</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.street}, ${data.zipcode} ${data.city}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Adresse</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.street}, ${data.zipcode} ${data.city}</td>
       </tr>
       <tr>
-        <td style="padding:8px; border:1px solid #ddd;"><strong>Date</strong></td>
-        <td style="padding:8px; border:1px solid #ddd;">${data.date}</td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb; background:#f4f7fa; color:#0b2545;"><strong>Date</strong></td>
+        <td style="padding:10px 12px; border:1px solid #d8e2eb;">${data.date}</td>
       </tr>
     </table>
     <p>${t.review}</p>

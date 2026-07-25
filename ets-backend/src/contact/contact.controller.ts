@@ -8,7 +8,7 @@ export class ContactController {
 
     @Post()
     async createContact(@Body() data: any) {
-        const result=  this.contactService.createContact(data)
+        const result = await this.contactService.createContact(data)
          await this.emailService.sendContactConfirmedEmail(data);
          await this.emailService.sendAdminNotification(data);
          return result
