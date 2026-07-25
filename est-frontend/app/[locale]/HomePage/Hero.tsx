@@ -31,7 +31,7 @@ export default function Hero() {
     >
       <Image
         src={slides[slideIndex]}
-        alt="Bureau d'etudes structurelles ETS Structure"
+        alt="Bureau d'etudes structurelles JTS Structure"
         fill
         priority
         quality={95}
@@ -50,7 +50,7 @@ export default function Hero() {
             
              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white">
               <span className="inline-block   bg-slate-950/45 px-3 py-2 backdrop-blur-[2px]">
-                ETS Structure
+                JTS Structure
               </span>
             </h1>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white">

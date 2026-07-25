@@ -25,7 +25,7 @@ export class EmailService {
         if (!to) throw new Error("No recipient");
 
         return this.transporter.sendMail({
-            from: `"ETS Structure" <${process.env.MAIL_USER}>`,
+            from: `"JTS Structure" <${process.env.MAIL_USER}>`,
             to,
             subject,
             html,

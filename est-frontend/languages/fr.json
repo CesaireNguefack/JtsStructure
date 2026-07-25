@@ -28,7 +28,7 @@
   "about": {
     "quality": "Rigueur technique",
     "title": "Qui nous sommes",
-    "description": "ETS Structure est une entreprise spécialisée dans les études, calculs et expertises structurelles. Nous intervenons dès les premières hypothèses jusqu’aux notes de calcul, plans d’exécution et diagnostics d’ouvrages existants.",
+    "description": "JTS Structure est une entreprise spécialisée dans les études, calculs et expertises structurelles. Nous intervenons dès les premières hypothèses jusqu’aux notes de calcul, plans d’exécution et diagnostics d’ouvrages existants.",
     "subtitle": "Nos domaines d’intervention",
     "subdescription": "Bâtiment, ouvrages d’art, infrastructures, réhabilitation, renforcement et assistance technique pour maîtres d’ouvrage, architectes et entreprises."
   },
@@ -77,7 +77,7 @@
     "subtitle4": "Documents fournis :",
     "subtitle5": "Notes de calcul, avis, plans et rapports.",
     "subtitle6": "Accompagnement possible sur toutes les phases du projet.",
-    "footer0": "ETS Structure :",
+    "footer0": "JTS Structure :",
     "footer": "Chaque mission est chiffrée selon le périmètre, les données disponibles, les normes applicables et le niveau de détail attendu.",
     "price": "Devis",
     "detailfooter": "Nous accompagnons les projets de bâtiment, ouvrages d’art et infrastructures avec une approche rigoureuse, confidentielle et sécurisée."
@@ -169,14 +169,14 @@
   },
   "privacyPage": {
     "title": "Politique de confidentialité",
-    "intro": "ETS Structure accorde une grande importance à la protection de vos données personnelles. Vos informations sont traitées de manière confidentielle et conformément au RGPD ainsi qu'aux lois applicables en matière de protection des données.",
+    "intro": "JTS Structure accorde une grande importance à la protection de vos données personnelles. Vos informations sont traitées de manière confidentielle et conformément au RGPD ainsi qu'aux lois applicables en matière de protection des données.",
     "lastUpdate": "Dernière mise à jour : Mars 2026",
     "sections": [
       {
         "title": "Responsable du traitement",
         "content": [
           "Emerant dass Kuietche soh",
-          "ETS Structure",
+          "JTS Structure",
           "Heinrich-Büssing-Ring 22",
           "38102 Braunschweig",
           "Téléphone : 0176 48082448",
@@ -248,7 +248,7 @@
         "title": "Informations conformément au §5 TMG",
         "content": [
           "Propriétaire : Emerant dass Kuietche soh",
-          "ETS Structure"
+          "JTS Structure"
         ]
       },
       {
@@ -317,7 +317,7 @@
       {
         "title": "Champ d'application",
         "content": [
-          "Les présentes conditions générales s'appliquent à tous les contrats d’études, de calculs, d’expertises et d’assistance technique entre ETS Structure et le client.",
+          "Les présentes conditions générales s'appliquent à tous les contrats d’études, de calculs, d’expertises et d’assistance technique entre JTS Structure et le client.",
           "Cela inclut notamment les études structurelles de bâtiment, ouvrages d’art, infrastructures, diagnostics, notes de calcul, rapports et avis techniques.",
           "Toute condition différente doit être confirmée par écrit."
         ]
@@ -328,7 +328,7 @@
           "L'étendue des prestations est définie dans l'offre, la mission ou la commande.",
           "Le client met à disposition les plans, hypothèses, diagnostics existants, contraintes de site et informations nécessaires à l’étude.",
           "Les données transmises doivent être complètes, lisibles et à jour.",
-          "ETS Structure utilise des méthodes et outils professionnels adaptés à la mission."
+          "JTS Structure utilise des méthodes et outils professionnels adaptés à la mission."
         ]
       },
       {
@@ -355,8 +355,8 @@
         "title": "Défauts et réclamations",
         "content": [
           "Les défauts visibles doivent être signalés immédiatement.",
-          "ETS Structure analysera la demande et corrigera les défauts avérés dans un délai raisonnable.",
-          "La correction est gratuite lorsqu’elle concerne une erreur imputable à ETS Structure.",
+          "JTS Structure analysera la demande et corrigera les défauts avérés dans un délai raisonnable.",
+          "La correction est gratuite lorsqu’elle concerne une erreur imputable à JTS Structure.",
           "Si la correction échoue, une réduction de prix ou une résiliation peut être étudiée."
         ]
       },
@@ -388,9 +388,9 @@
     ]
   },
   "aboutSection": {
-    "title": "À propos de ETS Structure",
+    "title": "À propos de JTS Structure",
     "subtitle": "Études, calculs et expertises structurelles",
-    "text1": "ETS Structure accompagne les maîtres d’ouvrage, architectes, entreprises et partenaires techniques dans la conception, la vérification et l’analyse des structures.",
+    "text1": "JTS Structure accompagne les maîtres d’ouvrage, architectes, entreprises et partenaires techniques dans la conception, la vérification et l’analyse des structures.",
     "text2": "Nous intervenons sur le bâtiment, les ouvrages d’art et les infrastructures, avec des missions de dimensionnement, diagnostic, renforcement, expertise et assistance technique.",
     "text3": "Notre priorité est de produire des livrables fiables, exploitables et sécurisés, dans le respect des contraintes d’intégrité, de disponibilité, de confidentialité et de sécurité des données."
   }

@@ -82,7 +82,7 @@
   "about": {
     "quality": "Technische Sorgfalt",
     "title": "Wer wir sind",
-    "description": "ETS Structure ist spezialisiert auf Tragwerksplanung, statische Berechnungen und Gutachten. Wir begleiten Projekte von den ersten Annahmen bis zu Berechnungen, Ausführungsunterlagen und Diagnosen bestehender Bauwerke.",
+    "description": "JTS Structure ist spezialisiert auf Tragwerksplanung, statische Berechnungen und Gutachten. Wir begleiten Projekte von den ersten Annahmen bis zu Berechnungen, Ausführungsunterlagen und Diagnosen bestehender Bauwerke.",
     "subtitle": "Unsere Einsatzbereiche",
     "subdescription": "Hochbau, Ingenieurbau, Infrastruktur, Sanierung, Verstärkung und technische Beratung für Bauherren, Architekten und Unternehmen."
   },
@@ -99,7 +99,7 @@
     "subtitle4": "Lieferumfang:",
     "subtitle5": "Berechnungen, Stellungnahmen, Plane und Berichte.",
     "subtitle6": "Begleitung in allen Projektphasen moglich.",
-    "footer0": "ETS Structure:",
+    "footer0": "JTS Structure:",
     "footer": "Jede Mission wird nach Umfang, vorhandenen Daten, geltenden Normen und gewunschtem Detaillierungsgrad angeboten."
   },
   "teamsection": {
@@ -170,13 +170,13 @@
   },
   "privacyPage": {
     "title": "Datenschutzerklärung",
-    "intro": "ETS Structure nimmt den Schutz Ihrer personenbezogenen Daten sehr ernst. Ihre Daten werden vertraulich und gemaß DSGVO sowie BDSG verarbeitet.",
+    "intro": "JTS Structure nimmt den Schutz Ihrer personenbezogenen Daten sehr ernst. Ihre Daten werden vertraulich und gemaß DSGVO sowie BDSG verarbeitet.",
     "sections": [
       {
         "title": "1. Verantwortlicher",
         "content": [
           "Emerant dass Kuietche soh",
-          "ETS Structure",
+          "JTS Structure",
           "Heinrich-Büssing-Ring 22",
           "38102 Braunschweig",
           "Telefon: 0176 48082448",
@@ -249,7 +249,7 @@
         "title": "Angaben gemäß § 5 TMG",
         "content": [
           "Inhaber: Emerant dass Kuietche soh",
-          "ETS Structure"
+          "JTS Structure"
         ]
       },
       {
@@ -318,7 +318,7 @@
       {
         "title": "Geltungsbereich",
         "content": [
-          "Diese AGB gelten fur alle Vertrage uber Tragwerksplanung, Berechnungen, Gutachten und technische Beratung zwischen ETS Structure und dem Kunden.",
+          "Diese AGB gelten fur alle Vertrage uber Tragwerksplanung, Berechnungen, Gutachten und technische Beratung zwischen JTS Structure und dem Kunden.",
           "Dies umfasst Hochbau, Ingenieurbauwerke, Infrastruktur, Diagnostik, Berechnungen, Berichte und technische Stellungnahmen.",
           "Abweichende Bedingungen bedürfen der Schriftform."
         ]
@@ -329,7 +329,7 @@
           "Der Leistungsumfang ergibt sich aus Angebot, Auftrag oder Bestellung.",
           "Der Kunde stellt Plane, Annahmen, vorhandene Gutachten, Standortbedingungen und alle erforderlichen Informationen bereit.",
           "Die bereitgestellten Daten mussen vollstandig, lesbar und aktuell sein.",
-          "ETS Structure verwendet professionelle Methoden und Werkzeuge passend zur Mission."
+          "JTS Structure verwendet professionelle Methoden und Werkzeuge passend zur Mission."
         ]
       },
       {
@@ -356,8 +356,8 @@
         "title": "Mängel und Reklamationen",
         "content": [
           "Sichtbare Mängel müssen sofort gemeldet werden.",
-          "ETS Structure pruft die Meldung und behebt nachgewiesene Mangel innerhalb einer angemessenen Frist.",
-          "Die Nachbesserung erfolgt kostenlos, wenn der Mangel ETS Structure zuzurechnen ist.",
+          "JTS Structure pruft die Meldung und behebt nachgewiesene Mangel innerhalb einer angemessenen Frist.",
+          "Die Nachbesserung erfolgt kostenlos, wenn der Mangel JTS Structure zuzurechnen ist.",
           "Bei erfolgloser Nachbesserung konnen Preisminderung oder Rucktritt gepruft werden."
         ]
       },
@@ -389,9 +389,9 @@
     ]
   },
   "aboutSection": {
-    "title": "Über ETS Structure",
+    "title": "Über JTS Structure",
     "subtitle": "Studien, Berechnungen und Tragwerksgutachten",
-    "text1": "ETS Structure begleitet Bauherren, Architekten, Unternehmen und technische Partner bei Planung, Prufung und Analyse von Tragwerken.",
+    "text1": "JTS Structure begleitet Bauherren, Architekten, Unternehmen und technische Partner bei Planung, Prufung und Analyse von Tragwerken.",
     "text2": "Wir arbeiten an Hochbau, Ingenieurbauwerken und Infrastruktur mit Bemessung, Diagnostik, Verstarkung, Gutachten und technischer Beratung.",
     "text3": "Unser Ziel sind zuverlassige, nutzbare und sichere Unterlagen unter Beachtung von Integritat, Verfugbarkeit, Vertraulichkeit und Datensicherheit."
   }

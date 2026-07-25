@@ -81,7 +81,7 @@
   "about": {
     "quality": "Technical rigor",
     "title": "Who we are",
-    "description": "ETS Structure specializes in structural studies, calculations and assessments. We support projects from early assumptions through calculation notes, execution documents and diagnostics of existing structures.",
+    "description": "JTS Structure specializes in structural studies, calculations and assessments. We support projects from early assumptions through calculation notes, execution documents and diagnostics of existing structures.",
     "subtitle": "Our fields of work",
     "subdescription": "Buildings, bridges, infrastructure, rehabilitation, strengthening and technical assistance for clients, architects and contractors."
   },
@@ -96,7 +96,7 @@
     "subtitle4": "Deliverables:",
     "subtitle5": "Calculations, opinions, drawings and reports.",
     "subtitle6": "Support available across all project phases.",
-    "footer0": "ETS Structure:",
+    "footer0": "JTS Structure:",
     "price": "Quote",
     "detailfooter": "We support building, bridge and infrastructure projects with a rigorous, confidential and secure approach.",
     "footer": "Each assignment is priced according to scope, available data, applicable standards and the expected level of detail."
@@ -169,14 +169,14 @@
   },
   "privacyPage": {
     "title": "Privacy Policy",
-    "intro": "ETS Structure takes the protection of your personal data very seriously. Your data is processed confidentially and in accordance with the GDPR and applicable data protection laws.",
+    "intro": "JTS Structure takes the protection of your personal data very seriously. Your data is processed confidentially and in accordance with the GDPR and applicable data protection laws.",
     "lastUpdate": "Last update: March 2026",
     "sections": [
       {
         "title": "Data Controller",
         "content": [
           "Emerant dass Kuietche soh",
-          "ETS Structure",
+          "JTS Structure",
           "Heinrich-Büssing-Ring 22",
           "38102 Braunschweig",
           "Phone: 0176 48082448",
@@ -248,7 +248,7 @@
         "title": "Information according to §5 TMG",
         "content": [
           "Owner: Emerant dass Kuietche soh",
-          "ETS Structure"
+          "JTS Structure"
         ]
       },
       {
@@ -317,7 +317,7 @@
       {
         "title": "Scope",
         "content": [
-          "These Terms and Conditions apply to all contracts for structural studies, calculations, assessments and technical assistance between ETS Structure and the customer.",
+          "These Terms and Conditions apply to all contracts for structural studies, calculations, assessments and technical assistance between JTS Structure and the customer.",
           "This includes building structural design, bridges, infrastructure, diagnostics, calculation notes, reports and technical opinions.",
           "Any deviating conditions require written confirmation."
         ]
@@ -328,7 +328,7 @@
           "The scope of services results from the offer, assignment or order.",
           "The customer provides drawings, assumptions, existing diagnostics, site constraints and all information needed for the study.",
           "Provided data must be complete, legible and up to date.",
-          "ETS Structure uses professional methods and tools adapted to the assignment."
+          "JTS Structure uses professional methods and tools adapted to the assignment."
         ]
       },
       {
@@ -355,8 +355,8 @@
         "title": "Defects and Complaints",
         "content": [
           "Visible defects must be reported immediately.",
-          "ETS Structure reviews the request and remedies proven defects within a reasonable period.",
-          "Correction is free of charge when the defect is attributable to ETS Structure.",
+          "JTS Structure reviews the request and remedies proven defects within a reasonable period.",
+          "Correction is free of charge when the defect is attributable to JTS Structure.",
           "If correction fails, price reduction or contract withdrawal may be considered."
         ]
       },
@@ -388,9 +388,9 @@
     ]
   },
   "aboutSection": {
-    "title": "About ETS Structure",
+    "title": "About JTS Structure",
     "subtitle": "Structural studies, calculations and assessments",
-    "text1": "ETS Structure supports clients, architects, contractors and technical partners in the design, verification and analysis of structures.",
+    "text1": "JTS Structure supports clients, architects, contractors and technical partners in the design, verification and analysis of structures.",
     "text2": "We work on buildings, bridges and infrastructure through sizing, diagnostics, strengthening, assessments and technical assistance.",
     "text3": "Our priority is to deliver reliable, usable and secure documents while respecting integrity, availability, confidentiality and data security requirements."
   }

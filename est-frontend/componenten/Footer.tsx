@@ -29,7 +29,7 @@ export default function Footer() {
             <Link href={`/${locale}`} className="relative mb-4 block h-20 w-44 bg-white/75">
               <Image
                 src="/images/ets-structure-logo.png"
-                alt="ETS Structure Consulting Engineers"
+                alt="JTS Structure Consulting Engineers"
                 fill
                 sizes="176px"
                 className="object-contain p-2"
@@ -186,7 +186,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <p>© {new Date().getFullYear()} ETS Structure. {t.footer.sublime}<Link href="https://sublimeprod.com" target="_blank" rel="noopener noreferrer" >Sublimeprod</Link> </p>
+          <p>© {new Date().getFullYear()} JTS Structure. {t.footer.sublime}<Link href="https://sublimeprod.com" target="_blank" rel="noopener noreferrer" >Sublimeprod</Link> </p>
 
         </div>
       </div>

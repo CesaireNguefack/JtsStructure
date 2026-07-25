@@ -39,7 +39,7 @@ export const translations: Record<Lang, Translation> = {
         adminSubject: "Nouvelle demande d’étude",
         salutation: "Cordialement",
         thanks: "Merci pour votre confiance.",
-        team: "L’équipe ETS Structure",
+        team: "L’équipe JTS Structure",
         newReservation: "Nouvelle demande depuis le site web",
         newContact: "Nouveau message depuis le site web"
     },
@@ -59,7 +59,7 @@ export const translations: Record<Lang, Translation> = {
         adminSubject: "New project request",
         salutation: "Best regards",
         thanks: "Thank you for your trust.",
-        team: "ETS Structure Team",
+        team: "JTS Structure Team",
         newReservation: "New project request from the website",
         newContact: "New message from the website"
     },
@@ -79,7 +79,7 @@ export const translations: Record<Lang, Translation> = {
         adminSubject: "Neue Projektanfrage",
         salutation: "Mit freundlichen Grüßen",
         thanks: "Vielen Dank für Ihr Vertrauen.",
-        team: "Ihr ETS Structure Team",
+        team: "Ihr JTS Structure Team",
         newReservation: "Neue Projektanfrage von der Website",
         newContact: "Neue Nachricht von der Website"
     },

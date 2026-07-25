@@ -58,7 +58,7 @@ const siteContent = {
       eyebrow: "Secteurs",
       title: "Domaines d'intervention",
       intro:
-        "ETS Structure accompagne les projets de batiment, d'ouvrages d'art, d'infrastructures et d'etudes techniques.",
+        "JTS Structure accompagne les projets de batiment, d'ouvrages d'art, d'infrastructures et d'etudes techniques.",
       items: [
         ["Batiments residentiels", "Villas, immeubles residentiels, bureaux, hotels, centres commerciaux, hopitaux et ecoles."],
         ["Batiments commerciaux", "Structures porteuses, transformations, extensions et verification de capacite."],
@@ -155,7 +155,7 @@ const siteContent = {
     sectors: {
       eyebrow: "Sectors",
       title: "Fields of intervention",
-      intro: "ETS Structure supports building, civil engineering, infrastructure and technical study projects.",
+      intro: "JTS Structure supports building, civil engineering, infrastructure and technical study projects.",
       items: [
         ["Residential buildings", "Villas, apartment buildings, offices, hotels, shopping centers, hospitals and schools."],
         ["Commercial buildings", "Load-bearing structures, transformations, extensions and capacity checks."],
@@ -242,7 +242,7 @@ const siteContent = {
     sectors: {
       eyebrow: "Sektoren",
       title: "Einsatzbereiche",
-      intro: "ETS Structure begleitet Hochbau-, Ingenieurbau-, Infrastruktur- und technische Studienprojekte.",
+      intro: "JTS Structure begleitet Hochbau-, Ingenieurbau-, Infrastruktur- und technische Studienprojekte.",
       items: [
         ["Wohngebaeude", "Villen, Mehrfamilienhaeuser, Bueros, Hotels, Einkaufszentren, Krankenhaeuser und Schulen."],
         ["Gewerbebauten", "Tragwerke, Umbauten, Erweiterungen und Tragfaehigkeitspruefungen."],
