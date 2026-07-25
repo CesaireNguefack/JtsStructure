@@ -18,14 +18,17 @@ export default function Demo() {
             {/* Content */}
             <div className="relative z-10 text-center text-white max-w-3xl px-6">
 
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                   {t.demosection.title}
-                </h2>
+                <div className="mb-6 flex items-center justify-center gap-4">
+                    <span className="h-px w-14 bg-white/75" />
+                    <h2 className="text-4xl font-bold md:text-5xl">
+                       {t.demosection.title}
+                    </h2>
+                    <span className="h-px w-14 bg-white/75" />
+                </div>
 
                 <p className="text-lg md:text-xl mb-8">
                     {t.demosection.subtitle}
                 </p>
-                 <ButtonContact />  
             </div>
 
         </section>

@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
+import Image from "next/image"
 import { useTranslations } from "@/lib/TranslationProvider"
 
 type Props = {
@@ -67,7 +68,7 @@ export default function Navbar({ navState, showLogo }: Props) {
             : "h-full w-[calc(100%-2rem)] max-w-[1804px]"
           }`}
       >
-        {isTop ? <TopLogo /> : <Logo2 show={showLogo} />}
+        {isTop ? <TopLogo href={`/${locale}`} /> : <Logo2 show={showLogo} href={`/${locale}`} />}
 
 
         {/* RIGHT BLOCK → tout à droite */}
@@ -227,48 +228,50 @@ function MobileMenuLink({
   );
 }
 
-export function Logo({ className = "" }) {
+export function Logo({ className = "", href = "/" }) {
   return (
-    <div className={`inline-flex items-center gap-3 ${className}`}>
-      <span className="flex h-12 w-12 items-center justify-center rounded bg-slate-950 text-sm font-bold text-white shadow">
-        ETS
-      </span>
-      <div className="leading-tight">
-        <p className="text-xl font-bold text-white md:text-2xl">ETS Structure</p>
-        <p className="text-xs font-medium uppercase tracking-[0.16em] text-sky-100">
-          Ingénierie structurelle
-        </p>
-      </div>
-    </div>
+    <Link href={href} className={`relative block h-14 w-36 md:h-16 md:w-44 ${className}`}>
+      <Image
+        src="/images/ets-structure-logo.png"
+        alt="ETS Structure Consulting Engineers"
+        fill
+        sizes="176px"
+        className="object-contain"
+        priority
+      />
+    </Link>
   );
 }
 
 
-export function TopLogo({ className = "" }) {
+export function TopLogo({ className = "", href = "/" }) {
   return (
-    <div className={`inline-flex h-full items-center gap-4 ${className}`}>
-      <div className="flex h-14 w-20 items-center justify-center bg-red-700 text-2xl font-black tracking-[-0.12em] text-white md:h-16 md:w-24">
-        EST
-      </div>
-      <div className="h-16 w-px bg-slate-400 md:h-20" />
-      <p className="hidden text-[15px] font-black uppercase tracking-[0.08em] text-slate-950 sm:block md:text-[17px]">
-        ETS Structure
-      </p>
-    </div>
+    <Link href={href} className={`relative block h-16 w-40 md:h-20 md:w-52 ${className}`}>
+      <Image
+        src="/images/ets-structure-logo.png"
+        alt="ETS Structure Consulting Engineers"
+        fill
+        sizes="208px"
+        className="object-contain"
+        priority
+      />
+    </Link>
   );
 }
 
 
-export function Logo2({ show = true, className = "" }) {
+export function Logo2({ show = true, className = "", href = "/" }) {
   if (!show) return null;
   return (
-    <div className={`inline-flex items-center gap-2 ${className}`}>
-      <span className="flex h-9 w-9 items-center justify-center rounded bg-slate-950 text-xs font-bold text-white">
-        ETS
-      </span>
-      <span className="text-base font-bold text-slate-900 md:text-lg">
-        ETS Structure
-      </span>
-    </div>
+    <Link href={href} className={`relative block h-11 w-32 md:h-14 md:w-40 ${className}`}>
+      <Image
+        src="/images/ets-structure-logo.png"
+        alt="ETS Structure Consulting Engineers"
+        fill
+        sizes="160px"
+        className="object-contain"
+        priority
+      />
+    </Link>
   );
 }

@@ -3,8 +3,6 @@
 import { useEffect, useState } from "react"
 import ContactSection from "@/app/[locale]/HomePage/Contact"
 import Image from "next/image"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { useTranslations } from "@/lib/TranslationProvider"
 
 const slides = [
@@ -17,8 +15,6 @@ const slides = [
 
 export default function Hero() {
   const t = useTranslations()
-  const pathname = usePathname()
-  const locale = pathname.split("/")[1] || "fr"
   const [slideIndex, setSlideIndex] = useState(0)
 
   useEffect(() => {
@@ -68,12 +64,6 @@ export default function Hero() {
                 {t.hero.subtitle}
               </span>
             </p>
-            <Link
-              href={`/${locale}/evaluation`}
-              className="mt-8 inline-flex rounded bg-white px-5 py-3 text-sm font-bold text-slate-950 shadow-lg transition hover:bg-sky-100"
-            >
-              {t.contact.contactbtn}
-            </Link>
           </div>
 
           {/* RIGHT */}

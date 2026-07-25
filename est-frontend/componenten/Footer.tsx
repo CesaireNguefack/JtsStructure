@@ -1,6 +1,7 @@
 "use client"
 
 import { useTranslations } from "@/lib/TranslationProvider";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation"
 import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
@@ -25,7 +26,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <h2 className="text-xl font-bold mb-4">ETS Structure</h2>
+            <Link href={`/${locale}`} className="relative mb-4 block h-20 w-44 bg-white/75">
+              <Image
+                src="/images/ets-structure-logo.png"
+                alt="ETS Structure Consulting Engineers"
+                fill
+                sizes="176px"
+                className="object-contain p-2"
+              />
+            </Link>
             <p className="text-sm leading-relaxed">
               {t.footer.title}
             </p>

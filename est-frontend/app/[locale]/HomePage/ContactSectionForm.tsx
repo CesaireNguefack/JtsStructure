@@ -160,7 +160,7 @@ export default function ContactFormBody() {
             onChange={handleChange}
             type="text"
             maxLength={70}
-            className="w-full border border-gray-300 rounded-lg px-4 py-3"
+            className="w-full border border-gray-300 px-4 py-3"
           />
         </div>
 
@@ -173,7 +173,7 @@ export default function ContactFormBody() {
             onChange={handleChange}
             type="email"
             maxLength={70}
-            className="w-full border border-gray-300 rounded-lg px-4 py-3"
+            className="w-full border border-gray-300 px-4 py-3"
           />
         </div>
 
@@ -186,7 +186,7 @@ export default function ContactFormBody() {
             onChange={handleChange}
             type="tel"
             maxLength={8}
-            className="w-full border border-gray-300 rounded-lg px-4 py-3"
+            className="w-full border border-gray-300 px-4 py-3"
           />
         </div>
 
@@ -199,7 +199,7 @@ export default function ContactFormBody() {
             onChange={handleChange}
             rows={4}
             maxLength={500}
-            className="w-full border border-gray-300 rounded-lg px-4 py-3 resize-none"
+            className="w-full resize-none border border-gray-300 px-4 py-3"
           />
         </div>
 
@@ -242,7 +242,7 @@ export function ContactCalendar() {
   return (
     <div className="w-full max-w-xl mx-auto md:mx-0 px-4 sm:px-0">
 
-      <div className="w-full max-w-md mx-auto md:mx-0 bg-white p-6 rounded-2xl shadow-xl">
+      <div className="w-full max-w-md mx-auto md:mx-0 bg-white p-6 shadow-xl">
          <IconCardForm  onClick={handleWhatsAppClick}
         icon={<FaWhatsapp className="text-green-500 text-xl" />}
     title={
@@ -295,7 +295,7 @@ export function IconCardForm({ icon, title, onClick }: Props) {
         {/* ICON */}
         <div 
           className="w-10 h-10 md:w-12 md:h-12 min-w-[2.5rem] md:min-w-[3rem]
-          flex items-center justify-center rounded-full
+          flex items-center justify-center
           bg-gray-100 text-[var(--foreground2)] shadow
           group-hover:bg-[var(--foreground2)] group-hover:text-white transition duration-300"
         >

@@ -1,8 +1,7 @@
 "use client";
 
 import Navbar from "@/componenten/Navbar";
-import SplitSection from "@/componenten/SplitSection";
-import { ContactCalendar } from "../../HomePage/ContactSectionForm";
+import HeaderPages from "@/componenten/headerPages";
 import { useState, useEffect } from "react";
 import { ButtonSubmit } from "@/componenten/Cards/KontaktButton";
 import { useParams } from "next/navigation";
@@ -24,18 +23,18 @@ import { useTranslations } from "@/lib/TranslationProvider"
 export default function ReservationPage() {
   return (
     <main className="bg-white">
-      <Navbar navState="gradient" showLogo={true} /> <br /> <br />
-      <div> <br /> <br /></div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        <div>
-          <ReservationForm />
-          <br /> <br />
-        </div>
+      <HeaderPages
+        title="evaluationPageHeaderInfos.label"
+        headerTitle="evaluationPageHeaderInfos.title"
+        subtitle="evaluationPageHeaderInfos.subtitle"
+        image="appointment1.png"
+      />
 
-        <div className="max-h-[600px] overflow-y-auto">
-          <AvailabilityCalendar />
+      <section className="px-6 py-16">
+        <div className="mx-auto max-w-2xl">
+          <ReservationForm />
         </div>
-      </div>
+      </section>
     </main>
   );
 }
@@ -197,22 +196,22 @@ export function ReservationForm() {
       </h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        <input name="name" value={form.name} onChange={handleChange} placeholder={t.contact.name} className="w-full border p-3 rounded" />
+        <input name="name" value={form.name} onChange={handleChange} placeholder={t.contact.name} className="w-full border p-3" />
 
-        <input name="email" value={form.email} onChange={handleChange} placeholder="Email" type="email" className="w-full border p-3 rounded" />
+        <input name="email" value={form.email} onChange={handleChange} placeholder="Email" type="email" className="w-full border p-3" />
 
-        <input name="phone" value={form.phone} onChange={handleChange} placeholder={t.contact.phone} className="w-full border p-3 rounded" />
+        <input name="phone" value={form.phone} onChange={handleChange} placeholder={t.contact.phone} className="w-full border p-3" />
 
-        <input name="street" value={form.street} onChange={handleChange} placeholder={t.contact.street} className="w-full border p-3 rounded" />
+        <input name="street" value={form.street} onChange={handleChange} placeholder={t.contact.street} className="w-full border p-3" />
 
         <div className="flex gap-2">
-          <input name="zipcode" value={form.zipcode} onChange={handleChange} placeholder={t.contact.postcode} className="w-1/2 border p-3 rounded" />
-          <input name="city" value={form.city} onChange={handleChange} placeholder={t.contact.city} className="w-1/2 border p-3 rounded" />
+          <input name="zipcode" value={form.zipcode} onChange={handleChange} placeholder={t.contact.postcode} className="w-1/2 border p-3" />
+          <input name="city" value={form.city} onChange={handleChange} placeholder={t.contact.city} className="w-1/2 border p-3" />
         </div>
 
         <div className="flex gap-2">
-          <input type="date" name="date" value={form.date} onChange={handleChange} className="w-1/2 border p-3 rounded" />
-          <input type="time" name="time" value={form.time} onChange={handleChange} className="w-1/2 border p-3 rounded" />
+          <input type="date" name="date" value={form.date} onChange={handleChange} className="w-1/2 border p-3" />
+          <input type="time" name="time" value={form.time} onChange={handleChange} className="w-1/2 border p-3" />
         </div>
 
         <textarea
@@ -220,7 +219,7 @@ export function ReservationForm() {
           value={form.message}
           onChange={handleChange}
           placeholder="Message"
-          className="w-full border p-3 rounded"
+          className="w-full border p-3"
         />
 
         {error && <p className="text-red-500">{error}</p>}
@@ -238,8 +237,6 @@ export function ReservationForm() {
   const params = useParams();
   const slug = params.slug as string;
   const locale = getCurentLanguage();
-
-  const [availabilities, setAvailabilities] = useState<Availability[]>([]);
 
   const [form, setForm] = useState({
     idService: 0,
@@ -270,11 +267,6 @@ export function ReservationForm() {
 
       const serviceData = await getServiceById(id, locale as Lang);
       setService(serviceData);
-
-      const availabilityData = await getAvailabilitiesByType(
-        AvailabilityType.AVAILABLE
-      );
-      setAvailabilities(availabilityData);
     }
 
     load();
@@ -293,17 +285,6 @@ export function ReservationForm() {
   if (!service) {
     return <div className="p-20 text-center">Service not found</div>;
   }
-
-  // ================= UTILS =================
-  const isAvailable = (dateISO: string) => {
-    const selected = new Date(dateISO);
-
-    return availabilities.some((a) => {
-      const start = new Date(a.start);
-      const end = new Date(a.end);
-      return selected >= start && selected <= end;
-    });
-  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -398,13 +379,6 @@ export function ReservationForm() {
       `${form.date}T${form.time}`
     ).toISOString();
 
-    if (!isAvailable(isoDate)) {
-      setError(
-        t.contact.notavailable
-      );
-      return;
-    }
-
     const payload = {
       idService: Number(service.id),
       name: form.name,
@@ -458,25 +432,25 @@ export function ReservationForm() {
       </h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        <input name="name" value={form.name} onChange={handleChange} placeholder={t.contact.name} className="w-full border p-3 rounded" />
+        <input name="name" value={form.name} onChange={handleChange} placeholder={t.contact.name} className="w-full appearance-none rounded-none border p-3" />
 
-        <input name="email" value={form.email} onChange={handleChange} placeholder="Email" type="email" className="w-full border p-3 rounded" />
+        <input name="email" value={form.email} onChange={handleChange} placeholder="Email" type="email" className="w-full appearance-none rounded-none border p-3" />
 
-        <input name="phone" value={form.phone} onChange={handleChange} placeholder={t.contact.phone} className="w-full border p-3 rounded" />
+        <input name="phone" value={form.phone} onChange={handleChange} placeholder={t.contact.phone} className="w-full appearance-none rounded-none border p-3" />
 
-        <input name="street" value={form.street} onChange={handleChange} placeholder={t.contact.street} className="w-full border p-3 rounded" />
+        <input name="street" value={form.street} onChange={handleChange} placeholder={t.contact.street} className="w-full appearance-none rounded-none border p-3" />
 
         <div className="flex gap-2">
-          <input name="zipcode" value={form.zipcode} onChange={handleChange} placeholder={t.contact.postcode} className="w-1/2 border p-3 rounded" />
-          <input name="city" value={form.city} onChange={handleChange} placeholder={t.contact.city} className="w-1/2 border p-3 rounded" />
+          <input name="zipcode" value={form.zipcode} onChange={handleChange} placeholder={t.contact.postcode} className="w-1/2 appearance-none rounded-none border p-3" />
+          <input name="city" value={form.city} onChange={handleChange} placeholder={t.contact.city} className="w-1/2 appearance-none rounded-none border p-3" />
         </div>
 
         <div className="flex gap-2">
           <label htmlFor=""> {t.contact.datereservation}</label>
         </div>
         <div className="flex gap-2">
-          <input type="date" name="date" value={form.date} onChange={handleChange} className="w-1/2 border p-3 rounded" />
-          <input type="time" name="time" value={form.time} onChange={handleChange} className="w-1/2 border p-3 rounded" />
+          <input type="date" name="date" value={form.date} onChange={handleChange} className="w-1/2 appearance-none rounded-none border p-3" />
+          <input type="time" name="time" value={form.time} onChange={handleChange} className="w-1/2 appearance-none rounded-none border p-3" />
         </div>
 
         <textarea
@@ -484,7 +458,7 @@ export function ReservationForm() {
           value={form.message}
           onChange={handleChange}
           placeholder="Message"
-          className="w-full border p-3 rounded"
+          className="w-full appearance-none rounded-none border p-3"
         />
 
         {/* ✅ CHECKBOT */}

@@ -118,7 +118,6 @@ export function ServiceDescription({ service }: { service: Service }) {
                 bg-primary/10 text-primary
                 text-xs sm:text-sm
                 px-3 py-1
-                rounded-full
                 whitespace-nowrap
               "
             >
@@ -131,7 +130,6 @@ export function ServiceDescription({ service }: { service: Service }) {
       {/* PRICING */}
       <div className="
         bg-white
-        rounded-2xl
         shadow-md md:shadow-lg
         p-4 sm:p-5 md:p-6
         mb-6 md:mb-8
@@ -197,7 +195,7 @@ export function ServiceCoverImage({ service }: { service: Service }) {
 
   return (
     <div className="relative flex flex-col items-center md:items-start">
-      <div className="relative w-full max-w-[420px] aspect-square rounded-3xl overflow-hidden shadow-2xl">
+      <div className="relative w-full max-w-[420px] aspect-square overflow-hidden shadow-2xl">
         <img
           src={getFullUrl(coverImage)}
           alt={service.title}

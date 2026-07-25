@@ -10,16 +10,17 @@ export default function TeamHome(){
             >
                 <div className="max-w-6xl mx-auto px-6 text-center">
 
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        {t.teamsection.title}
-                    </h2>
+                    <div className="mb-6 flex items-center justify-center gap-4">
+                        <span className="h-px w-14 bg-white/75" />
+                        <h2 className="text-4xl font-bold md:text-5xl">
+                            {t.teamsection.title}
+                        </h2>
+                        <span className="h-px w-14 bg-white/75" />
+                    </div>
 
                     <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
                        {t.teamsection.description}
                      </p>
-                     
-                    <ButtonContact />   
-
                 </div>
             </section>
     )

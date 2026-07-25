@@ -12,10 +12,14 @@ export  default function HomePageContacSection() {
 
                 {/* TITLE */}
                 <div className="text-center mb-14 md:mb-20">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)">
-                        {t.contact.title}
-                    </h2>
-                    <p className="text-[var(--foreground2) font-medium mt-2">
+                    <div className="flex items-center justify-center gap-4">
+                        <span className="h-px w-14 bg-[var(--foreground)]/70" />
+                        <h2 className="text-3xl font-bold text-[var(--foreground)] md:text-4xl">
+                            {t.contact.title}
+                        </h2>
+                        <span className="h-px w-14 bg-[var(--foreground)]/70" />
+                    </div>
+                    <p className="mt-2 font-medium text-[var(--foreground2)]">
                         {t.contact.subtitle}
                     </p>
                 </div>

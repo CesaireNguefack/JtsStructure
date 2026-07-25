@@ -30,7 +30,7 @@ export   function ButtonReservation({onClick}:Props){
    const t = useTranslations()
     return (
         <button  onClick={onClick}
-            className="text-white px-5 py-3 rounded-xl shadow-lg 
+            className="text-white px-5 py-3 shadow-lg 
              cursor-pointer hover:scale-105  "
              style={{ background: "var(--gradient-primary)" }}
           > {t.contact.reserve}
@@ -42,7 +42,7 @@ export   function ButtonSubmit({onClickSubmit,loading}:Props){
    const t = useTranslations()
     return (
         <button  type="submit" onClick={onClickSubmit}
-            className="text-white px-5 py-3 rounded-xl shadow-lg 
+            className="text-white px-5 py-3 shadow-lg 
              cursor-pointer hover:scale-105 "
              style={{ background: "var(--gradient-primary)" }}
           >

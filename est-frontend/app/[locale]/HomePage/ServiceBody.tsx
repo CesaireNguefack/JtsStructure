@@ -27,11 +27,14 @@ export default function ServiceBody({ services }: { services: Service[] }) {
       <div className="relative z-10 max-w-7xl mx-auto px-6">
 
         {/* Title */}
-        <div className="text-center mb-6 text-white">
-          <h1 className="text-4xl font-bold text-gray-800 mb-2">
-            {t.service.title}
-          </h1>
-         
+        <div className="mb-6 text-center">
+          <div className="flex items-center justify-center gap-4">
+            <span className="h-px w-14 bg-[var(--foreground)]/70" />
+            <h1 className="text-3xl font-bold text-gray-800 md:text-4xl">
+              {t.service.title}
+            </h1>
+            <span className="h-px w-14 bg-[var(--foreground)]/70" />
+          </div>
         </div>
         <br />
 
