@@ -46,7 +46,7 @@ export default function Hero() {
         <div className="grid min-h-[460px] items-center md:min-h-[500px] md:grid-cols-[1.05fr_0.95fr]">
 
           {/* LEFT */}
-          <div className="max-w-full translate-y-16 md:max-w-3xl md:translate-y-10">
+          <div className="max-w-full translate-y-20 md:max-w-3xl md:translate-y-10">
             <h2 className="max-w-full text-[clamp(2rem,9vw,2.8rem)] font-bold leading-[1.08] text-white sm:text-5xl md:text-6xl">
               <span className="inline-block max-w-full break-words bg-slate-950/45 px-3 py-2 backdrop-blur-[2px]">
                  {t.hero.title}

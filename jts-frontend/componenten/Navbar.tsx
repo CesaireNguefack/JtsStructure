@@ -122,7 +122,7 @@ export default function Navbar({ navState, showLogo }: Props) {
         {/* BURGER (mobile) */}
         <button
           onClick={() => setOpen(!open)}
-          className={`md:hidden ml-auto text-2xl font-bold ${isTop ? "text-black" : ""}`}
+          className={`md:hidden ml-auto text-4xl font-bold ${isTop ? "text-black" : ""}`}
           aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
         >
           <span className="block leading-none">☰</span>
