@@ -43,10 +43,10 @@ jobs:
 
       - name: Build & Push Frontend
         run: |
-          # PROVISOIRE: utilisation directe de l'IP du VPS tant que le domaine n'est pas reserve.
-          # DEFINITIF: remettre https://jts-structure.com/api apres reservation/configuration du domaine.
+          # PRODUCTION: API exposee par Apache via le nom de domaine.
+          # ANCIEN PROVISOIRE: NEXT_PUBLIC_API_URL=http://51.75.65.254:3011
           docker build \
-            --build-arg NEXT_PUBLIC_API_URL=http://51.75.65.254:3011 \
+            --build-arg NEXT_PUBLIC_API_URL=https://jts-structure.com/api \
             -t $IMAGE_FRONTEND:${{ github.sha }} ./jts-frontend
           docker push $IMAGE_FRONTEND:${{ github.sha }}
 
