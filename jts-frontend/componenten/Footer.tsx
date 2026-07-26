@@ -109,10 +109,10 @@ export default function Footer() {
         <Mail size={16} />
       </div>
       <a
-        href="mailto:contact@jts-structure.com"
+        href="mailto:info@jts-structure.com"
         className="text-gray-700 group-hover:text-[var(--foreground)] transition"
       >
-        contact@jts-structure.com
+        info@jts-structure.com
       </a>
     </li>
     {/* Adresse */}

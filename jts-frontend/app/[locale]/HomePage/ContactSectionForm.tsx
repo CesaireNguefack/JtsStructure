@@ -185,7 +185,7 @@ export default function ContactFormBody() {
             value={form.phone}
             onChange={handleChange}
             type="tel"
-            maxLength={8}
+            maxLength={30}
             className="w-full border border-gray-300 px-4 py-3"
           />
         </div>
@@ -254,7 +254,7 @@ export function ContactCalendar() {
 
       <IconCardForm
         icon={<Mail />}
-        title="contact@jts-structure.com"
+        title="info@jts-structure.com"
 
       />
 
