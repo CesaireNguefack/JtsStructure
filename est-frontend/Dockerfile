@@ -10,6 +10,9 @@ RUN npm install
 # Copier le reste du code
 COPY . .
 
+ARG NEXT_PUBLIC_API_URL
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+
 # Build Next.js
 RUN npm run build
 
@@ -17,6 +20,9 @@ RUN npm run build
 FROM node:20-alpine
 
 WORKDIR /app
+
+ARG NEXT_PUBLIC_API_URL
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
 
 # Copier uniquement le nécessaire depuis builder
 COPY --from=builder /app ./

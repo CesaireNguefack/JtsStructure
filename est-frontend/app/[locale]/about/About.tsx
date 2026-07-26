@@ -15,7 +15,7 @@ export default function AboutSection() {
           <div>
             <img
               src="/images/about/team_lead.png"
-              alt="Équipe EST Structure"
+              alt="Équipe JTS Structure"
               className="h-[420px] w-full object-cover shadow-sm"
             />
           </div>

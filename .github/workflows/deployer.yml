@@ -8,10 +8,11 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_BACKEND: ghcr.io/cesairenguefack/sohblitz-backend_
-  IMAGE_FRONTEND: ghcr.io/cesairenguefack/sohblitz-frontend_
-  VPS_IP: 51.75.65.254_
-  VPS_USER: sublime_
+  IMAGE_BACKEND: ghcr.io/cesairenguefack/ets-backend
+  IMAGE_FRONTEND: ghcr.io/cesairenguefack/est-frontend
+  VPS_IP: 51.75.65.254
+  VPS_USER: sublime
+  VPS_APP_DIR: /var/www/JtsStructure
 
 jobs:
 
@@ -34,7 +35,7 @@ jobs:
 
       - name: Build & Push Backend
         run: |
-          docker build -t $IMAGE_BACKEND:${{ github.sha }} ./sohblitz-backend
+          docker build -t $IMAGE_BACKEND:${{ github.sha }} ./ets-backend
           docker push $IMAGE_BACKEND:${{ github.sha }}
 
           docker tag $IMAGE_BACKEND:${{ github.sha }} $IMAGE_BACKEND:latest
@@ -43,8 +44,8 @@ jobs:
       - name: Build & Push Frontend
         run: |
           docker build \
-            --build-arg NEXT_PUBLIC_API_URL=https://sohblitz-mobil.de/api \
-            -t $IMAGE_FRONTEND:${{ github.sha }} ./sohblitz-frontend
+            --build-arg NEXT_PUBLIC_API_URL=https://jts-structure.com/api \
+            -t $IMAGE_FRONTEND:${{ github.sha }} ./est-frontend
           docker push $IMAGE_FRONTEND:${{ github.sha }}
 
           docker tag $IMAGE_FRONTEND:${{ github.sha }} $IMAGE_FRONTEND:latest
@@ -69,7 +70,7 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no $VPS_USER@$VPS_IP << EOF
             set -e
-            cd /var/www/SohblitzMobil_ 
+            cd $VPS_APP_DIR
             git fetch origin
             git reset --hard origin/main  
             echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u cesairenguefack --password-stdin

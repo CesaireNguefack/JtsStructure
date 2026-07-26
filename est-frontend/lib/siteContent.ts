@@ -69,7 +69,7 @@ const siteContent = {
       ],
     },
     about: {
-      title: "EST-Structure",
+      title: "JTS Structure",
       intro:
         "Nous accompagnons les maîtres d'ouvrage, architectes, entreprises et investisseurs dans la conception, l'étude et le suivi technique de leurs projets de construction. Spécialisés en ingénierie des structures, nous mettons notre expertise au service de bâtiments et d'infrastructures sûrs, optimisés et conformes aux normes en vigueur.",
       introFooter:
@@ -166,7 +166,7 @@ const siteContent = {
       ],
     },
     about: {
-      title: "EST-Structure",
+      title: "JTS Structure",
       intro: "We support project owners, architects, contractors and investors in the design, study and technical monitoring of construction projects. Specialized in structural engineering, we put our expertise at the service of safe, optimized buildings and infrastructure that comply with current standards.",
       introFooter: "Our commitment is based on technical quality, professional rigor and respect for deadlines to help every project succeed. Your project deserves a solid structure and reliable expertise.",
       missionTitle: "Our mission",
@@ -253,7 +253,7 @@ const siteContent = {
       ],
     },
     about: {
-      title: "EST-Structure",
+      title: "JTS Structure",
       intro: "Wir begleiten Bauherren, Architekten, Unternehmen und Investoren bei der Planung, Untersuchung und technischen Begleitung ihrer Bauprojekte. Als Spezialisten für Tragwerksplanung stellen wir unser Know-how in den Dienst sicherer, optimierter und normgerechter Gebäude und Infrastrukturen.",
       introFooter: "Unser Engagement beruht auf technischer Qualität, professioneller Sorgfalt und der Einhaltung von Fristen, um den Erfolg jedes Projekts zu sichern. Ihr Projekt verdient eine solide Struktur und verlässliche Expertise.",
       missionTitle: "Unsere Mission",

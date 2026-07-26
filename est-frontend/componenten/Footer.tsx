@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <Link href={`/${locale}`} className="relative mb-4 block h-20 w-44 bg-white/75">
               <Image
-                src="/images/ets-structure-logo.png"
+                src="/images/jts-structure-logo.png"
                 alt="JTS Structure Consulting Engineers"
                 fill
                 sizes="176px"
@@ -109,10 +109,10 @@ export default function Footer() {
         <Mail size={16} />
       </div>
       <a
-        href="mailto:contact@ets-structure.de"
+        href="mailto:contact@jts-structure.com"
         className="text-gray-700 group-hover:text-[var(--foreground)] transition"
       >
-        contact@ets-structure.de
+        contact@jts-structure.com
       </a>
     </li>
     {/* Adresse */}

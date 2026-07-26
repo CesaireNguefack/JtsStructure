@@ -2,16 +2,16 @@ import { getTranslations } from "@/lib/translation";
 import { TranslationProvider } from "@/lib/TranslationProvider";
 import "../globals.css";
 import { notFound } from "next/navigation"; 
-import { IBM_Plex_Sans } from "next/font/google";
+import { Manrope } from "next/font/google";
 
 import Footer from "@/componenten/Footer"
 
 const locales = ["en", "de", "fr"];
 
-const ibmPlexSans = IBM_Plex_Sans({
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-ibm-plex-sans",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-manrope",
 });
 
 export default async function RootLayout({
@@ -33,7 +33,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${ibmPlexSans.variable} ${ibmPlexSans.className} overflow-x-hidden font-sans`}>
+      <body className={`${manrope.variable} ${manrope.className} overflow-x-hidden font-sans`}>
 
         <TranslationProvider messages={messages}>
           {children}

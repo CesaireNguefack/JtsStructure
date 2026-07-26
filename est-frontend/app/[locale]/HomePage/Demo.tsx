@@ -7,7 +7,7 @@ export default function Demo() {
     return (
         <section className="relative h-[500px] flex items-center justify-center overflow-hidden bg-slate-950">
             <img
-                src="/images/ets-structure-hero.png"
+                src="/images/jts-structure-hero.png"
                 alt="Expertise structurelle"
                 className="absolute top-0 left-0 w-full h-full object-cover"
             />

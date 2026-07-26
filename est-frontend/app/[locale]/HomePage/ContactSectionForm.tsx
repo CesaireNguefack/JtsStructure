@@ -254,7 +254,7 @@ export function ContactCalendar() {
 
       <IconCardForm
         icon={<Mail />}
-        title="contact@ets-structure.de"
+        title="contact@jts-structure.com"
 
       />
 

@@ -1,21 +1,28 @@
+name: jts-structure
+
 services:
   frontend:
     image: ghcr.io/cesairenguefack/est-frontend:latest
+    container_name: jts_frontend
     restart: always
     ports:
-      - "3000:3000"
+      - "3010:3000"
     environment:
-      NEXT_PUBLIC_API_URL: https://sohblitz-mobil.de/api
+      NEXT_PUBLIC_API_URL: https://jts-structure.com/api
     depends_on:
       - backend
 
   backend:
     image: ghcr.io/cesairenguefack/ets-backend:latest
+    container_name: jts_backend
     restart: always
     env_file:
-      - .env
+      - ./ets-backend/.env
+    environment:
+      PORT: 3001
+      DATABASE_URL: postgresql://cesaire:changeme@db:5432/jts_structure
     ports:
-      - "3001:3001"
+      - "3011:3001"
     command: >
       sh -c "
         until nc -z db 5432;
@@ -33,11 +40,12 @@ services:
 
   db:
     image: postgres:15
+    container_name: jts_postgres_db
     restart: always
     environment:
       POSTGRES_USER: cesaire
       POSTGRES_PASSWORD: changeme
-      POSTGRES_DB: sohblitz
+      POSTGRES_DB: jts_structure
     volumes:
       - db_data:/var/lib/postgresql/data
 

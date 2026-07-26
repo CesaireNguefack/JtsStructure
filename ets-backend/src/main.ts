@@ -6,7 +6,7 @@ import { NestExpressApplication } from '@nestjs/platform-express'
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
-  const port = await getPort({port:[3001,3002]})
+  const port = Number(process.env.PORT) || await getPort({port:[3001,3002]})
 
    app.useStaticAssets(join(process.cwd(), 'service_data'), {
     prefix: '/service_data/',

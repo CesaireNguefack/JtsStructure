@@ -1,28 +1,31 @@
+name: jts-structure
+
 services:
   db:
     ports:
-    - "5432:5432"
+    - "5433:5432"
     image: postgres:15
-    container_name: postgres_db
+    container_name: jts_postgres_db
     restart: always
     environment:
       POSTGRES_USER: cesaire
       POSTGRES_PASSWORD: changeme
-      POSTGRES_DB: sohblitz
+      POSTGRES_DB: jts_structure
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - jts_postgres_data:/var/lib/postgresql/data
     networks:
       - app_network
 
   backend:
     build: ./ets-backend
-    container_name: backend
+    container_name: jts_backend
     restart: always
     env_file:
       - ./ets-backend/.env
     environment:
-      NODE_ENV: docker_sublime_prod
-      DATABASE_URL: postgresql://cesaire:changeme@db:5432/sohblitz
+      NODE_ENV: docker
+      PORT: 3001
+      DATABASE_URL: postgresql://cesaire:changeme@db:5432/jts_structure
     depends_on:
       - db
     networks:
@@ -41,11 +44,12 @@ services:
       "
 
   frontend:
-    build: ./est-frontend
-    container_name: frontend
+    build:
+      context: ./est-frontend
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8081/api
+    container_name: jts_frontend
     restart: always
-    ports:
-      - "3000:3000"
     depends_on:
       - backend
     networks:
@@ -53,10 +57,10 @@ services:
 
   nginx:
     image: nginx:latest
-    container_name: nginx
+    container_name: jts_nginx
     restart: always
     ports:
-      - "8080:80"
+      - "8081:80"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     depends_on:
@@ -66,7 +70,7 @@ services:
       - app_network
 
 volumes:
-  postgres_data:
+  jts_postgres_data:
 
 networks:
   app_network:

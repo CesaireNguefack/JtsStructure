@@ -109,7 +109,7 @@ export default function WhyChoose() {
 
           <div>
             <p className="text-sm font-black uppercase tracking-[0.22em] text-[var(--foreground)]">
-              EST Structure
+              JTS Structure
             </p>
 
             <div className="mt-6 space-y-7">
