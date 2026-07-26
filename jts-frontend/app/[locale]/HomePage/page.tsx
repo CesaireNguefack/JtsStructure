@@ -5,7 +5,6 @@ import Hero from "@/app/[locale]/HomePage/Hero"
 import Navbar from "@/componenten/Navbar"
 
 import ReviewsSection from "@/app/[locale]/HomePage/ReviewsSection"
-
 import { useEffect, useState, useRef } from "react"
 import Demo from "./Demo"
 import TeamHome from "./Team"
@@ -15,13 +14,9 @@ import WhyChoose from "./WhyChoose"
 import HeroAboutDivider from "./HeroAboutDivider"
 
 export default function Welcome() {
-
     const [navState, setNavState] = useState<"transparent" | "gradient" | "white">("transparent")
-
     const heroRef = useRef<HTMLDivElement | null>(null)
     const [showlogo, setShowLogo] = useState<boolean>(false)
-
-
 
     useEffect(() => {
 
@@ -59,10 +54,8 @@ export default function Welcome() {
             <HeroAboutDivider />
             <AboutSection />
             <ServicesBlock  />
-
             <TeamHome />
              <WhyChoose />
-
             <Demo />
             <HomePageContacSection />
         </main>
