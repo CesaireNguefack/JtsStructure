@@ -57,18 +57,18 @@ export default function Navbar({ navState, showLogo }: Props) {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 overflow-visible
+      className={`fixed inset-x-0 top-0 w-full z-50 overflow-visible
   ${isTop ? "h-24 bg-transparent pt-4 md:h-[118px]" : isSubPage ? "h-20 bg-transparent pt-3 md:h-24" : "h-14"}
   ${navState === "white" && "bg-white shadow-md"}
   `}
     >
       <div
-        className={`mx-auto flex items-center px-4 md:px-8
+        className={`mx-auto flex items-center px-3 md:px-8
           ${isTop
-            ? "h-20 w-[calc(100%-2rem)] max-w-[1804px] bg-white/65 shadow-sm backdrop-blur-sm md:h-[102px]"
+            ? "h-20 w-[calc(100%-1.5rem)] max-w-[1804px] bg-white/65 shadow-sm backdrop-blur-sm md:h-[102px] md:w-[calc(100%-2rem)]"
             : isSubPage
               ? "h-16 w-[calc(100%-1.5rem)] max-w-7xl bg-white/82 shadow-md backdrop-blur-sm md:h-20"
-            : "h-full w-[calc(100%-2rem)] max-w-[1804px]"
+            : "h-full w-[calc(100%-1.5rem)] max-w-[1804px] md:w-[calc(100%-2rem)]"
           }`}
       >
         {isTop ? <TopLogo href={`/${locale}`} /> : <Logo2 show={showLogo} href={`/${locale}`} />}
@@ -255,7 +255,7 @@ export function Logo({ className = "", href = "/" }) {
 
 export function TopLogo({ className = "", href = "/" }) {
   return (
-    <Link href={href} className={`relative block h-16 w-40 md:h-20 md:w-52 ${className}`}>
+    <Link href={href} className={`relative block h-14 w-36 md:h-20 md:w-52 ${className}`}>
       <Image
         src="/images/jts-structure-logo.png"
         alt="JTS Structure Consulting Engineers"

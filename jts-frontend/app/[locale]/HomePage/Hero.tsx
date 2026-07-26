@@ -27,7 +27,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-[720px] overflow-hidden pt-32 md:pt-40 pb-20 md:pb-32 z-10 bg-slate-950"
+      className="relative min-h-[680px] overflow-hidden pt-32 pb-20 z-10 bg-slate-950 md:min-h-[720px] md:pt-40 md:pb-32"
     >
       <Image
         src={slides[slideIndex]}
@@ -40,27 +40,21 @@ export default function Hero() {
       />
 
       {/* CONTAINER */}
-      <div className="relative max-w-7xl mx-auto px-4 md:px-10">
+      <div className="relative mx-auto w-full max-w-7xl px-4 md:px-10">
 
         {/* GRID */}
-        <div className="grid md:grid-cols-[1.05fr_0.95fr] items-center min-h-[500px]">
+        <div className="grid min-h-[460px] items-center md:min-h-[500px] md:grid-cols-[1.05fr_0.95fr]">
 
           {/* LEFT */}
-          <div className="max-w-3xl">
-            
-             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white">
-              <span className="inline-block   bg-slate-950/45 px-3 py-2 backdrop-blur-[2px]">
-                JTS Structure
-              </span>
-            </h1>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white">
-              <span className="inline-block   bg-slate-950/45 px-3 py-2 backdrop-blur-[2px]">
+          <div className="max-w-full md:max-w-3xl">
+            <h2 className="max-w-full text-[clamp(2rem,9vw,2.8rem)] font-bold leading-[1.08] text-white sm:text-5xl md:text-6xl">
+              <span className="inline-block max-w-full break-words bg-slate-950/45 px-3 py-2 backdrop-blur-[2px]">
                  {t.hero.title}
                 </span>
             </h2>
 
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-100">
-              <span className="inline-block rounded-sm bg-slate-950/45 px-4 py-3 backdrop-blur-[2px]">
+            <p className="mt-5 max-w-full text-base leading-relaxed text-slate-100 sm:text-lg md:max-w-2xl">
+              <span className="inline-block max-w-full break-words rounded-sm bg-slate-950/45 px-4 py-3 backdrop-blur-[2px]">
                 {t.hero.subtitle}
               </span>
             </p>
