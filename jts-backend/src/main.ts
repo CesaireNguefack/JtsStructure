@@ -16,6 +16,10 @@ async function bootstrap() {
     origin: [
                 'http://localhost:3000',
                 'http://51.75.65.254:3000',
+                // PROVISOIRE: frontend expose directement sur le VPS tant que le domaine n'est pas reserve.
+                // DEFINITIF: utiliser https://jts-structure.com et https://www.jts-structure.com.
+                'http://51.75.65.254:3010',
+                'http://localhost:3010',
                 'https://jts-structure.com',
                 'https://www.jts-structure.com'
               ],
