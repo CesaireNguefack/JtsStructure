@@ -138,6 +138,10 @@
     "title": "Prestations d'ingénierie structurelle",
     "subtitle": "Études, calculs, diagnostics et suivi technique"
   },
+  "serviceDetailPageHeaderInfos": {
+    "title": "Analyse technique du service",
+    "subtitle": "Méthode, livrables et accompagnement adaptés au projet"
+  },
   "sectorsPageHeaderInfos": {
     "title": "Secteurs d'intervention",
     "subtitle": "Bâtiments, ouvrages d'art, infrastructures et projets techniques"

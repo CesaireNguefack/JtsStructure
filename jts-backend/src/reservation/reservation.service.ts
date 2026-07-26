@@ -49,6 +49,15 @@ export class ReservationService {
     }
 
     private findServiceData(id: number) {
+        if (id === 0) {
+            return {
+                id: 0,
+                title: "",
+                description1: "Demande d'evaluation generale",
+                description: "Demande d'evaluation generale",
+            };
+        }
+
         const filePath = path.join(process.cwd(), "service_data", "fr.json");
         const services = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 

@@ -27,7 +27,7 @@ export default function ReservationPage() {
         title="evaluationPageHeaderInfos.label"
         headerTitle="evaluationPageHeaderInfos.title"
         subtitle="evaluationPageHeaderInfos.subtitle"
-        image="appointment1.png"
+        image="headers/contact/cover_header.png"
       />
 
       <section className="px-6 py-16">
@@ -232,10 +232,10 @@ export function ReservationForm() {
 }
  */
 
-export function ReservationForm() {
+export function ReservationForm({ general = false }: { general?: boolean }) {
   const t = useTranslations();
   const params = useParams();
-  const slug = params.slug as string;
+  const slug = params.slug as string | undefined;
   const locale = getCurentLanguage();
 
   const [form, setForm] = useState({
@@ -263,6 +263,22 @@ export function ReservationForm() {
   // ================= LOAD =================
   useEffect(() => {
     async function load() {
+      if (general) {
+        setService({
+          id: 0,
+          title: "",
+          description1: "",
+          description: "",
+          pricing: [],
+          tags: [],
+          cover: "",
+          images: [],
+        });
+        return;
+      }
+
+      if (!slug) return;
+
       const id = parseInt(slug.split("-")[0]);
 
       const serviceData = await getServiceById(id, locale as Lang);
@@ -270,7 +286,7 @@ export function ReservationForm() {
     }
 
     load();
-  }, [slug, locale]);
+  }, [slug, locale, general]);
 
   // ================= DEFAULT DATE =================
   useEffect(() => {

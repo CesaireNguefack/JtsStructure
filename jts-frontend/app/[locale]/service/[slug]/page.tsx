@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams, usePathname, useRouter } from "next/navigation";
-import Navbar from "@/componenten/Navbar";
+import HeaderPages from "@/componenten/headerPages";
 import { ButtonReservation } from "@/componenten/Cards/KontaktButton";
 import { useState, useEffect } from "react";
 import SplitSection from "@/componenten/SplitSection";
@@ -37,8 +37,12 @@ export default function ServiceDetail() {
 
     return (
       <main>
-        <Navbar navState="gradient" showLogo={true} />
-        <br />
+        <HeaderPages
+          title="navbar.services"
+          headerTitle="serviceDetailPageHeaderInfos.title"
+          subtitle="serviceDetailPageHeaderInfos.subtitle"
+          image="headers/services/cover_header.png"
+        />
         <div className="p-20 text-center">Loading ...</div>
       </main>
     )
@@ -49,8 +53,12 @@ export default function ServiceDetail() {
 
     return (
       <main>
-        <Navbar navState="gradient" showLogo={true} />
-        <br />
+        <HeaderPages
+          title="navbar.services"
+          headerTitle="serviceDetailPageHeaderInfos.title"
+          subtitle="serviceDetailPageHeaderInfos.subtitle"
+          image="headers/services/cover_header.png"
+        />
         <div className="p-20 text-center">Service not found</div>
       </main>
     )
@@ -59,8 +67,12 @@ export default function ServiceDetail() {
   // ✅ Render
   return (
     <main>
-      <Navbar navState="gradient" showLogo={true} />
-      <br />
+      <HeaderPages
+        title="navbar.services"
+        headerTitle="serviceDetailPageHeaderInfos.title"
+        subtitle="serviceDetailPageHeaderInfos.subtitle"
+        image="headers/services/cover_header.png"
+      />
       <SplitSection
         reverse
         left={<ServiceCoverImage service={service} />}

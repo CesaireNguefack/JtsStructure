@@ -138,6 +138,10 @@
     "title": "Structural engineering services",
     "subtitle": "Studies, calculations, diagnostics and technical follow-up"
   },
+  "serviceDetailPageHeaderInfos": {
+    "title": "Technical service analysis",
+    "subtitle": "Method, deliverables and project-specific support"
+  },
   "sectorsPageHeaderInfos": {
     "title": "Sectors of intervention",
     "subtitle": "Buildings, civil works, infrastructure and technical projects"
