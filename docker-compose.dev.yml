@@ -17,11 +17,11 @@ services:
       - app_network
 
   backend:
-    build: ./ets-backend
+    build: ./jts-backend
     container_name: jts_backend
     restart: always
     env_file:
-      - ./ets-backend/.env
+      - ./jts-backend/.env
     environment:
       NODE_ENV: docker
       PORT: 3001
@@ -45,7 +45,7 @@ services:
 
   frontend:
     build:
-      context: ./est-frontend
+      context: ./jts-frontend
       args:
         NEXT_PUBLIC_API_URL: http://localhost:8081/api
     container_name: jts_frontend

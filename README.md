@@ -1,2 +1,2 @@
-# SohblitzMobil
-Web Site für ein Reinigungsunternehmen
+# JtsStructure
+Site web JTS Structure
