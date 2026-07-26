@@ -320,7 +320,7 @@ export function ReservationForm({ general = false }: { general?: boolean }) {
   };
 
   const isValidPhone = (phone: string) => {
-    return /^\+?[0-9]+$/.test(phone);
+    return /^\+?[0-9\s().-]+$/.test(phone);
   };
 
   // ================= VALIDATION =================
@@ -341,7 +341,7 @@ export function ReservationForm({ general = false }: { general?: boolean }) {
     if (form.phone) {
       if (!isValidPhone(form.phone))
         return t.contact.phone + " " + t.contact.invalide;
-      if (form.phone.length < 2 || form.phone.length > 25)
+      if (form.phone.length < 2 || form.phone.length > 30)
         return t.contact.phone + " " + t.contact.invalide;
     }
 

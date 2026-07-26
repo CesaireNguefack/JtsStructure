@@ -94,11 +94,11 @@ export default function Footer() {
         <FaWhatsapp size={16} />
       </div>
       <a
-        href="https://wa.me/4917648082448"
+        href="https://wa.me/4915292627453"
         target="_blank"
         className="text-gray-700 group-hover:text-[var(--foreground)] transition"
       >
-        +49 176 48082448
+        +4915292627453
       </a>
     </li>
     

@@ -39,7 +39,7 @@ export default function ContactFormBody() {
 
   // ✅ Regex
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-  const phoneRegex = /^\+?[0-9]+$/
+  const phoneRegex = /^\+?[0-9\s().-]+$/
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -76,7 +76,7 @@ export default function ContactFormBody() {
       return "Email "+t.contact.errorcharacter
 
     // PHONE
-    if (phone.length < 2 || phone.length > 8)
+    if (phone.length < 2 || phone.length > 30)
       return t.contact.phone+" "+t.contact.invalide
     if (!phoneRegex.test(phone))
       return t.contact.phone+" "+t.contact.invalide
@@ -247,7 +247,7 @@ export function ContactCalendar() {
         icon={<FaWhatsapp className="text-green-500 text-xl" />}
     title={
       <a href="">
-        0176 48082448
+        +4915292627453
       </a>
     }
       />
@@ -316,7 +316,7 @@ export function IconCardForm({ icon, title, onClick }: Props) {
   );
 }
 const handleWhatsAppClick = () => {
-  window.open("https://wa.me/4917648082448", "_blank");
+  window.open("https://wa.me/4915292627453", "_blank");
 };
 
  
