@@ -82,7 +82,7 @@ export function AdminAvailability() {
     const conflict = others.some((a) => overlaps(a, newItem));
 
     if (conflict) {
-      alert("Conflit détecté");
+      alert("Konflikt erkannt");
       return;
     }
 
@@ -126,7 +126,7 @@ export function AdminAvailability() {
         prev.filter((a) => a.id !== tempId)
       );
 
-      alert("Erreur réseau");
+      alert("Netzwerkfehler");
     }
   };
 
@@ -245,7 +245,7 @@ export function AdminAvailability() {
 
       // ❌ erreur technique → rollback
       setAvailabilities(backup);
-      alert("Erreur réseau");
+      alert("Netzwerkfehler");
     }
   };
 

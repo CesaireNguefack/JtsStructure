@@ -183,7 +183,7 @@ export function ReservationForm() {
         lang: locale,
       });
     } catch (err) {
-      setError("Erreur lors de la réservation");
+      setError(t.contact.senderror);
     } finally {
       setLoading(false);
     }
@@ -332,7 +332,7 @@ export function ReservationForm({ general = false }: { general?: boolean }) {
     if (hasSQLInjection(form.name)) return t.contact.name + " " + t.contact.invalide;
 
     // EMAIL
-    if (!isValidEmail(form.email)) return "Email invalide";
+    if (!isValidEmail(form.email)) return "Email " + t.contact.invalide;
     if (form.email.length < 2 || form.email.length > 70)
       return "Email " + t.contact.invalide;
     if (hasSQLInjection(form.email)) return "Email " + t.contact.invalide;
@@ -371,7 +371,7 @@ export function ReservationForm({ general = false }: { general?: boolean }) {
 
     // DATE
     if (!form.date || !form.time)
-      return "Datum Fehlt";
+      return "Datum fehlt";
 
     if (!isHuman) return t.contact.roboterror;
 
@@ -434,7 +434,7 @@ export function ReservationForm({ general = false }: { general?: boolean }) {
 
       setIsHuman(false);
     } catch (err) {
-      setError("Erreur lors de la réservation");
+      setError(t.contact.senderror);
     } finally {
       setLoading(false);
     }

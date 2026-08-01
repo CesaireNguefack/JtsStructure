@@ -72,7 +72,7 @@ export function BodyImages() {
     const res = await deleteServiceImage(selectedImage.img, selectedImage.serviceId!)
 
     if (res.success) {
-      alert("✅ Image supprimé avec succès");
+      alert("✅ Bild erfolgreich gelöscht");
       setServices((prev) =>
         prev.map((s) =>
           s.id === selectedImage.serviceId
@@ -84,7 +84,7 @@ export function BodyImages() {
       setShowDelete(false);
       setSelectedImage(null);
     } else {
-      alert("❌ Erreur lors de la suppression " + res.data);
+      alert("❌ Fehler beim Löschen " + res.data);
     }
 
   };
@@ -101,12 +101,12 @@ export function BodyImages() {
     const result = await uploadServiceImage(file, selectedService);
 
     if (!result.success || !result.data) {
-      alert("❌ Erreur lors de l'upload");
+      alert("❌ Fehler beim Hochladen");
       return;
     }
 
     // ✅ succès
-    alert("✅ Image ajoutée avec succès");
+    alert("✅ Bild erfolgreich hinzugefügt");
 
     setServices((prev) =>
       prev.map((s) =>
@@ -359,7 +359,7 @@ export function Body() {
         price:Number(price)
       })
 
-      setSuccess("Service ajouté avec succès")
+      setSuccess("Leistung erfolgreich hinzugefügt")
       setTitle("")
       setDescription("")
       setPrice("")
@@ -369,7 +369,7 @@ export function Body() {
       },1500)
 
     }catch(err:any){
-      setError(err.message || "Erreur lors de l'ajout")
+      setError(err.message || "Fehler beim Hinzufügen")
     }finally{
       setSaving(false)
     } 

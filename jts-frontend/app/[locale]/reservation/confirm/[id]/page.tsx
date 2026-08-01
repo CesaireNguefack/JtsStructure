@@ -22,17 +22,17 @@ export default function ConfirmReservationPage() {
         const res = await confirmReservation(Number(id));
 
         if (res.status!== "success") {
-          throw new Error("Erreur lors de la confirmation"+res);
+          throw new Error("Fehler bei der Bestätigung" + res);
         }
 
         const data = await res;
 
         setStatus("success");
-        setMessage(data.message || "Réservation confirmée avec succès !");
+        setMessage(data.message || "Anfrage erfolgreich bestätigt!");
       } catch (error: any) {
         setStatus("error");
         setMessage(
-          error.message || "Une erreur est survenue lors de la confirmation."
+          error.message || "Bei der Bestätigung ist ein Fehler aufgetreten."
         );
       }
     };
@@ -45,7 +45,7 @@ export default function ConfirmReservationPage() {
                 <Navbar navState="gradient" showLogo={true} />
                 <section className="min-h-screen flex items-center justify-center">
       <div style={{ padding: "2rem", textAlign: "center" }}>
-        {status === "loading" && <p>Confirmation en cours...</p>}
+        {status === "loading" && <p>Bestätigung läuft...</p>}
 
         {status === "success" && (
           <div>
@@ -55,7 +55,7 @@ export default function ConfirmReservationPage() {
 
         {status === "error" && (
           <div>
-            <h1>❌ Erreur</h1>
+            <h1>❌ Fehler</h1>
             <p>{message}</p>
           </div>
         )}

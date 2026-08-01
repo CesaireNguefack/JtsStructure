@@ -50,7 +50,7 @@ export function ContactList() {
       fetchContacts()
     } catch (err) {
       console.error(err)
-      alert("Erreur suppression")
+      alert("Fehler beim Löschen")
     }
   }
 

@@ -26,19 +26,19 @@ type Reservation = {
 }
 const statusConfig = {
     PENDING: {
-        label: "En attente",
+        label: "Ausstehend",
         className: "bg-yellow-100 text-yellow-700",
     },
     CONFIRMED: {
-        label: "Confirmée",
+        label: "Bestätigt",
         className: "bg-green-100 text-green-700",
     },
     CANCELLED: {
-        label: "Annulée",
+        label: "Storniert",
         className: "bg-red-100 text-red-700",
     },
     DONE: {
-        label: "Terminée",
+        label: "Abgeschlossen",
         className: "bg-blue-100 text-blue-700",
     },
 } as const
@@ -82,7 +82,7 @@ export function ReservationList() {
       fetchReservations()
     } catch (err) {
       console.error(err)
-      alert("Erreur confirmation")
+      alert("Fehler bei der Bestätigung")
     }
   }
 
@@ -93,7 +93,7 @@ export function ReservationList() {
       fetchReservations()
     } catch (err) {
       console.error(err)
-      alert("Erreur annulation")
+      alert("Fehler bei der Stornierung")
     }
   }
 
@@ -103,7 +103,7 @@ export function ReservationList() {
       fetchReservations()
     } catch (err) {
       console.error(err)
-      alert("Erreur suppression")
+      alert("Fehler beim Löschen")
     }
   }
 
@@ -215,4 +215,3 @@ export function ReservationList() {
     </div>
   )
 }
-

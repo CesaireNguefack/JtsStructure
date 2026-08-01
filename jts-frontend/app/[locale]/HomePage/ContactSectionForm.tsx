@@ -69,9 +69,9 @@ export default function ContactFormBody() {
       return t.contact.name+" "+t.contact.errorcharacter
     // EMAIL
     if (!emailRegex.test(email))
-      return t.contact.invalide+" Email"
+      return "Email "+t.contact.invalide
     if (email.length < 2 || email.length > 70)
-      return "Email size "+t.contact.invalide
+      return "Email "+t.contact.invalide
     if (forbiddenPatterns.test(email))
       return "Email "+t.contact.errorcharacter
 
@@ -123,7 +123,7 @@ export default function ContactFormBody() {
       const res = await createContact(formData)
       const data = await res.json()
 
-      if (!res.ok) throw new Error(data.message || "Erreur")
+      if (!res.ok) throw new Error(data.message || t.contact.senderror)
 
       setSuccess(t.contact.sendsucess)
 

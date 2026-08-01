@@ -26,9 +26,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <Link href={`/${locale}`} className="relative mb-4 block h-20 w-44 bg-white/75">
+            <Link href={`/${locale}`} className="relative mb-4 block h-20 w-44">
               <Image
-                src="/images/jts-structure-logo.png"
+                src="/images/jts-structure-logo-transparent.png"
                 alt="JTS Structure Consulting Engineers"
                 fill
                 sizes="176px"

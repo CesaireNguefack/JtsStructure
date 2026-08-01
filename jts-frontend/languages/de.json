@@ -9,7 +9,7 @@
     "contact": "Kontakt",
     "impressum": "Impressum",
     "privacy": "Datenschutz",
-    "about": "Über Uns",
+    "about": "Über uns",
     "agb": "AGB",
     "reseaux":"Folgen Sie uns in den sozialen Medien"
   },
@@ -21,7 +21,7 @@
     "items": ["SORGFALT", "QUALITÄT", "INNOVATION"]
   },
   "adminPage": {
-  "btn_section_view": "Nach Service anzeigen",
+  "btn_section_view": "Nach Leistung anzeigen",
   "btn_global_view": "Globale Ansicht",
   "btn_add_image": "+ Bild hinzufügen",
   "form_add_image_title": "Bild hinzufügen",
@@ -37,13 +37,13 @@
   "contact_title": "Kontakte",
   "btn_delete": "Löschen",
   "btn_choose_img":"Wählen Sie das Bild aus",
-  "title_delete_form":"Dieses Bild löschen ?"
+  "title_delete_form":"Dieses Bild löschen?"
 },
 
   "footer": {
     "title": "Ingenieurbüro für Tragwerksplanung, statische Berechnungen, Diagnostik und Gutachten.",
     "navigation": "Navigation",
-    "sublime": "Alle Rechte vorbehalten.  Designed und entwickelt von "
+    "sublime": "Alle Rechte vorbehalten.  Konzipiert und entwickelt von "
   },
   "contact": {
     "title": "Kontakt",
@@ -51,8 +51,8 @@
     "iconLocation": "Unser Standort",
     "contactbtn": "Bewertung anfragen →",
     "reserve": "Angebot anfragen →",
-    "sending": "Sending...",
-    "submit": "Submit →",
+    "sending": "Wird gesendet...",
+    "submit": "Absenden →",
     "formtitle": "Kontakt aufnehmen",
     "name": "Name",
     "ihr": "Ihr",
@@ -93,18 +93,18 @@
     "subtitle2": "Bedarfsanalyse",
     "besichtigungstermin": "Technischer Termin",
     "price": "Angebot",
-    "detailfooter": "Wir begleiten Hochbau-, Ingenieurbau- und Infrastrukturprojekte mit einer sorgfaltigen, vertraulichen und sicheren Arbeitsweise.",
+    "detailfooter": "Wir begleiten Hochbau-, Ingenieurbau- und Infrastrukturprojekte mit einer sorgfältigen, vertraulichen und sicheren Arbeitsweise.",
     "subtitle22": "Studien und Gutachten:",
-    "subtitle3": "Angebot passend zur Komplexitat.",
+    "subtitle3": "Angebot passend zur Komplexität.",
     "subtitle4": "Lieferumfang:",
-    "subtitle5": "Berechnungen, Stellungnahmen, Plane und Berichte.",
-    "subtitle6": "Begleitung in allen Projektphasen moglich.",
+    "subtitle5": "Berechnungen, Stellungnahmen, Pläne und Berichte.",
+    "subtitle6": "Begleitung in allen Projektphasen möglich.",
     "footer0": "JTS Structure:",
-    "footer": "Jede Mission wird nach Umfang, vorhandenen Daten, geltenden Normen und gewunschtem Detaillierungsgrad angeboten."
+    "footer": "Jede Mission wird nach Umfang, vorhandenen Daten, geltenden Normen und gewünschtem Detaillierungsgrad angeboten."
   },
   "teamsection": {
     "title": "Klare und nutzbare Tragwerksplanung",
-    "description": "Unsere Unterlagen unterstutzen Entscheidungen, Baustellenkoordination und technische Nachweise gegenuber allen Projektbeteiligten."
+    "description": "Unsere Unterlagen unterstützen Entscheidungen, Baustellenkoordination und technische Nachweise gegenüber allen Projektbeteiligten."
   },
   "reviewsection": {
     "title": "Einige Bewertungen",
@@ -113,7 +113,7 @@
   },
   "demosection": {
     "title": "Tragwerksentscheidungen absichern",
-    "subtitle": "Diagnostik, Berechnung, Planung und Gutachten fur Neubau, Umbau und Verstarkung."
+    "subtitle": "Diagnostik, Berechnung, Planung und Gutachten für Neubau, Umbau und Verstärkung."
   },
   "adminNavbar": {
     "dashboard": "Dashboard",
@@ -170,11 +170,11 @@
   },
   "agbPageHeaderInfos": {
     "title": "Allgemeine \n Geschäftsbedingungen",
-    "subtitle": "Unsere Bedingungen fur Ingenieurleistungen"
+    "subtitle": "Unsere Bedingungen für Ingenieurleistungen"
   },
   "privacyPage": {
     "title": "Datenschutzerklärung",
-    "intro": "JTS Structure nimmt den Schutz Ihrer personenbezogenen Daten sehr ernst. Ihre Daten werden vertraulich und gemaß DSGVO sowie BDSG verarbeitet.",
+    "intro": "JTS Structure nimmt den Schutz Ihrer personenbezogenen Daten sehr ernst. Ihre Daten werden vertraulich und gemäß DSGVO sowie BDSG verarbeitet.",
     "sections": [
       {
         "title": "1. Verantwortlicher",
@@ -264,7 +264,7 @@
           "Gutachten und Diagnostik",
           "Ingenieurbauwerke",
           "Infrastruktur",
-          "Sanierung und Verstarkung",
+          "Sanierung und Verstärkung",
           "Technische Beratung"
         ]
       },
@@ -292,8 +292,8 @@
       {
         "title": "Berufsbezeichnung",
         "content": [
-          "Ingenieurburo fur Tragwerksplanung",
-          "Zustandige Kammer: zu erganzen",
+          "Ingenieurbüro für Tragwerksplanung",
+          "Zuständige Kammer: zu ergänzen",
           "Burgplatz 2",
           "38100 Braunschweig"
         ]
@@ -322,7 +322,7 @@
       {
         "title": "Geltungsbereich",
         "content": [
-          "Diese AGB gelten fur alle Vertrage uber Tragwerksplanung, Berechnungen, Gutachten und technische Beratung zwischen JTS Structure und dem Kunden.",
+          "Diese AGB gelten für alle Verträge über Tragwerksplanung, Berechnungen, Gutachten und technische Beratung zwischen JTS Structure und dem Kunden.",
           "Dies umfasst Hochbau, Ingenieurbauwerke, Infrastruktur, Diagnostik, Berechnungen, Berichte und technische Stellungnahmen.",
           "Abweichende Bedingungen bedürfen der Schriftform."
         ]
@@ -331,8 +331,8 @@
         "title": "Leistungsbeschreibung und Kundenpflichten",
         "content": [
           "Der Leistungsumfang ergibt sich aus Angebot, Auftrag oder Bestellung.",
-          "Der Kunde stellt Plane, Annahmen, vorhandene Gutachten, Standortbedingungen und alle erforderlichen Informationen bereit.",
-          "Die bereitgestellten Daten mussen vollstandig, lesbar und aktuell sein.",
+          "Der Kunde stellt Pläne, Annahmen, vorhandene Gutachten, Standortbedingungen und alle erforderlichen Informationen bereit.",
+          "Die bereitgestellten Daten müssen vollständig, lesbar und aktuell sein.",
           "JTS Structure verwendet professionelle Methoden und Werkzeuge passend zur Mission."
         ]
       },
@@ -351,8 +351,8 @@
         "title": "Termine und Absagen",
         "content": [
           "Vereinbarte Termine, Besprechungen und Meilensteine sind verbindlich.",
-          "Verspatete Absagen konnen nach Angebot berechnet werden.",
-          "Verzogerungen bei der Datenubergabe konnen die Bearbeitungszeit verlangern.",
+          "Verspätete Absagen können nach Angebot berechnet werden.",
+          "Verzögerungen bei der Datenübergabe können die Bearbeitungszeit verlängern.",
           "Bei Zahlungsverzug ruht die Leistungspflicht."
         ]
       },
@@ -360,17 +360,17 @@
         "title": "Mängel und Reklamationen",
         "content": [
           "Sichtbare Mängel müssen sofort gemeldet werden.",
-          "JTS Structure pruft die Meldung und behebt nachgewiesene Mangel innerhalb einer angemessenen Frist.",
+          "JTS Structure prüft die Meldung und behebt nachgewiesene Mängel innerhalb einer angemessenen Frist.",
           "Die Nachbesserung erfolgt kostenlos, wenn der Mangel JTS Structure zuzurechnen ist.",
-          "Bei erfolgloser Nachbesserung konnen Preisminderung oder Rucktritt gepruft werden."
+          "Bei erfolgloser Nachbesserung können Preisminderung oder Rücktritt geprüft werden."
         ]
       },
       {
         "title": "Haftung",
         "content": [
           "Die Haftung besteht nur bei Vorsatz oder grober Fahrlässigkeit.",
-          "Vermutete Schaden oder Fehler sind unverzuglich zu melden.",
-          "Keine Haftung fur Folgen unvollstandiger, fehlerhafter oder nicht mitgeteilter geanderter Daten."
+          "Vermutete Schäden oder Fehler sind unverzüglich zu melden.",
+          "Keine Haftung für Folgen unvollständiger, fehlerhafter oder nicht mitgeteilter geänderter Daten."
         ]
       },
       {
@@ -383,8 +383,8 @@
       {
         "title": "Kündigung und Vertragsdauer",
         "content": [
-          "Einmalige Auftrage enden nach Ubergabe der vereinbarten Unterlagen.",
-          "Laufende Missionen konnen gemaß den Bedingungen im Angebot beendet werden.",
+          "Einmalige Aufträge enden nach Übergabe der vereinbarten Unterlagen.",
+          "Laufende Missionen können gemäß den Bedingungen im Angebot beendet werden.",
           "Gerichtsstand ist Braunschweig.",
           "Änderungen der AGB bleiben vorbehalten.",
           "Mit der Auftragserteilung akzeptiert der Kunde diese AGB."
@@ -395,8 +395,8 @@
   "aboutSection": {
     "title": "Über JTS Structure",
     "subtitle": "Studien, Berechnungen und Tragwerksgutachten",
-    "text1": "JTS Structure begleitet Bauherren, Architekten, Unternehmen und technische Partner bei Planung, Prufung und Analyse von Tragwerken.",
-    "text2": "Wir arbeiten an Hochbau, Ingenieurbauwerken und Infrastruktur mit Bemessung, Diagnostik, Verstarkung, Gutachten und technischer Beratung.",
-    "text3": "Unser Ziel sind zuverlassige, nutzbare und sichere Unterlagen unter Beachtung von Integritat, Verfugbarkeit, Vertraulichkeit und Datensicherheit."
+    "text1": "JTS Structure begleitet Bauherren, Architekten, Unternehmen und technische Partner bei Planung, Prüfung und Analyse von Tragwerken.",
+    "text2": "Wir arbeiten an Hochbau, Ingenieurbauwerken und Infrastruktur mit Bemessung, Diagnostik, Verstärkung, Gutachten und technischer Beratung.",
+    "text3": "Unser Ziel sind zuverlässige, nutzbare und sichere Unterlagen unter Beachtung von Integrität, Verfügbarkeit, Vertraulichkeit und Datensicherheit."
   }
 }

@@ -241,7 +241,7 @@ export function Logo({ className = "", href = "/" }) {
   return (
     <Link href={href} className={`relative block h-14 w-36 md:h-16 md:w-44 ${className}`}>
       <Image
-        src="/images/jts-structure-logo.png"
+        src="/images/jts-structure-logo-transparent.png"
         alt="JTS Structure Consulting Engineers"
         fill
         sizes="176px"
@@ -257,7 +257,7 @@ export function TopLogo({ className = "", href = "/" }) {
   return (
     <Link href={href} className={`relative block h-14 w-36 md:h-20 md:w-52 ${className}`}>
       <Image
-        src="/images/jts-structure-logo.png"
+        src="/images/jts-structure-logo-transparent.png"
         alt="JTS Structure Consulting Engineers"
         fill
         sizes="208px"
@@ -274,7 +274,7 @@ export function Logo2({ show = true, className = "", href = "/" }) {
   return (
     <Link href={href} className={`relative block h-11 w-32 md:h-14 md:w-40 ${className}`}>
       <Image
-        src="/images/jts-structure-logo.png"
+        src="/images/jts-structure-logo-transparent.png"
         alt="JTS Structure Consulting Engineers"
         fill
         sizes="160px"

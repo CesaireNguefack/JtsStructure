@@ -10,10 +10,10 @@
   {
     "id": 1,
     "title": "Tragwerksplanung im Hochbau",
-    "description1": "Konzeption, Vordimensionierung und Nachweise fur neue und bestehende Gebaude.",
-    "description": "JTS Structure erstellt Tragwerksplanungen fur Wohn-, Gewerbe-, Industrie- und offentliche Gebaude. Dazu gehoren Lastannahmen, Bemessung tragender Bauteile und die Abstimmung mit Architekten und ausfuhrenden Unternehmen.",
+    "description1": "Konzeption, Vordimensionierung und Nachweise für neue und bestehende Gebäude.",
+    "description": "JTS Structure erstellt Tragwerksplanungen für Wohn-, Gewerbe-, Industrie- und öffentliche Gebäude. Dazu gehören Lastannahmen, Bemessung tragender Bauteile und die Abstimmung mit Architekten und ausführenden Unternehmen.",
     "pricing": [
-      "Honorar nach Angebot je nach Planstand, Leistungsphase und Komplexitat",
+      "Honorar nach Angebot je nach Planstand, Leistungsphase und Komplexität",
       "Lieferumfang: Berechnungen, Annahmen und technische Empfehlungen"
     ],
     "tags": [
@@ -26,10 +26,10 @@
   {
     "id": 2,
     "title": "Berechnung und Bemessung",
-    "description1": "Verlassliche statische Berechnungen fur tragende Bauteile, Anschlusse und Tragwerke.",
-    "description": "Bemessung von Tragern, Stutzen, Decken, Fundamenten, tragenden Wanden, Dachwerken und Anschlussen nach Projektannahmen und geltenden Normen.",
+    "description1": "Verlässliche statische Berechnungen für tragende Bauteile, Anschlüsse und Tragwerke.",
+    "description": "Bemessung von Trägern, Stützen, Decken, Fundamenten, tragenden Wänden, Dachwerken und Anschlüssen nach Projektannahmen und geltenden Normen.",
     "pricing": [
-      "Pauschale oder Aufwandsschatzung nach Prufung des Umfangs",
+      "Pauschale oder Aufwandsschätzung nach Prüfung des Umfangs",
       "Einzelauftrag oder komplette Projektbegleitung"
     ],
     "tags": [
@@ -41,8 +41,8 @@
   {
     "id": 3,
     "title": "Gutachten und Tragwerksdiagnostik",
-    "description1": "Analyse von Rissen, Schaden, Verformungen und konstruktiven Mangelbildern.",
-    "description": "Begehung, Unterlagenprufung, Ursachenanalyse und Empfehlungen fur Instandsetzung oder Verstarkung. Die Berichte unterstutzen technische und administrative Entscheidungen.",
+    "description1": "Analyse von Rissen, Schäden, Verformungen und konstruktiven Mängelbildern.",
+    "description": "Begehung, Unterlagenprüfung, Ursachenanalyse und Empfehlungen für Instandsetzung oder Verstärkung. Die Berichte unterstützen technische und administrative Entscheidungen.",
     "pricing": [
       "Ortstermin und Bericht nach Angebot",
       "Preis je nach Dringlichkeit, Fahrt und Untersuchungsumfang"
@@ -56,57 +56,57 @@
   {
     "id": 4,
     "title": "Ingenieurbauwerke",
-    "description1": "Studien und technische Stellungnahmen fur Brucken, Stege, Wande und Sonderbauwerke.",
-    "description": "Begleitung von Ingenieurbauwerken: statische Prufungen, Tragfahigkeitsanalysen, Reparaturvorschlage, Verstarkungen und technische Nachverfolgung.",
+    "description1": "Studien und technische Stellungnahmen für Brücken, Stege, Wände und Sonderbauwerke.",
+    "description": "Begleitung von Ingenieurbauwerken: statische Prüfungen, Tragfähigkeitsanalysen, Reparaturvorschläge, Verstärkungen und technische Nachverfolgung.",
     "pricing": [
       "Angebot passend zum Bauwerkstyp",
-      "Prufung auf Basis von Unterlagen oder nach Ortstermin"
+      "Prüfung auf Basis von Unterlagen oder nach Ortstermin"
     ],
     "tags": [
-      "Brucken",
+      "Brücken",
       "Stege",
-      "Stutzwande"
+      "Stützwände"
     ]
   },
   {
     "id": 5,
     "title": "Infrastruktur und Tiefbau",
-    "description1": "Tragwerksbezogene Unterstutzung fur Infrastruktur, Fundamente, Stutzbauwerke und erdberuhrte Bauteile.",
-    "description": "Ingenieurtechnische Studien fur Infrastrukturprojekte, Schnittstellen zwischen Hochbau und Tiefbau, Stutzbauwerke und Strukturen mit besonderen Boden- oder Nutzungsanforderungen.",
+    "description1": "Tragwerksbezogene Unterstützung für Infrastruktur, Fundamente, Stützbauwerke und erdberührte Bauteile.",
+    "description": "Ingenieurtechnische Studien für Infrastrukturprojekte, Schnittstellen zwischen Hochbau und Tiefbau, Stützbauwerke und Strukturen mit besonderen Boden- oder Nutzungsanforderungen.",
     "pricing": [
-      "Angebot nach Prufung der Randbedingungen und vorhandenen Unterlagen"
+      "Angebot nach Prüfung der Randbedingungen und vorhandenen Unterlagen"
     ],
     "tags": [
       "Tiefbau",
-      "Stutzbauwerke",
+      "Stützbauwerke",
       "Infrastruktur"
     ]
   },
   {
     "id": 6,
-    "title": "Sanierung und Verstarkung",
-    "description1": "Losungen zur Umnutzung, Reparatur oder Tragfahigkeitserhohung bestehender Strukturen.",
-    "description": "Verstarkungsstudien bei Nutzungsanderung, Wanddurchbruchen, Erweiterungen, Aufstockungen oder Schadensbehebung unter Berucksichtigung der Baustellen- und Nutzungsbedingungen.",
+    "title": "Sanierung und Verstärkung",
+    "description1": "Lösungen zur Umnutzung, Reparatur oder Tragfähigkeitserhöhung bestehender Strukturen.",
+    "description": "Verstärkungsstudien bei Nutzungsänderung, Wanddurchbrüchen, Erweiterungen, Aufstockungen oder Schadensbehebung unter Berücksichtigung der Baustellen- und Nutzungsbedingungen.",
     "pricing": [
-      "Studie nach Angebot entsprechend Aufmass, Planunterlagen und Zustand"
+      "Studie nach Angebot entsprechend Aufmaß, Planunterlagen und Zustand"
     ],
     "tags": [
-      "Verstarkung",
+      "Verstärkung",
       "Sanierung",
       "Umbau"
     ]
   },
   {
     "id": 7,
-    "title": "Technische Beratung und Projektprufung",
-    "description1": "Unabhangige Beratung zur Absicherung technischer Entscheidungen und Projektunterlagen.",
-    "description": "Prufung von Berechnungen, konstruktiven Prinzipien, Varianten, Ausschreibungs- oder Ausfuhrungsunterlagen sowie Unterstutzung bei technischen Fragen der Projektbeteiligten.",
+    "title": "Technische Beratung und Projektprüfung",
+    "description1": "Unabhängige Beratung zur Absicherung technischer Entscheidungen und Projektunterlagen.",
+    "description": "Prüfung von Berechnungen, konstruktiven Prinzipien, Varianten, Ausschreibungs- oder Ausführungsunterlagen sowie Unterstützung bei technischen Fragen der Projektbeteiligten.",
     "pricing": [
       "Kurzberatung oder laufende Begleitung nach Angebot"
     ],
     "tags": [
       "Beratung",
-      "Technische Prufung",
+      "Technische Prüfung",
       "Koordination"
     ]
   }

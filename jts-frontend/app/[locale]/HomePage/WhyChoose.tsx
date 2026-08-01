@@ -12,7 +12,7 @@ export default function WhyChoose() {
   const [visibleItems, setVisibleItems] = useState<number[]>([]);
   const subtitle =
     locale === "de"
-      ? "Ihr zuverlaessiger Partner fuer dauerhafte Tragwerke"
+      ? "Ihr zuverlässiger Partner für dauerhafte Tragwerke"
       : locale === "en"
         ? "Reliable expertise for durable structures"
         : "Une expertise fiable pour des ouvrages durables";
@@ -98,10 +98,10 @@ export default function WhyChoose() {
                 </p>
                 <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
                   {locale === "de"
-                    ? "Praezision, Kontrolle und Begleitung fuer jedes Bauprojekt."
+                    ? "Präzision, Kontrolle und Begleitung für jedes Bauprojekt."
                     : locale === "en"
                       ? "Precision, control and guidance for every construction project."
-                      : "Precision, controle et accompagnement pour chaque projet de construction."}
+                      : "Precision, contrôle et accompagnement pour chaque projet de construction."}
                 </p>
               </div>
             </div>

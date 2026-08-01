@@ -9,7 +9,7 @@ const reviews = [
         name: "Martina Blume",
         location: "Braunschweig",
         avatar: "/images/p1.png",
-        message: "Die technische Analyse war klar, nachvollziehbar und sehr hilfreich fur unsere Projektentscheidung. JTS Structure konnen wir empfehlen."
+        message: "Die technische Analyse war klar, nachvollziehbar und sehr hilfreich für unsere Projektentscheidung. JTS Structure können wir empfehlen."
 
     },
     {

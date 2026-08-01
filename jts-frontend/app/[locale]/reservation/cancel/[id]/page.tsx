@@ -22,17 +22,17 @@ export default function CancelReservationPage() {
         const res = await cancelReservation(Number(id));
 
         if (res.status!== "success") {
-          throw new Error("Erreur lors de la confirmation"+res);
+          throw new Error("Fehler bei der Stornierung" + res);
         }
 
         const data = await res;
 
         setStatus("success");
-        setMessage(data.message || "Réservation confirmée avec succès !");
+        setMessage(data.message || "Anfrage erfolgreich storniert!");
       } catch (error: any) {
         setStatus("error");
         setMessage(
-          error.message || "Une erreur est survenue lors de la confirmation."
+          error.message || "Bei der Stornierung ist ein Fehler aufgetreten."
         );
       }
     };
@@ -45,7 +45,7 @@ export default function CancelReservationPage() {
                 <Navbar navState="gradient" showLogo={true} />
                 <section className="min-h-screen flex items-center justify-center">
       <div style={{ padding: "2rem", textAlign: "center" }}>
-        {status === "loading" && <p>Stönieren läuft ....</p>}
+        {status === "loading" && <p>Stornierung läuft...</p>}
 
         {status === "success" && (
           <div>
@@ -55,7 +55,7 @@ export default function CancelReservationPage() {
 
         {status === "error" && (
           <div>
-            <h1>❌ Erreur</h1>
+            <h1>❌ Fehler</h1>
             <p>{message}</p>
           </div>
         )}
