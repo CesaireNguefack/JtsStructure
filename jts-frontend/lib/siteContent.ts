@@ -94,6 +94,21 @@ const siteContent = {
         ["Partenaires", "Collaboration avec maitres d'ouvrage, architectes, entreprises, bureaux techniques et acteurs du chantier."],
       ],
     },
+    founder: {
+      eyebrow: "À propos du fondateur",
+      title: "L'expertise au service de vos projets",
+      name: "Tsamo Sonna Jospin",
+      role: "Fondateur et CEO de JTS-Structure",
+      imageAlt: "Fondateur et CEO de JTS Structure",
+      highlights: ["M.Sc. TUHH", "Génie civil", "Ouvrages d'art", "FEM"],
+      paragraphs: [
+        "Fondateur et CEO de JTS-Structure, je suis ingénieur en génie civil spécialisé dans le calcul de structures et les ouvrages d'art. Diplômé Master of Science (M.Sc.) en Ingénierie des Structures de la Technische Universität Hamburg (TUHH), j'ai fondé JTS-Structure avec une ambition claire : proposer des solutions d'ingénierie alliant excellence technique, innovation et accompagnement personnalisé.",
+        "Au cours de mon parcours professionnel en Allemagne, j'ai acquis une solide expérience dans la conception, le dimensionnement, la vérification et le recalcul de structures complexes en béton armé et béton précontraint. J'ai notamment travaillé sur des ouvrages d'art et des infrastructures majeures, tels que des écluses, ponts, murs de soutènement, fondations et ouvrages hydrauliques.",
+        "Cette expérience m'a permis de développer une expertise approfondie en calcul de structures, modélisation par éléments finis (FEM), analyse des structures existantes et application des normes européennes, avec pour objectif de concevoir des ouvrages sûrs, durables et économiquement optimisés.",
+        "Chez JTS-Structure, nous accompagnons maîtres d'ouvrage, architectes, entreprises et collectivités dans toutes les phases de leurs projets en proposant des études techniques rigoureuses, fiables et adaptées aux enjeux de chaque réalisation.",
+      ],
+      commitment: "Notre engagement est de transformer les défis techniques en solutions structurelles performantes et durables.",
+    },
     resources: {
       title: "Actualites et ressources",
       items: [
@@ -189,6 +204,21 @@ const siteContent = {
         ["Partners", "Collaboration with clients, architects, contractors, technical offices and site stakeholders."],
       ],
     },
+    founder: {
+      eyebrow: "About the founder",
+      title: "Engineering excellence for sustainable structures",
+      name: "Tsamo Sonna Jospin",
+      role: "Founder and CEO of JTS-Structure",
+      imageAlt: "Founder and CEO of JTS Structure",
+      highlights: ["M.Sc. TUHH", "Civil engineering", "Civil structures", "FEM"],
+      paragraphs: [
+        "As the Founder and CEO of JTS-Structure, I am a structural and civil engineer specializing in structural design and analysis. Holding a Master of Science (M.Sc.) in Structural Engineering from the Hamburg University of Technology (TUHH), I founded JTS-Structure with a clear vision: to provide engineering services built on technical excellence, innovation, and long-term client partnerships.",
+        "Throughout my professional career in Germany, I have gained extensive experience in the design, structural analysis, verification, and assessment of complex reinforced and prestressed concrete structures. My work has involved major civil engineering and hydraulic infrastructure projects, including locks, bridges, retaining structures, foundations, and other large-scale engineering works.",
+        "This experience has enabled me to develop strong expertise in structural analysis, finite element modelling (FEM), structural assessment, and the application of European design standards to deliver safe, sustainable, and cost-effective engineering solutions.",
+        "At JTS-Structure, we work closely with developers, architects, contractors, and public authorities to provide reliable, high-quality structural engineering services tailored to the unique requirements of every project.",
+      ],
+      commitment: "Our commitment is to transform engineering challenges into safe, efficient, and sustainable structural solutions.",
+    },
     resources: {
       title: "News and resources",
       items: ["Technical articles", "Construction advice", "Regulations", "Civil engineering innovations", "Case studies", "Join us", "Spontaneous application"],
@@ -275,6 +305,21 @@ const siteContent = {
         ["Entwicklungsperspektiven", "Diese Seite wächst natürlich mit dem Unternehmen und seinen Referenzen."],
         ["Partner", "Zusammenarbeit mit Bauherren, Architekten, Unternehmen, Fachplanern und Projektbeteiligten."],
       ],
+    },
+    founder: {
+      eyebrow: "Über den Gründer",
+      title: "Ingenieurkompetenz für nachhaltige Tragwerke",
+      name: "Jospin Tsamo Sonna",
+      role: "Gründer und CEO von JTS-Structure",
+      imageAlt: "Gründer und CEO von JTS Structure",
+      highlights: ["M.Sc. TUHH", "Bauingenieurwesen", "Ingenieurbauwerke", "FEM"],
+      paragraphs: [
+        "Als Gründer und CEO von JTS-Structure bin ich Bauingenieur mit Spezialisierung auf Tragwerksplanung und statische Berechnung. Mit einem Master of Science (M.Sc.) in Structural Engineering der Technischen Universität Hamburg (TUHH) habe ich JTS-Structure mit einer klaren Vision gegründet: Ingenieurleistungen anzubieten, die technische Exzellenz, Innovation und eine persönliche Projektbegleitung miteinander verbinden.",
+        "Im Laufe meiner beruflichen Tätigkeit in Deutschland habe ich umfassende Erfahrung in der Planung, Bemessung, Prüfung und Nachrechnung komplexer Tragwerke aus Stahlbeton und Spannbeton gesammelt. Dabei war ich an bedeutenden Ingenieurbau- und Infrastrukturprojekten beteiligt, darunter Schleusen, Brücken, Stützwände, Fundamente und wasserbauliche Anlagen.",
+        "Diese Erfahrung hat mir eine fundierte Expertise in Tragwerksberechnung, Finite-Elemente-Modellierung (FEM), Bestandsanalyse und der Anwendung europäischer Bemessungsnormen vermittelt, mit dem Ziel, sichere, langlebige und wirtschaftlich optimierte Bauwerke zu entwickeln.",
+        "Bei JTS-Structure begleiten wir Bauherren, Architekten, Unternehmen und öffentliche Auftraggeber in allen Projektphasen mit präzisen, zuverlässigen und auf die Anforderungen jedes Vorhabens abgestimmten technischen Studien.",
+      ],
+      commitment: "Unser Anspruch ist es, technische Herausforderungen in leistungsfähige, sichere und nachhaltige Tragwerkslösungen zu verwandeln.",
     },
     resources: {
       title: "Aktuelles und Ressourcen",

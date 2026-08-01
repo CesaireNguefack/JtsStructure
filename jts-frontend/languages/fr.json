@@ -17,9 +17,6 @@
     "title": "Construisons ensemble \n des ouvrages durables \n et performants",
     "subtitle": "Rigueur, qualité et innovation au service de vos projets."
   },
-  "homeDivider": {
-    "items": ["RIGUEUR", "QUALITÉ", "INNOVATION"]
-  },
   "footer": {
   "title": "Bureau d’études structure spécialisé dans le dimensionnement, le diagnostic et l’expertise des ouvrages.",
   "navigation": "Navigation",
@@ -27,10 +24,10 @@
 },
   "about": {
     "quality": "Rigueur technique",
-    "title": "Qui nous sommes",
-    "description": "JTS Structure est une entreprise spécialisée dans les études, calculs et expertises structurelles. Nous intervenons dès les premières hypothèses jusqu’aux notes de calcul, plans d’exécution et diagnostics d’ouvrages existants.",
-    "subtitle": "Nos domaines d’intervention",
-    "subdescription": "Bâtiment, ouvrages d’art, infrastructures, réhabilitation, renforcement et assistance technique pour maîtres d’ouvrage, architectes et entreprises."
+    "title": "Notre mission",
+    "description": "Notre mission est de fournir des solutions d’ingénierie innovantes et adaptées aux réalités locales, tout en répondant aux plus hauts standards de qualité et de sécurité.",
+    "subtitle": "L’ingénierie au service de la performance durable",
+    "subdescription": "Nous contribuons au développement durable des infrastructures et des bâtiments en plaçant la performance, l’économie et la pérennité au cœur de chaque projet. À travers nos réalisations, nous participons activement à la modernisation du secteur de la construction et au développement de l’Afrique."
   },
   "contact": {
     "title": "Contact",

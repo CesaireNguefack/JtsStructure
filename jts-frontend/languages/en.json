@@ -17,9 +17,6 @@
     "title": "Let's build durable \n and high-performing \n structures together",
     "subtitle": "Rigor, quality and innovation at the service of your projects."
   },
-  "homeDivider": {
-    "items": ["RIGOR", "QUALITY", "INNOVATION"]
-  },
   "footer": {
     "title": "Structural engineering office for design, calculations, diagnostics and expert assessments.",
     "navigation": "Navigation",
@@ -80,10 +77,10 @@
   },
   "about": {
     "quality": "Technical rigor",
-    "title": "Who we are",
-    "description": "JTS Structure specializes in structural studies, calculations and assessments. We support projects from early assumptions through calculation notes, execution documents and diagnostics of existing structures.",
-    "subtitle": "Our fields of work",
-    "subdescription": "Buildings, bridges, infrastructure, rehabilitation, strengthening and technical assistance for clients, architects and contractors."
+    "title": "Our mission",
+    "description": "Our mission is to provide innovative engineering solutions adapted to local realities while meeting the highest standards of quality and safety.",
+    "subtitle": "Engineering for sustainable performance",
+    "subdescription": "We contribute to the sustainable development of infrastructure and buildings by placing performance, efficiency, and long-term durability at the heart of every project. Through our work, we actively support the modernization of the construction sector and Africa’s development."
   },
   "service": {
     "title": "Our Services",

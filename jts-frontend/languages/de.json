@@ -17,9 +17,6 @@
     "title": "Gemeinsam bauen wir \n dauerhafte und leistungsfähige \n Bauwerke",
     "subtitle": "Sorgfalt, Qualität und Innovation im Dienst Ihrer Projekte."
   },
-  "homeDivider": {
-    "items": ["SORGFALT", "QUALITÄT", "INNOVATION"]
-  },
   "adminPage": {
   "btn_section_view": "Nach Leistung anzeigen",
   "btn_global_view": "Globale Ansicht",
@@ -81,10 +78,10 @@
   },
   "about": {
     "quality": "Technische Sorgfalt",
-    "title": "Wer wir sind",
-    "description": "JTS Structure ist spezialisiert auf Tragwerksplanung, statische Berechnungen und Gutachten. Wir begleiten Projekte von den ersten Annahmen bis zu Berechnungen, Ausführungsunterlagen und Diagnosen bestehender Bauwerke.",
-    "subtitle": "Unsere Einsatzbereiche",
-    "subdescription": "Hochbau, Ingenieurbau, Infrastruktur, Sanierung, Verstärkung und technische Beratung für Bauherren, Architekten und Unternehmen."
+    "title": "Unsere Mission",
+    "description": "Unsere Mission ist es, innovative Ingenieurlösungen bereitzustellen, die an lokale Gegebenheiten angepasst sind und gleichzeitig höchste Qualitäts- und Sicherheitsstandards erfüllen.",
+    "subtitle": "Ingenieurwesen für nachhaltige Leistungsfähigkeit",
+    "subdescription": "Wir tragen zur nachhaltigen Entwicklung von Infrastrukturen und Gebäuden bei, indem wir Leistung, Wirtschaftlichkeit und Dauerhaftigkeit in den Mittelpunkt jedes Projekts stellen. Mit unserer Arbeit unterstützen wir aktiv die Modernisierung des Bausektors und die Entwicklung Afrikas."
   },
   "service": {
     "title": "Unsere Leistungen",

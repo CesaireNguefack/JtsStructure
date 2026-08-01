@@ -2,6 +2,8 @@ type Props = {
   left: React.ReactNode;
   right: React.ReactNode;
   reverse?: boolean;
+  align?: "center" | "stretch";
+  balancedGutters?: boolean;
   className?: string;
 };
 
@@ -9,16 +11,22 @@ export default function SplitSection({
   left,
   right,
   reverse = false,
+  align = "center",
+  balancedGutters = false,
   className = "",
 }: Props) {
   return (
     <section className={`w-full py-16 md:py-24 bg-[#f7f8fb] ${className}`}>
       <div
         className={`
-          max-w-7xl mx-auto px-4 md:px-6
+          max-w-7xl mx-auto
           grid grid-cols-1 md:grid-cols-2
-          gap-10 md:gap-16
-          items-center
+          ${
+            balancedGutters
+              ? "gap-y-10 gap-x-4 px-4 md:gap-x-6 md:px-6"
+              : "gap-10 px-4 md:gap-16 md:px-6"
+          }
+          ${align === "stretch" ? "items-stretch" : "items-center"}
         `}
       >
         {/* LEFT */}

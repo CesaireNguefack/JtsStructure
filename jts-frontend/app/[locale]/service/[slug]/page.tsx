@@ -75,6 +75,8 @@ export default function ServiceDetail() {
       />
       <SplitSection
         reverse
+        align="stretch"
+        balancedGutters
         left={<ServiceCoverImage service={service} />}
         right={<ServiceDescription service={service} />}
       />
@@ -206,8 +208,8 @@ export function ServiceCoverImage({ service }: { service: Service }) {
   }
 
   return (
-    <div className="relative flex flex-col items-center md:items-start">
-      <div className="relative w-full max-w-[420px] aspect-square overflow-hidden shadow-2xl">
+    <div className="relative h-full w-full">
+      <div className="relative aspect-[4/3] w-full overflow-hidden shadow-2xl md:h-full md:min-h-[620px] md:aspect-auto">
         <img
           src={getFullUrl(coverImage)}
           alt={service.title}

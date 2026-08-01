@@ -11,7 +11,7 @@ import TeamHome from "./Team"
 import HomePageContacSection from "./HomePageContacSection"
 import ServicesBlock from "./Services"
 import WhyChoose from "./WhyChoose"
-import HeroAboutDivider from "./HeroAboutDivider"
+import AboutCEO from "./AboutCEO"
 
 export default function Welcome() {
     const [navState, setNavState] = useState<"transparent" | "gradient" | "white">("transparent")
@@ -51,9 +51,9 @@ export default function Welcome() {
             <div ref={heroRef}>
                 <Hero />
             </div>
-            <HeroAboutDivider />
+            <AboutCEO />
             <AboutSection />
-            <ServicesBlock  />
+            <ServicesBlock />
             <TeamHome />
              <WhyChoose />
             <Demo />
