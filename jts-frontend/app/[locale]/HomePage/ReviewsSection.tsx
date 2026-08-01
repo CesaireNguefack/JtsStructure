@@ -8,23 +8,23 @@ const reviews = [
         id: 0,
         name: "Martina Blume",
         location: "Braunschweig",
-        avatar: "/images/p1.png",
+        initials: "MB",
         message: "Die technische Analyse war klar, nachvollziehbar und sehr hilfreich für unsere Projektentscheidung. JTS Structure können wir empfehlen."
 
     },
     {
         id: 1,
-        name: "Cesaire Dongmo",
-        location: "Mannheim, Deuschland",
-        avatar: "/images/p2.png",
-        message: "Ich bin sehr zufrieden – mein Sofa sieht wieder wie neu aus. Die Arbeit wurde sorgfältig und effizient ausgeführt. Das Team ist professionell, pünktlich und freundlich. Ich kann den Service nur weiterempfehlen."
+        name: "Christian Weber",
+        location: "Hannover, Deutschland",
+        initials: "CW",
+        message: "Die statischen Nachweise waren sauber strukturiert und gut nachvollziehbar. Die Abstimmung mit Architekt und Ausführung verlief professionell."
     },
     {
         id: 2,
         name: "Wilfried Mund",
-        location: " Braunschweig",
-        avatar: "/images/p3.png",
-        message: "Professional, precise and responsive. The structural recommendations were easy to use with our project team."
+        location: "Braunschweig",
+        initials: "WM",
+        message: "Professionell, präzise und reaktionsschnell. Die Empfehlungen zur Tragwerksplanung ließen sich sehr gut im Projektteam einsetzen."
     }
 ]
 
@@ -82,10 +82,9 @@ export default function ReviewsSection() {
                                     }}
                                 >
 
-                                    <img
-                                        src={r.avatar}
-                                        className="w-10 h-10 md:w-12 md:h-12 rounded-full"
-                                    />
+                                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--foreground)] text-xs font-black text-white md:h-12 md:w-12">
+                                        {r.initials}
+                                    </div>
 
                                     <div>
                                         <p className="font-semibold text-sm md:text-base  text-[var(--foreground2)]">

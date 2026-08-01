@@ -3,9 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Navbar from "@/componenten/Navbar";
-import {   confirmReservation } from "@/services/reservationApi";
-
-const token = process.env.NEXT_PUBLIC_CONFIRMATION_TOKEN || "sblmobile"; // Assure-toi de définir cette variable d'environnement
+import { confirmReservation } from "@/services/reservationApi";
 
 export default function ConfirmReservationPage() {
   const params = useParams();

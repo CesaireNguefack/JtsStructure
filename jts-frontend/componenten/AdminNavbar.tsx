@@ -67,7 +67,7 @@ export default function AdminNavbar({ navState }: Props) {
           {/* Logo */}
           <div className="text-xl font-semibold text-slate-800">
             <Link href={`/${locale}`} className={linkClass("/")}>
-              SOHBLITZ Mobil
+              JTS Structure
             </Link>
           </div>
 

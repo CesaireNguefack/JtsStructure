@@ -28,7 +28,7 @@ export default function ServiceCard({
 
         {/* Image */}
         <img
-          src="/images/doctor-small.jpg"
+          src={image || "/images/jts-structure-hero.png"}
           alt={title}
           className="w-full h-52 object-cover"
         />
