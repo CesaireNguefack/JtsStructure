@@ -153,7 +153,7 @@ export default function Footer() {
               {/* Facebook */}
               <li>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/jts-structure-consulting-engineers"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-700 hover:text-[var(--foreground)] transition group"
