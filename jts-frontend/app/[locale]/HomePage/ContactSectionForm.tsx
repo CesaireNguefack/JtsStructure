@@ -247,7 +247,7 @@ export function ContactCalendar() {
         icon={<FaWhatsapp className="text-green-500 text-xl" />}
     title={
       <a href="">
-        +4915292627453
+        +49 179 6148361
       </a>
     }
       />
@@ -316,7 +316,7 @@ export function IconCardForm({ icon, title, onClick }: Props) {
   );
 }
 const handleWhatsAppClick = () => {
-  window.open("https://wa.me/4915292627453", "_blank");
+  window.open("https://wa.me/491796148361", "_blank");
 };
 
  

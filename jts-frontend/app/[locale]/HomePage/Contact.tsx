@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Mail, MapPin } from "lucide-react";
 
 const handleWhatsAppClick = () => {
-  window.open("https://wa.me/4915292627453", "_blank");
+  window.open("https://wa.me/491796148361", "_blank");
 };
 
 export default function ContactSection() {
@@ -32,8 +32,8 @@ export default function ContactSection() {
           icon={<FaWhatsapp className="text-green-500 text-xl" />}
           title="Hotline"
           description={
-      <a href="https://wa.me/4915292627453" target="_blank">
-        +4915292627453
+      <a href="https://wa.me/491796148361" target="_blank">
+        +49 179 6148361
       </a>
     }
     onClick={handleWhatsAppClick}

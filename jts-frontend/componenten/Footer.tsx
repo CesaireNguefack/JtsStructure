@@ -94,11 +94,11 @@ export default function Footer() {
         <FaWhatsapp size={16} />
       </div>
       <a
-        href="https://wa.me/4915292627453"
+        href="https://wa.me/491796148361"
         target="_blank"
         className="text-gray-700 group-hover:text-[var(--foreground)] transition"
       >
-        +4915292627453
+        +49 179 6148361
       </a>
     </li>
     
@@ -153,7 +153,7 @@ export default function Footer() {
               {/* Facebook */}
               <li>
                 <a
-                  href="https://www.linkedin.com/company/jts-structure-consulting-engineers"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-700 hover:text-[var(--foreground)] transition group"
@@ -165,7 +165,7 @@ export default function Footer() {
 
               <li>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/jts-structure-consulting-engineers"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-700 hover:text-[var(--foreground)] transition group"
