@@ -9,10 +9,13 @@ import { contactAdminTemplate, contactTemplate } from './templates/contact.templ
 
 @Injectable()
 export class EmailService {
+    private readonly mailPort = Number(process.env.MAIL_PORT);
+    private readonly mailSecure = process.env.MAIL_SECURE === 'true' || this.mailPort === 465;
+
     private transporter = nodemailer.createTransport({
         host: process.env.MAIL_HOST,
-        port: Number(process.env.MAIL_PORT),
-        secure: false,
+        port: this.mailPort,
+        secure: this.mailSecure,
         auth: {
             user: process.env.MAIL_USER,
             pass: process.env.MAIL_PASS,
@@ -25,7 +28,7 @@ export class EmailService {
         if (!to) throw new Error("No recipient");
 
         return this.transporter.sendMail({
-            from: `"JTS Structure" <${process.env.MAIL_USER}>`,
+            from: `"JTS Structure" <${process.env.MAIL_FROM || process.env.MAIL_USER}>`,
             to,
             subject,
             html,
