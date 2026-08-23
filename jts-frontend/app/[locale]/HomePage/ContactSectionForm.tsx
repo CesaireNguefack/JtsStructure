@@ -267,7 +267,7 @@ export function ContactCalendar() {
         <a className="text-pink-600 hover:scale-110 transition" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <FaInstagram size={28} />
         </a>
-        <a className="text-blue-600 hover:scale-110 transition" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <a className="text-blue-600 hover:scale-110 transition" href="https://www.facebook.com/share/p/1D67VyyVZT/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
           <FaFacebook size={28} />
         </a>
         <a className="text-blue-700 hover:scale-110 transition" href="https://www.linkedin.com/company/jts-structure-consulting-engineers" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
