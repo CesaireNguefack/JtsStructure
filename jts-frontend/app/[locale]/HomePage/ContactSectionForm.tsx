@@ -7,6 +7,14 @@ import { getCurentLanguage } from "@/languages/getcurentlanguage"
 import { useTranslations } from "@/lib/TranslationProvider"
 import {ButtonSubmit} from "@/componenten/Cards/KontaktButton"
 import {  Mail, MapPin } from "lucide-react";
+import {
+  CONTACT_PHONE_PRIMARY,
+  CONTACT_PHONE_PRIMARY_TEL,
+  CONTACT_PHONE_WHATSAPP,
+  CONTACT_WHATSAPP_URL,
+  FACEBOOK_URL,
+  LINKEDIN_URL,
+} from "@/lib/contactLinks";
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function ContactFormBody() {
@@ -243,12 +251,18 @@ export function ContactCalendar() {
     <div className="w-full max-w-xl mx-auto md:mx-0 px-4 sm:px-0">
 
       <div className="w-full max-w-md mx-auto md:mx-0 bg-white p-6 shadow-xl">
-         <IconCardForm  onClick={handleWhatsAppClick}
+         <IconCardForm
         icon={<FaWhatsapp className="text-green-500 text-xl" />}
     title={
-      <a href="">
-        +49 179 6148361
-      </a>
+      <span className="flex flex-col gap-1">
+        <a href={CONTACT_PHONE_PRIMARY_TEL}>
+          {CONTACT_PHONE_PRIMARY}
+        </a>
+        <a href={CONTACT_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+          <FaWhatsapp className="text-green-500" />
+          {CONTACT_PHONE_WHATSAPP}
+        </a>
+      </span>
     }
       />
 
@@ -267,10 +281,10 @@ export function ContactCalendar() {
         <a className="text-pink-600 hover:scale-110 transition" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <FaInstagram size={28} />
         </a>
-        <a className="text-blue-600 hover:scale-110 transition" href="https://www.facebook.com/share/p/1D67VyyVZT/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <a className="text-blue-600 hover:scale-110 transition" href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
           <FaFacebook size={28} />
         </a>
-        <a className="text-blue-700 hover:scale-110 transition" href="https://www.linkedin.com/company/jts-structure-consulting-engineers" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a className="text-blue-700 hover:scale-110 transition" href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <FaLinkedin size={28} />
         </a>
       </div>
@@ -315,8 +329,4 @@ export function IconCardForm({ icon, title, onClick }: Props) {
     </div>
   );
 }
-const handleWhatsAppClick = () => {
-  window.open("https://wa.me/491796148361", "_blank");
-};
-
  

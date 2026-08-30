@@ -4,9 +4,17 @@ import { useTranslations } from "@/lib/TranslationProvider";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation"
+import {
+  CONTACT_PHONE_PRIMARY,
+  CONTACT_PHONE_PRIMARY_TEL,
+  CONTACT_PHONE_WHATSAPP,
+  CONTACT_WHATSAPP_URL,
+  FACEBOOK_URL,
+  LINKEDIN_URL,
+} from "@/lib/contactLinks";
 import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   const t = useTranslations()
@@ -87,19 +95,29 @@ export default function Footer() {
 
   <ul className="space-y-3 text-sm">
 
-    {/* WhatsApp */}
-    <li className="flex items-center gap-3 group cursor-pointer">
+    {/* Phone */}
+    <li className="flex items-start gap-3 group">
       <div className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-[var(--foreground)]
         group-hover:bg-[var(--foreground)] group-hover:text-white transition">
-        <FaWhatsapp size={16} />
+        <Phone size={16} />
       </div>
-      <a
-        href="https://wa.me/491796148361"
-        target="_blank"
-        className="text-gray-700 group-hover:text-[var(--foreground)] transition"
-      >
-        +49 179 6148361
-      </a>
+      <div className="flex flex-col gap-1">
+        <a
+          href={CONTACT_PHONE_PRIMARY_TEL}
+          className="text-gray-700 group-hover:text-[var(--foreground)] transition"
+        >
+          {CONTACT_PHONE_PRIMARY}
+        </a>
+        <a
+          href={CONTACT_WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-gray-700 group-hover:text-[var(--foreground)] transition"
+        >
+          <FaWhatsapp size={16} className="text-green-500" />
+          {CONTACT_PHONE_WHATSAPP}
+        </a>
+      </div>
     </li>
     
     {/* Email */}
@@ -153,7 +171,7 @@ export default function Footer() {
               {/* Facebook */}
               <li>
                 <a
-                  href="https://www.facebook.com/share/p/1D67VyyVZT/?mibextid=wwXIfr"
+	                  href={FACEBOOK_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-700 hover:text-[var(--foreground)] transition group"
@@ -165,7 +183,7 @@ export default function Footer() {
 
               <li>
                 <a
-                  href="https://www.linkedin.com/company/jts-structure-consulting-engineers"
+                  href={LINKEDIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-700 hover:text-[var(--foreground)] transition group"

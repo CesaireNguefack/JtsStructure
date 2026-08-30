@@ -2,13 +2,15 @@
 
 import {ButtonContact} from "@/componenten/Cards/KontaktButton";
 import IconCard from "../../../componenten/Cards/IconCard";
+import {
+  CONTACT_PHONE_PRIMARY,
+  CONTACT_PHONE_PRIMARY_TEL,
+  CONTACT_PHONE_WHATSAPP,
+  CONTACT_WHATSAPP_URL,
+} from "@/lib/contactLinks";
 import { useTranslations } from "@/lib/TranslationProvider"
 import { FaWhatsapp } from "react-icons/fa";
-import { Mail, MapPin } from "lucide-react";
-
-const handleWhatsAppClick = () => {
-  window.open("https://wa.me/491796148361", "_blank");
-};
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function ContactSection() {
     const t = useTranslations()
@@ -29,14 +31,19 @@ export default function ContactSection() {
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 items-start text-left md:text-center">
         <IconCard
-          icon={<FaWhatsapp className="text-green-500 text-xl" />}
+          icon={<Phone className="text-xl" />}
           title="Hotline"
           description={
-      <a href="https://wa.me/491796148361" target="_blank">
-        +49 179 6148361
-      </a>
+      <span className="flex flex-col gap-1">
+        <a href={CONTACT_PHONE_PRIMARY_TEL}>
+          {CONTACT_PHONE_PRIMARY}
+        </a>
+        <a href={CONTACT_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
+          <FaWhatsapp className="text-green-500" />
+          {CONTACT_PHONE_WHATSAPP}
+        </a>
+      </span>
     }
-    onClick={handleWhatsAppClick}
         />
 
         <IconCard
